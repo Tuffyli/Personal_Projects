@@ -1,0 +1,75 @@
+---
+title: "Pre-Avg_SE"
+author: "Tuffy"
+date: "2025-28-10"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, echo=FALSE, warning=FALSE, message=FALSE}
+library(did)
+```
+
+#Replicating the SDs in the Pre-Avg period
+
+The first step is to open the reference dataset and run the regression and dynamic aggregation of the results.
+```{r Primeira Parte}
+# Data Opening
+data(mpdta)
+
+#Regression outline
+out <- att_gt(yname="lemp",
+              tname="year",
+              idname="countyreal",
+              gname="first.treat",
+              xformla=NULL,
+              data=mpdta)
+
+
+#Aggregation for Event Study
+es_dyn <- aggte(out, type = "dynamic")
+```
+
+After this step, we calculate the average value of the cofficient for the Pre-Avgs periods.
+```{r Pre-Avg coef}
+#Extracting the pre-treatment periods
+pre_egt <- es_dyn$egt < 0
+
+#Calulating the average value for the coefficients
+pre_av <- mean(es_dyn$att.egt[pre_egt], na.rm = TRUE)
+```
+
+##Standard Error
+
+We will now apply the formula suggested by Callaway and Sant’Anna to extract the Variance–Covariance matrix available in the HonestDiD package code. Once the matrix V is obtained, I will aggregate the values to compute the Standard Error for the Pre-Avg period.
+```{r V}
+#Code for suggested by the authors in the HonestDiD
+
+es_inf_func <- es_dyn$inf.function$dynamic.inf.func.e
+n <- nrow(es_inf_func)
+V <- t(es_inf_func) %*% es_inf_func / n / n
+
+# ---------------------------------------------------------------------------- #
+#Standard Error calculations
+## 1) Extracting the pre-treatment values
+V3 <- V[1:3, 1:3]
+
+## 2) Equal period weights
+w <- rep(1/3, 3)
+
+## 3) Multiplication by the weight matrices: w`Vw
+var_equal <- as.numeric(crossprod(w, V3 %*% w))
+
+## 4) Square Root.
+se_equal  <- sqrt(var_equal)
+
+```
+
+
+The Pre-Avg SE provided by the Stata package was 0.0075204. Appluing this method, the final SE is:
+```{r}
+se_equal
+```
+
+While not exact, the final result is close to the reference value, indicating this method can reliably approximate the pre-average standard error.
