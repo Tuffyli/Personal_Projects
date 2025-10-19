@@ -2,7 +2,7 @@
 # Data Organization
 # DataBase adjustment
 # Last edited by: Tuffy Licciardi Issa
-# Date: 01/05/2025
+# Date: 18/10/2025
 # ---------------------------------------------------------------------------- #
 
 # ---------------------------------------------------------------------------- #
@@ -84,13 +84,13 @@ base <- base %>%
     )
 
 
-#Criando as dummys
+#Creating dummies
 base <- base %>%
   mutate(
-    branco_dummy = ifelse( #Dummy de raça/cor
+    branco_dummy = ifelse( #Dummy raça/cor - race/color
       !is.na(raca_aux) & raca_aux == 2, 1, 0
     ),
-    sexo_dummy = ifelse( #Dummy por sexo Masculino = 1
+    sexo_dummy = ifelse( #Dummy sex Male = 1
       !is.na(sexo_aux) & sexo_aux == 1, 1, 0
     ),
 
@@ -120,10 +120,10 @@ str(base)
 summary(base$cbo_group)
 
 
-#Tratando do dos NA para os grupos CBO
+#Dealing with NA values in the CBO
 base$cbo_group <- ifelse(is.na(base$cbo_group), 0, base$cbo_group)
 
-## 1.5 Salvando a Base de dados editada#################################
+## 1.5 Saving edited database ----
 write.csv(base, "C:/Users/tuffy/Documents/IC/Bases/panel_workers_2003to2013_nova.csv")
 
 
@@ -134,13 +134,12 @@ write.csv(base, "C:/Users/tuffy/Documents/IC/Bases/panel_workers_2003to2013_nova
 # ---------------------------------------------------------------------------- #
 base <- read.csv("C:/Users/tuffy/Documents/IC/Bases/panel_workers_2003to2013_nova.csv")
 
-#Estabelecendo o grupo de indivíduos que se encontrará na Rais em todos os períodos.
+#Defining the cohort of individuals observed in RAIS across all periods.
 base <- base %>%   
   group_by(code_id) %>% 
-  mutate( all_in_rais = min(rais_)
-    )
+  mutate( all_in_rais = min(rais_))
 
-#Cortando algumas variáveis
+#Filtering variables
 base <- base %>% 
   select(
     -raca_aux,
@@ -157,10 +156,13 @@ base <- base %>%
   )
 
 
-#Estabelecendo se os trabalhadores são White collars
+###2.1.1 Workers Group ----
+#Separating the workers groups
+
+
 strings <- unique(base$ocupacao_cbo2002_)
 
-#Extraindo os valores em string do grupo cbo
+#Extracting the CBO strings
 classification_collar <- data.frame(strings) %>%
   mutate(
     first_two_digits = substr(strings, 1, 2),
@@ -180,21 +182,20 @@ base <- merge(base, classification_collar,
               by.x = "ocupacao_cbo2002_", by.y = "strings", all.x = TRUE)
 
 
-
-#Criação de variáveis de auxílio e remuneração
+### 2.1.2 Salary auxiliar variable
+#Creation of auxiliary (helper) and remuneration variables
 base <- base %>% 
   mutate(time_to_treat = (ano - year_first_treated),
          treat = 1,
          previous_year = year_first_treated - 1,
-         #Criando a variável em log para o salário
          nvl_rem = log(remuneracao_media_sm_ + 1)
          ) %>%
-  #Removendo os valores das categorias CBO, não mais necessários
+  #Removing the CBO category values that are no longer needed
   select(-ocupacao_cbo2002_)
 
 
 
-# Extraindo os valores pré-tratamento
+#Extracting the pre-treatment values
 pre_treatment <- base %>%
   filter(ano == previous_year) %>%
   rename(
@@ -212,18 +213,21 @@ pre_treatment <- base %>%
     cnae_pre_treat
   )
 
-# Mesclando com o dataframe original
+# Merging with the original dataframe
 base <- base %>%
   left_join(pre_treatment, by = c("code_id", "previous_year")) %>% 
   arrange(code_id)
 
 
 
+# ------------------- #
+##2.2 CNAE Dummy ----
+# ------------------- #
 
-####CNAE###
+
 summary(base$cnae_group)
 
-#Passos para  a criação da dummy
+# Steps for creating the dummy
 treat <- base %>%
   arrange(code_id, ano) %>% 
   select(
@@ -237,10 +241,10 @@ treat <- base %>%
   group_by(code_id) %>% 
   
   mutate(
-    #Dummy auxiliar - livre mudança após o tratamento
+    # Auxiliary dummy — free to change after treatment
     dummy_cnae_aux =        
       case_when(
-        #Aqui listamos os possíveis casos
+        # Here we list the possible cases
           ano < year_first_treated & cnae_group == 0 ~ 1, 
           
           ano >= year_first_treated & cnae_group == 0 ~ 1,
@@ -249,31 +253,33 @@ treat <- base %>%
           
           TRUE ~ 0
         ),
-    #Dummy final
-    first_one = which(dummy_cnae_aux == 1 & ano >= year_first_treated)[1], #Primeira linha post-treat
+    
+    #Final Dummy
+    first_one = which(dummy_cnae_aux == 1 & ano >= year_first_treated)[1], #First post-treatment row
     
     dummy_cnae = ifelse(
       row_number() >= first_one & !is.na(first_one), 1, dummy_cnae_aux
     ),
 
     dummy_cnae = ifelse(
-      is.na(first_one) & ano >= year_first_treated, 0 , dummy_cnae #Essa condição lida com os casos em que não há first_one
+      is.na(first_one) & ano >= year_first_treated, 0 , dummy_cnae #This condition handles cases where there is no first_one
     )
   )
 
 treat <- treat %>% 
   select(
-    code_id, ano, dummy_cnae #selecionando apenas as colunas suficientes para realizar o merge
+    code_id, ano, dummy_cnae # selecting only the columns needed to perform the merge
   )
 
-#Unindo as os dataframes
+#joining the dataframes
 base <- base %>% 
   left_join(treat, by= c("code_id", "ano"))
 
+# ------------------ #
+## 2.3 CBO Dummy ----
+# ------------------ #
 
-###CB0###
- 
-#Informações que importam para o CBO
+#information that matters for the CBO
 treat <- base %>%
   select(
     code_id,
@@ -301,13 +307,13 @@ treat <- treat %>%
       )
   )
 
-#A última dummy
+#The last dummy
 treat <- treat %>% 
   group_by(code_id) %>% 
   mutate(
-    first_one = which(dummy_cbo_aux == 1 & ano >= year_first_treated)[1], #Primeira linha com mudança post-treat
+    first_one = which(dummy_cbo_aux == 1 & ano >= year_first_treated)[1], #First post-treatment row with change
     
-    #DUMMY FINAL
+    #Final Dummy
     dummy_cbo = case_when(
       ano < year_first_treated ~ dummy_cbo_aux,
       ano >= year_first_treated & row_number() >= first_one & !is.na(first_one) ~ 1,
@@ -329,9 +335,10 @@ base <- base %>%
             ) %>% 
   arrange(code_id, ano) 
 
-
-###Collars###
-#Separando os indivíduos entre os collars:
+# --------------- #
+##2.4 Collars ----
+# --------------- #
+#Separating individuals by collar type
 base <- base %>% 
   group_by(code_id) %>% 
   mutate(
@@ -343,7 +350,7 @@ base <- base %>%
       )
   )
 
-#Extraindo o maior valor
+#Largest value extraction
 base <- base %>% 
   group_by(code_id) %>% 
   mutate(
@@ -353,15 +360,15 @@ base <- base %>%
   )
 
 
-#Para a descrição das variáveis da base, o Stargazer necessita dos valores numérios
-# Convert the variables to numeric if necessary (if they are factors)
+#For variable summaries, stargazer requires numeric values
+# Convert variables to numeric if needed (e.g., if they are factors)
 base$sexo_dummy <- as.numeric(base$sexo_dummy)
 base$branco_dummy <- as.numeric(base$branco_dummy)
 base$ensino_dummy <- as.numeric(base$ensino_dummy)
 base$white_dummy <- as.numeric(base$white_dummy)
 
 
-## 2.2 Descriptive Statistics ----
+## 2.5 Descriptive Statistics ----
 stargazer(base[, c("sexo_dummy", "branco_dummy", "ensino_dummy", "white_dummy")], 
           type = "text",          
           title = "Descrição das variáveis",
