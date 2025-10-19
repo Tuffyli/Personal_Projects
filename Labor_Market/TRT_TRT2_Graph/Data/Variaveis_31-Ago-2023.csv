@@ -1,0 +1,1315 @@
+sigla;dsc_sigla
+a1;A1 - Assistência Judiciária Gratuita em relação à Despesa Total da Justiça
+a2;A2 - Assistência Judiciária Gratuita por 100.000 habitantes (R$)
+a3;A3 – Percentual de processos de justiça gratuita arquivados definitivamente
+ag;Ag - Agravos de Recursos e Agravos do art. 557
+ag2;Ag2º – Agravos de Recursos e Agravos do art. 557 de 2º Grau
+agdda;AgDDA – Agravos às Decisões Denegatórias de Admissibilidade
+ai2;AI2º – Agravos às Decisões Denegatórias de Admissibilidade de Recurso de Revista e Recurso Ordinário para o TST
+ano;Ano
+ano219;Último ano utilizado para aferição da média dos casos novos do triênio
+ap1;AP1º - Agravos de Petição
+apublic;Apublic – Acórdãos Publicados
+apublic2;Apublic2º – Acórdãos Publicados no 2º Grau
+areakm;Área em Quilômetros Quadrados
+arq;Arq – Processos arquivados definitivamente
+arqdisp;ArqDisp - Espaço disponibilizado para arquivo, em metros lineares
+arqjg;ArqJG – Processos de justiça gratuita arquivados definitivamente
+arqncrim;ArqNCrim – Processos não-criminais arquivados definitivamente
+arqncrimjg;ArqNCrimJG – Processos não-criminais de justiça gratuita arquivados definitivamente
+arqntutil;ArqNTUtil - Espaço, não terceirizado, utilizado com arquivo em metros lineares
+arqtutil;ArqTUtil - Espaço terceirizado utilizado com arquivo em metros lineares
+cc;Total de Cargos em Comissão
+cc1;CC1º – Cargos em Comissão Existentes na Área Judiciária do 1º Grau
+cc2;CC2º – Cargos em Comissão Existentes na Área Judiciária do 2º Grau
+ccadm;CCAdm – Cargos em Comissão Existentes na Área Administrativa
+ccjud;CCJud – Cargos em Comissão Existentes na Área Judiciária
+ccstm;CCSTM – Cargos em Comissão Existentes na Área Judiciária do STM
+cctrje1;CCTRJE1º – Cargos em Comissão Existentes na Área Judiciária do 1º Grau, nas Turmas Recursais e nos Juizados Especiais
+cejusc;CEJUSC - Centros Judiciários de Solução de Conflitos e Cidadania
+ch;Ch - Casos Novos por 100.000 habitantes
+ch1;Ch1º - Casos Novos por 100.000 habitantes no 1º Grau
+ch1jetr;Ch1º - Casos Novos por 100.000 habitantes no 1º Grau, juizados Especiais e Turmas Recursais
+ch2;Ch2º - Casos Novos por 100.000 habitantes no 2º Grau
+chje;ChJE - Casos Novos por 100.000 habitantes nos Juizados Especiais
+chstm;ChSTM – Casos Novos por 100.000 habitantes no STM
+chtr;ChTR - Casos Novos por 100.000 habitantes nas Turmas Recursais
+chtru;ChTRU - Casos Novos por 100.000 habitantes nas Turmas Regionais de Uniformização
+cm;Cm - Casos Novos por Magistrado
+cm1;Cm1º - Casos Novos por Magistrado no 1º Grau
+cm2;Cm2º - Casos Novos por Magistrado no 2º Grau
+cmje;CmJE - Casos Novos por Magistrado nos Juizados Especiais
+cmstm;CmSTM – Casos Novos por Magistrado no STM
+cmtr;CmTR - Casos Novos por Magistrado nas Turmas Recursais
+cmtru;CmTRU - Casos Novos por Magistrado nas Turmas Regionais de Uniformização
+cn;CnTST - Casos Novos no TST
+cn1;Cn1º - Casos Novos no 1º Grau
+cn2;Cn2º - Casos Novos de 2º Grau
+cn3;Cn3 - Casos Novos nos Tribunais Superiores.
+cnc1;CnC1º – Casos Novos de Conhecimento no 1º Grau
+cnccrim1;CnCCrim1º – Casos Novos de Conhecimento no 1º Grau Criminais
+cnccrimje;CnCCrimJE – Casos Novos de Conhecimento nos Juizados Especiais Criminais
+cnce;CnCESTJ - Casos Novos no STJ Contra os Estados, Distrito Federal, Autarquias, Fundações e Empresas Públicas Estaduais
+cnce1;CnCE1º - Casos Novos no 1º Grau Contra os Estados, Distrito Federal, Autarquias, Fundações e Empresas Públicas Estaduais ou Distritais
+cnce2;CnCE2º - Casos Novos no 2º Grau Contra os Estados, Distrito Federal, Autarquias, Fundações e Empresas Públicas Estaduais ou Distritais
+cncf;CnCFSTJ - Casos Novos no STJ Contra a União, Autarquias, Fundações e Empresas Públicas Federais
+cncf1;CnCF1º - Casos Novos no 1º Grau Contra a União, Autarquias, Fundações e Empresas Públicas Federais
+cncf2;CnCF2º - Casos Novos no 2º Grau Contra a União, Autarquias, Fundações e Empresas Públicas Federais
+cncfem;CnCFEM - Casos Novos de Conhecimento em feminicídio
+cncfem.h2m;Casos Novos de Feminicídio por 100.000 Mulheres
+cncje;CnCJE - Casos Novos de Conhecimento nos Juizados Especiais
+cncm;CnCMSTJ - Casos Novos no STJ Contra os Municípios, Autarquias, Fundações e Empresas Públicas Municipais
+cncm1;CnCM1º - Casos Novos no 1º Grau Contra os Municípios, Autarquias, Fundações e Empresas Públicas Municipais
+cncm2;CnCM2º - Casos Novos no 2º Grau Contra os Municípios, Autarquias, Fundações e Empresas Públicas Municipais
+cncncrim1;CnCNCrim1º – Casos Novos de Conhecimento no 1º Grau Não-Criminais
+cncncrimje;CnCNCrimJE – Casos Novos de Conhecimento nos Juizados Especiais Não-Criminais
+cncrim;CnCrimTSE - Casos Novos Criminais no TSE
+cncrim2;CnCrim2º - Casos Novos no 2º Grau Criminais
+cncrimtr;CnCrimTR - Casos Novos nas Turmas Recursais Criminais
+cncvd;CnCVD - Casos Novos de Conhecimento em violência doméstica contra a mulher. 
+cncvdf;Casos Novos de Violência Doméstica
+cncvdf.h2m;Casos Novos de Violência Doméstica por 100.000 Mulheres
+cncvdf.hm;Casos Novos de Violência Doméstica por Mulher
+cncvdf.vara;Casos Novos de Violência Doméstica por Vara
+cnelet;CnElet – Casos Novos Eletrônicos
+cnelet1;CnElet1º – Casos Novos Eletrônicos no 1º Grau
+cnelet2;CnElet2º – Casos Novos Eletrônicos no 2º Grau
+cneletje;CnEletJE – Casos Novos Eletrônicos nos Juizados Especiais
+cneletstm;CnEletSTM – Casos Novos Eletrônicos no STM
+cnelettr;CnEletTR – Casos Novos Eletrônicos nas Turmas Recursais
+cnelettru;CnEletTRU - Casos Novos Eletrônicos na Turma Regional de Uniformização
+cnex1;CnEx1º - Casos Novos de Execução no 1º Grau
+cnexje;CnExJE - Casos Novos de Execução nos Juizados Especiais
+cnext1;CnExt1º - Casos Novos de Execução de Título Extrajudicial no 1º Grau
+cnextfisc1;CnExtFisc1º – Casos Novos de Execução Fiscal no 1º grau
+cnextje;CnExtJE – Casos Novos de Execução de Título Extrajudicial nos Juizados Especiais
+cnextncrimje;(CnExtJE + ExeJudNCrimJE) Total de Casos novos Extrajudiciais e de Execuções Judiciais não Criminais nos Juizados Especiais
+cnextnfisc1;CnExtNFisc1º – Casos Novos de Execução de Título Extrajudicial no 1º grau, exceto execuções fiscais
+cnje;CnJE - Casos Novos nos Juizados Especiais
+cnncrim;CnNCrimTSE - Casos Novos Não-Criminais no TSE
+cnncrim2;CnNCrim2º - Casos Novos no 2º Grau Não-Criminais
+cnncrimtr;CnNCrimTr - Casos Novos nas Turmas Recursais Não-criminais
+cnnjud;Total de casos novos (exceto execuções judiciais)
+cno;CnO – Casos Novos Originários
+cno2;CnO2º - Casos Novos Originários de 2º Grau
+cno3;Casos novos originários nos Tribunais Superiores
+cnocrim;CnOCrim – Casos Novos Originários Criminais
+cnocrim2;CnOCrim2º – Casos Novos Originários no 2º Grau Criminais
+cnocrim3;Casos novos criminais originários nos Tribunais Superiores
+cnocrimtr;CnOCrimTR – Casos Novos Originários nas Turmas Recursais Criminais
+cnoncrim;CnONCrim – Casos Novos Originários Não-Criminais
+cnoncrim2;CnONCrim2º – Casos Novos Originários no 2º Grau Não-Criminais
+cnoncrim3;Casos novos não criminais originários nos Tribunais Superiores
+cnoncrimtr;CnONCrimTR – Casos Novos Originários nas Turmas Recursais Não-criminais
+cnostm;CnOSTM – Casos Novos Originários no STM
+cnotr;Casos novos originários nas Turmas Recursais
+cnpe;CnPESTJ - Casos Novos no STJ Propostos Pelos Estados, Distrito Federal, Autarquias, Fundações e Empresas Públicas Est
+cnpe1;CnPE1º - Casos Novos no 1º Grau Propostos Pelos Estados, Distrito Federal, Autarquias, Fundações e Empresas Públicas Estaduais ou Distritais
+cnpe2;CnPE2º - Casos Novos no 2º Grau Propostos Pelos Estados, Distrito Federal, Autarquias, Fundações e Empresas Públicas Estaduais ou Distritais
+cnpf;CnPFSTJ - Casos Novos no STJ Propostos Pela União, Autarquias, Fundações e Empresas Públicas Federais 
+cnpf1;CnPF1º - Casos Novos no 1º Grau Propostos Pela União, Autarquias, Fundações e Empresas Públicas Federais
+cnpf2;CnPF2º - Casos Novos no 2º Grau Propostos Pela União, Autarquias, Fundações e Empresas Públicas Federais
+cnpm;CnPMSTJ - Casos Novos no STJ Propostos Pelos Municípios, Autarquias, Fundações e Empresas Públicas Municipais
+cnpm1;CnPM1º - Casos Novos no 1º Grau Propostos Pelos Municípios, Autarquias, Fundações e Empresas Públicas Municipais
+cnpm2;CnPM2º - Casos Novos no 2º Grau Propostos Pelos Municípios, Autarquias, Fundações e Empresas Públicas Municipais
+cnr;CnR – Casos Novos Recursais
+cnr2;CnR2º - Casos Novos Recursais de 2º Grau
+cnr3;Casos novos originários nos Tribunais Superiores
+cnrcrim;CnRCrim – Casos Novos Recursais Criminais
+cnrcrim2;CnRCrim2º – Casos Novos Recursais no 2º Grau Criminais
+cnrcrim3;Casos novos criminais recursais nos Tribunais Superiores
+cnrcrimtr;CnRCrimTR – Casos Novos Recursais nas Turmas Recursais Criminais
+cnrncrim;CnRNCrim – Casos Novos Recursais Não-Criminais
+cnrncrim2;CnRNCrim2º – Casos Novos Recursais no 2º Grau Não-Criminais
+cnrncrim3;Casos novos não criminais recursais nos Tribunais Superiores
+cnrncrimtr;CnRNCrimTR – Casos Novos Recursais nas Turmas Recursais Não-criminais
+cnrstm;CnRSTM – Casos Novos Recursais no STM
+cnrtr;Casos novos recursais nas Turmas Recursais
+cnstm;CnSTM - Casos Novos no STM
+cntr;CnTR - Casos Novos na Turma Recursal
+cntru;CnTRU – Casos Novos na Turma Regional de Uniformização
+comarca;Número de Comarcas
+comp;Comp - Número de computadores de uso pessoal
+cp;Cp – Casos Pendentes
+cp.sus.fisc.penal;Processos pendentes, excluídos os processos suspensos e as execuções fiscais e penais
+cp1;Cp1º - Casos Pendentes no 1º Grau
+cp2;Cp2º – Casos Pendentes no 2º Grau
+cp3;Cp3 - Casos Pendentes nos Tribunais Superiores.
+cpc1;CpC1º – Casos Pendentes de Conhecimento no 1º Grau
+cpccrim1;CpCCrim1º – Casos Pendentes de Conhecimento no 1º Grau Criminais
+cpccrimje;CpCCrimJE – Casos Pendentes de Conhecimento nos Juizados Especiais Criminais
+cpce;CpCESTJ - Casos Pendentes no STJ Contra os Estados, Distrito Federal, Autarquias, Fundações e Empresas Públicas Estaduais ou Distritais
+cpce1;CpCE1º - Casos Pendentes no 1º Grau Contra os Estados, Distrito Federal, Autarquias, Fundações e Empresas Públicas Estaduais ou Distritais
+cpce2;CpCE2º - Casos Pendentes no 2º Grau Contra os Estados, Distrito Federal, Autarquias, Fundações e Empresas Públicas Estaduais ou Distritais
+cpcf;CpCFSTJ - Casos Pendentes no STJ Contra a União, Autarquias, Fundações e Empresas Públicas Federais
+cpcf1;CpCF1º - Casos Pendentes no 1º Grau Contra a União, Autarquias, Fundações e Empresas Públicas Federais
+cpcf2;CpCF2º - Casos Pendentes no 2º Grau Contra a União, Autarquias, Fundações e Empresas Públicas Federais
+cpcfem;CpCFEM - Casos Pendentes de Conhecimento em feminicídio
+cpcje;CpCJE - Casos Pendentes nos Juizados Especiais
+cpcm;CpCMSTJ - Casos Pendentes no STJ Contra os Municípios, Autarquias, Fundações e Empresas Públicas Municipais
+cpcm1;CpCM1º - Casos Pendentes no 1º Grau Contra os Municípios, Autarquias, Fundações e Empresas Públicas Municipais
+cpcm2;CpCM2º - Casos Pendentes no 2º Grau Contra os Municípios, Autarquias, Fundações e Empresas Públicas Municipais
+cpcncrim1;CpCNCrim1º – Casos Pendentes de Conhecimento no 1º Grau Não-Criminais
+cpcncrimje;CpCNCrimJE – Casos Pendentes de Conhecimento nos Juizados Especiais Não-Criminais
+cpcrim;CpCrim – Casos Pendentes Criminais
+cpcrim2;CpCrim2º – Casos Pendentes no 2º Grau Criminais
+cpcrim3;Casos pendentes criminais nos Tribunais Superiores
+cpcrimtr;CpCrimTR – Casos Pendentes nas Turmas Recursais Criminais
+cpcvd;CpCVD - Casos Pendentes de Conhecimento em violência doméstica contra a mulher. 
+cpcvdf;Casos Pendentes de Violência Doméstica
+cpex1;CpEx1º - Casos Pendentes de Execução no 1º Grau
+cpexje;CpExJE - Casos Pendentes de Execução nos Juizados Especiais
+cpext1;CpExt1º - Casos Pendentes de Execução de Título Extrajudicial no 1º Grau
+cpextfisc1;CpExtFisc1º – Casos Pendentes de Execução Fiscal no 1º grau
+cpextje;CpExtJE – Casos Pendentes de Execução de Título Extrajudicial nos Juizados Especiais
+cpextncrimje;(CpExtJE + ExeJudPNCrimJE)Total de Casos pendentes Extrajudiciais e de Execuções Judiciais pendentes não Criminais nos Juizados Especiais
+cpextnfisc1;CpExtNFisc1º – Casos Pendentes de Execução de Título Extrajudicial no 1º grau, exceto execuções fiscais
+cpje;CpJE - Casos Pendentes nos Juizados Especiais
+cpncrim;CpNCrim – Casos Pendentes Não-Criminais
+cpncrim2;CpNCrim2º – Casos Pendentes no 2º Grau Não-Criminais
+cpncrim3;CpNCrim3 - Número de casos pendentes não criminais nos Tribunais Superiores.
+cpncrimtr;CpNCrimTR – Casos Pendentes nas Turmas Recursais Não-Criminais
+cppe;CpPESTJ - Casos Pendentes no STJ Propostos Pelos Estados, Distrito Federal, Autarquias, Fundações e Empresas Públicas Estaduais ou Distritais
+cppe1;CpPE1º - Casos Pendentes no 1º Grau Propostos Pelos Estados, Distrito Federal, Autarquias, Fundações e Empresas Públicas Estaduais ou Distritais
+cppe2;CpPE2º - Casos Pendentes no 2º Grau Propostos Pelos Estados, Distrito Federal, Autarquias, Fundações e Empresas Públicas Estaduais ou Distritais
+cppf;CpPFSTJ - Casos Pendentes no STJ Propostos Pela União, Autarquias, Fundações e Empresas Públicas Federais
+cppf1;CpPF1º - Casos Pendentes no 1º Grau Propostos Pela União, Autarquias, Fundações e Empresas Públicas Federais
+cppf2;CpPF2º - Casos Pendentes no 2º Grau Propostos Pela União, Autarquias, Fundações e Empresas Públicas Federais
+cppm;CpPMSTJ - Casos Pendentes no STJ Propostos Pelos Municípios, Autarquias, Fundações e Empresas Públicas Municipais
+cppm1;CpPM1º - Casos Pendentes no 1º Grau Propostos Pelos Municípios, Autarquias, Fundações e Empresas Públicas Municipais
+cppm2;CpPM2º - Casos Pendentes no 2º Grau Propostos Pelos Municípios, Autarquias, Fundações e Empresas Públicas Municipais
+cpstm;CpSTM – Casos Pendentes no STM
+cptr;CpTR - Casos Pendentes na Turma Recursal
+cptru;CpTRU - Casos Pendentes na Turma Regional de Uniformização
+cs;Cs - Casos Novos por Servidor
+cs1;Cs1º - Casos Novos por Servidor no 1º Grau
+cs2;Cs2º - Casos Novos por Servidor no 2º Grau
+csje;CsJE - Casos Novos por Servidor nos Juizados Especiais
+csstm;CsSTM – Casos Novos por Servidor no STM
+cstr;CsTR - Casos Novos por Servidor nas Turmas Recursais
+cstru;CsTRU - Casos Novos por Servidor nas Turmas Regionais de Uniformização
+da2;DA2º - Decisões denegatórias de admissibilidade de Recurso de Revista e de Recurso Ordinário para o TST
+dben;DBen – Despesas com Benefícios
+dbena;DBenA – Despesas com Benefícios do Pessoal do Quadro Ativo
+dbena1;DBenA1º – Despesas com Benefícios do Quadro Ativo no 1º grau
+dbena2;DBenA2º – Despesas com Benefícios do Quadro Ativo no 2º grau
+dbenaadm;DBenAAdm – Despesas com Benefícios do Quadro Ativo na área administrativa
+dbenajud;DBenAJud – Despesas com Benefícios do Quadro Ativo na Área Judiciária
+dbenatrje1;DBenATRJE1º – Despesas com Benefícios do Quadro Ativo no 1º grau, Turmas Recursais e Juizados Especiais
+dbeni;DBenI – Despesas com Benefícios do Quadro Inativo
+dbs;DBS - Despesa com Bens e Serviços e de Capital
+dcap;DCap - Despesas com Capacitação
+dcc;DCC – Despesas com Cargos em Comissão
+dcc1;DCC1º – Despesas com Cargos em Comissão na área judiciária do 1º grau
+dcc2;DCC2º – Despesas com Cargos em Comissão na área judiciária do 2º grau
+dccadm;DCCAdm – Despesas com Cargos em Comissão na área administrativa
+dccjud;DCCJud – Despesas com Cargos em Comissão na área judiciária
+dcctrje1;DCCTRJE1º – Despesas com Cargos em Comissão na área judiciária do 1º grau, das Turmas Recursais e dos Juizados Especiais
+dct;DCt - Despesa com Custeio
+dda;DDA – Decisões Denegatórias de Admissibilidade
+dec;Dec – Decisões terminativas de processo
+dec2;Dec2º – Decisões terminativas de processo no 2º Grau
+dec3;Dec3 - Total de Decisões que põem fim à relação processual
+deccrim;DecCrim – Decisões terminativas de processo criminal
+deccrim2;DecCrim2º – Decisões terminativas de processo criminal no 2º Grau
+deccrim3;Total de decisões criminais nos Tribunais Superiores
+deccrimtr;DecCrimTR – Decisões Terminativas de processo criminal nas Turmas Recursais
+dech;DecH – Decisões Homologatórias de Acordos
+dech2;DecH2º – Decisões Homologatórias de Acordos no 2º Grau
+dechtr;DecHTR – Decisões Homologatórias de Acordos nas Turmas Recursais
+decncrim;DecNCrim – Decisões terminativas de processo não-criminal
+decncrim2;DecNCrim2º – Decisões terminativas de processo não-criminal no 2º Grau
+decncrim3;DecNCrim3 - Número de decisões não criminais nos Tribunais Superiores.
+decncrimtr;DecNCrimTR – Decisões terminativas de processo não-criminal nas Turmas Recursais
+decstm;DecSTM – Decisões terminativas de processo no STM
+dectr;DecTR - Total de Decisões que põem fim à relação processual na Turma Recursal
+dectru;DecTRU – Decisões Terminativas de Processo na Turma Regional de Uniformização
+deimpje;DeImpJE – Decisões nos Juizados Especiais Passíveis de Impugnação
+dem;Dem - Pessoas Demandantes
+demono;DeMono - Decisões Monocráticas
+demono2;DeMono2º – Decisões Monocráticas no 2º Grau
+denc;DEnc - Despesas com Encargos
+depjud;DepJud – Saldo de Depósitos Judiciais
+deprecp;DepRecP - Saldo de Depósitos Recursais Pendentes
+depub;DePub – Decisões Publicadas
+depub2;DePub2º – Decisões no 2º Grau Publicadas
+dere;DeRe – Decisões Passíveis de Recurso de Embargos
+derext1;DeRExt1º – Decisões no 1º Grau Passíveis de Recurso Externo
+derextje;DeRExtJE – Decisões nos Juizados Especiais Passíveis de Recurso Externo
+derint;DeRIntTSE - Decisões Passíveis de Recurso Interno no TSE
+derint2;DeRInt2º - Decisões Passíveis de Recurso Interno no 2º Grau
+derintstm;DeRIntSTM - Decisões Passíveis de Recurso Interno no STM
+derinttr;DeRIntTR - Decisões nas Turmas Recursais Passíveis de Recurso Interno
+dest;DEst - Despesas com Estagiários
+dfc;DFC – Despesas com Função de Confiança
+dfc1;DFC1º – Despesas com Funções de Confiança na área judiciária do 1º grau
+dfc2;DFC2º – Despesas com Funções de Confiança na área judiciária do 2º grau
+dfcadm;DFCAdm – Despesas com Funções de Confiança na área administrativa
+dfcjud;DFCJud – Despesas com Funções de Confiança na área judiciária
+dfctrje1;DFCTRJE1º – Despesas com Funções de Confiança na área judiciária do 1º grau, das Turmas Recursais e dos Juizados Especiais
+dhes;DHEs – Despesas Extraordinárias com Servidores para a Realização de Pleitos Eleitorais
+dhet;DHEt – Despesas Extraordinárias com Terceirizados para a Realização de Pleitos Eleitorais
+dinf1;DInf1 – Despesa com Aquisições em Tecnologia de Informação e Comunicação
+dinf2;DInf2 – Despesa com Custeio da Tecnologia de Informação e Comunicação
+dinf3;DInf3 - Despesa com Contratos da Tecnologia de Informação e Comunicação da Justiça Estadual
+dip;Dip – Outras Despesas Indenizatórias e Indiretas com Recursos Humanos
+dip1;DIP1º – Outras Despesas Indenizatórias Indiretas com Recursos Humanos no 1º grau
+dip2;DIP2º – Outras Despesas Indenizatórias Indiretas com Recursos Humanos no 2º grau
+dipadm;DIPAdm – Outras Despesas Indenizatórias Indiretas com Recursos Humanos na área administrativa
+dipjud;DIPJud – Outras Despesas Indenizatórias Indiretas com Recursos Humanos na área judiciária
+diptrje1;DIPTRJE1º – Outras Despesas Indenizatórias Indiretas com Recursos Humanos no 1º grau, Turmas Recursais e Juizados Especiais
+dk;Dk – Despesa de Capital
+dm;Dm² – Área Útil em relação à Área Total (em metros quadrados)
+dmag;DMag – Despesa com Recursos Humanos de Magistrados
+dpcn;DpCn - Despesas por Casos Novos.
+dpco;DPCO – Despesas com Projetos de Construção e Obras
+dpe;DPE – Despesa com Pessoal e Encargos
+dpea;DPEA - Despesa com Pessoal e Encargos do Quadro Ativo
+dpea1;DPEA1º – Despesas com Pessoal e Encargos do Quadro Ativo no 1º grau
+dpea2;DPEA2º – Despesas com Pessoal e Encargos do Quadro Ativo no 2º grau
+dpeaadm;DPEAAdm – Despesas com Pessoal e Encargos do Quadro Ativo na área administrativa
+dpeajud;DPEAJud – Despesas com Pessoal e Encargos do Quadro Ativo na Área Judiciária
+dpeatrje1;DPEATRJE1º – Despesas com Pessoal e Encargos do Quadro Ativo no 1º grau, nas Turmas Recursais e nos Juizados Especiais
+dpei;DPEI – Despesas com Pessoal e Encargos do Quadro Inativo
+dpiext;DPIExt - Despesas com Pessoal que ingressou extraordinariamente por cessão ou requisição
+dpj;Dpj - Despesa Total da Justiça Estadual
+dpjio;Despesa total (Exceto gastos com inativos e obras)
+dplei;DPlei – Despesas com Pleitos Eleitorais
+dpmag;DpMag - Despesas por Magistrado.
+dpreqext;DPReqExt - Despesas com Pessoal Requisitado Extraordinariamente
+dpsva;DPSVA – Despesas com Atualização e Manutenção do Sistema de Votação e Apuração
+drem;DRem - Despesas com Remuneração, Proventos e Pensão
+drh;DRH - Despesa com Recursos Humanos
+dsc_tribunal;Descrição do Tribunal
+dserv;DServ – Despesa com Recursos Humanos de Servidores
+dter;DTer - Despesas com Terceirizados
+ed;Ed - Embargos de Declaração
+ed2;Ed2º – Embargos de Declaração no 2º Grau
+eff;IPC-Jus
+eff1;IPC-Jus 1º grau
+eff2;IPC-Jus 2º grau
+el;EL - Número de Eleitores
+emb;Emb - Embargos para as Seções Especializadas
+eo1;EO1 – Execução Orçamentária das Despesas com Pessoal e Encargos
+eo2;EO2 – Execução Orçamentária das Despesas de Capital
+eo3;EO3 – Execução Orçamentária de Outras Despesas Correntes
+estrutura;Estrutura
+exejud1;ExeJud1º – Execuções Penais no 1º Grau
+exejudcrim1;ExeJudCrim1º – Execuções Penais no 1º Grau
+exejudcrimfem;Execução Judicial Nova Criminal de Feminicídio
+exejudcrimnpl1;ExeJudCrimNPL1º – Execuções de Penas Não-Privativas de Liberdade no 1º Grau
+exejudcrimnplje;ExeJudCrimNPLJE – Execuções de Penas Não-Privativas de Liberdade nos Juizados Especiais
+exejudcrimpl1;ExeJudCrimPL1º – Execuções de Penas Privativas de Liberdade no 1º Grau
+exejudcrimvd;Execução Judicial Nova Criminal de Violência Doméstica, exceto Feminicídio
+exejudcrimvdf;Execuções Judiciais Novas de Violência Doméstica
+exejudje;ExeJudJE – Execuções Judiciais nos Juizados Especiais
+exejudncrim1;ExeJudNCrim1º – Execuções Judiciais no 1º Grau, exceto execuções penais
+exejudncrimje;ExeJudNCrimJE – Execuções Judiciais nos Juizados Especiais, exceto execuções penais
+exejudp1;ExeJudP1º – Execuções Penais Pendentes no 1º Grau
+exejudpcrim1;ExeJudPCrim1º – Execuções Penais Pendentes no 1º Grau
+exejudpcrimfem;Execução Judicial Pendente Criminal de Feminicídio
+exejudpcrimnpl1;ExeJudPCrimNPL1º – Execuções Pendentes de Penas Não-Privativas de Liberdade no 1º Grau
+exejudpcrimnplje;ExeJudPCrimNPLJE – Execuções Pendentes de Penas Não-Privativas de Liberdade nos Juizados Especiais
+exejudpcrimpl1;ExeJudPCrimPL1º – Execuções Pendentes de Penas Privativas de Liberdade no 1º Grau
+exejudpcrimvd;Execução Judicial Pendente Criminal de Violência Doméstica, exceto Feminicídio
+exejudpcrimvdf;Execuções Judiciais Pendentes de Violência Doméstica
+exejudpje;ExeJudPJE – Execuções Judiciais Pendentes nos Juizados Especiais
+exejudpncrim1;ExeJudPNcrim1º – Execuções Judiciais Pendentes no 1º Grau, exceto execuções penais
+exejudpncrimje;ExeJudPNCrimJE – Execuções Judiciais Pendentes nos Juizados Especiais, exceto execuções penais
+exejudr1;ExeJudR1º - Execuções Penais Reativadas no 1º Grau
+exejudrcrimnpl1;ExeJudRCrimNPL1º - Execuções Reativadas de Penas Não-Privativas de Liberdade no 1º Grau
+exejudrcrimnplje;ExeJudRCrimNPLJE - Execuções Pendentes de Penas Não-Privativas de Liberdade nos Juizados Especiais
+exejudrcrimpl1;ExeJudRCrimPL1º - Execuções Reativadas de Penas Privativas de Liberdade no 1º Grau
+exejudrje;ExeJudRJE - Execuções Judiciais Reativadas nos Juizados Especiais
+exejudrncrim1;ExeJudRNcrim1º - Execuções Judiciais Reativadas no 1º Grau, exceto execuções penais
+exejudrncrimje;ExeJudRNCrimJE - Execuções Judiciais Pendentes nos Juizados Especiais, exceto execuções penais
+exesusfisc1;ExeSuSFisc1º - Execuções Fiscais Sobrestadas ou Suspensas ou em Arquivo Provisório
+exesusje;ExeSuSJE - Execuções Sobrestadas ou Suspensas ou em Arquivo Provisório
+exesusnfisc1;ExeSuSNfisc1º - Execuções Sobrestadas ou Suspensas ou em Arquivo Provisório, exceto execuções fiscais e penais
+f1;F1 - Cargos de Magistrado Existentes por 100.000 habitantes
+f2;F2 - Magistrados por 100.000 habitantes
+f3;F3 - Força de Trabalho por 100.000 habitantes
+f4a;F4a - Servidores do Quadro Efetivo por 100.000 habitantes
+f4b;F4b - Força de Trabalho Auxiliar por 100.000 habitantes
+f4c;F4c - Cargos Efetivos Existentes por 100.000 habitantes
+f4d;F4d - Cargos em Comissão e Funções Comissionadas Existentes em relação aos Cargos Efetivos Existentes
+f4e;F4e - Total de Pessoal Requisitado Extraordinariamente em Relação ao Total de Servidores do Tribunal.
+f5;F5 – Força de Trabalho da Área de Tecnologia da Informação em relação ao total de servidores
+f6;F6 – Força de Trabalho das Escolas Judiciais em relação ao total de servidores
+fc;FC – Funções de Confiança Existentes
+fc1;FC1º – Funções de Confiança Existentes na Área Judiciária do 1º Grau
+fc2;FC2º – Funções de Confiança Existentes na Área Judiciária do 2º grau
+fcadm;FCAdm – Funções de Confiança Existentes na Área Administrativa
+fcjud;FCJud – Funções de Confiança Existentes na Área Judiciária
+fcstm;FCSTM – Funções de Confiança Existentes na Área Judiciária do STM
+fctrje1;FCTRJE1º – Funções de Confiança Existentes na Área Judiciária do 1º Grau, nas Turmas Recursais e nos Juizados Especiais
+ftt;FTT - Força de Trabalho Total de Servidores e Magistrados
+g1;G1 - Despesa Total da Justiça em relação ao PIB
+g10a;G10a – Despesa média por Magistrado
+g10b;G10b – Despesa média por Servidor
+g10c;G10c – Despesa média por Terceirizado
+g10d;G10d – Despesa média por Estagiário
+g11;G11 - Despesas com Serviço Extraordinário de Terceirizados em Relação à Despesa Total do Pleito Eleitoral
+g12;G12 - Despesas com Atualização e Manutenção do Sistema de Votação e Apuração em relação à Despesa Total
+g13;G13 – Despesas com Serviço Extraordinário de Servidores em Relação à Despesa Total do Pleito Eleitoral
+g14;G14 – Despesas com Serviço Extraordinário de Terceirizados em Relação à Despesa Total do Pleito Eleitoral
+g15;G15 – Despesas com Atualização e Manutenção do Sistema de Votação e Apuração em relação à Despesa Total do Tribunal
+g2;G2 - Despesa Total da Justiça em relação à Despesa Pública
+g3;G3 - Despesa com Recursos Humanos em relação à Despesa Total da Justiça
+g4;G4 - Despesa com Bens e Serviços e de Capital em relação à Despesa Total da Justiça
+g5;G5 - Despesa com Pessoal e Encargos do Quadro Permanente em relação à Despesa Total da Justiça
+g5a;G5a - Despesa com Pessoal Ativo e Encargos em relação à Despesa Total da Justiça
+g5b;G5b - Despesa com Pessoal Inativo e Instituidores de Pensão em relação à Despesa Total da Justiça
+g6;G6 - Despesa com Custeio e Capital em relação à Despesa Total da Justiça
+g7;G7 - Despesa Total da Justiça por Habitante (R$)
+g8;G8 - Despesas com Pleitos Eleitorais em relação à Despesa Total
+g9;G9 - Despesas com Pleitos Eleitorais por Eleitor(R$)
+gabinp;GabinP - Número de Gabinetes Privativos
+gabinp.vara;Gabinetes Privativos por Vara
+gt;GT - Gastos Totais
+h1;h1 - Número de Habitantes
+h2;h2 - Número de Habitantes dividido por 100.000
+h2m;Número de Mulheres por 100.000
+hm;Número de Mulheres
+i;i - Arrecadações sobre a despesa total da Justiça
+i1;I1 - Arrecadação com Custas e Emolumentos em relação à Despesa Total da Justiça
+i2;I2 - Arrecadação com Receitas de Execução Fiscal em Relação à Despesa Total da Justiça
+i2a;I2a - Arrecadação com Execução Fiscal e Impostos causa mortis em Relação à Despesa Total da Justiça
+i2b;I2b - Arrecadação decorrente de Execução das Penalidades impostas pelos Órgãos de Fiscalização das Relações de Trabalho em relação à Despesa Total da Justiça
+i3;I3 - Arrecadação com Execuções Previdenciárias em relação à Despesa Total da Justiça
+i4;I4 - Arrecadação com Imposto de Renda em relação à Despesa Total da Justiça
+i5;I5 - Valores Pagos aos Jurisdicionados em relação à Despesa Total da Justiça
+i6;I6 - Saldo de Depósitos Judiciais Pendentes em relação à Despesa Total da Justiça
+i7;I7 - Saldo de Depósitos Recursais Pendentes em relação à Despesa Total da Justiça
+iad;IAD - Processos Baixados por Caso Novo
+iad1;IAD1º - Processos Baixados por Caso Novo no 1º Grau
+iad2;IAD2º - Processos Baixados por Caso Novo no 2º grau
+iadc1;IADC1º - Processos Baixados por Caso Novo na fase de conhecimento do 1º Grau
+iadccrim1;IADCCrim1º - Processos Baixados por Caso Novo Criminais na Fase de Conhecimento do 1º Grau
+iadccrimje;IADCCrimJe - Processos Baixados por Caso Novo Criminais na Fase de Conhecimento dos Juizados Especiais
+iadcje;IADCJe - Processos Baixados por Caso Novo na fase de conhecimento dos Juizados Especiais
+iadcncrim1;IADCNCrim1º - Processos Baixados por Caso Novo Não-Criminais na Fase de Conhecimento do 1º Grau
+iadcncrimje;IADCNCrimJe - Processos Baixados por Caso Novo Não-Criminais na Fase de Conhecimento dos Juizados Especiais
+iadcrim;IADCrim - Processos Baixados por Caso Novo Criminais
+iadcrim2;IADCrim2º - Processos Baixados por Caso Novo Criminais no 2º grau
+iadcrimtr;IADCrimTr - Processos Baixados por Caso Novo Criminais nas Turmas Recursais
+iadex1;IADEx1º - Processos Baixados por Caso Novo na fase de execução do 1º Grau
+iadexje;IADExJe - Processos Baixados por Caso Novo na fase de execução dos Juizados Especiais
+iadext1;IADExt1º - Processos Baixados por Caso Novo na Execução Extrajudicial do 1º Grau
+iadextfisc1;IADExtFisc1º - Processos Baixados por Caso Novo na Execução Fiscal do 1º Grau
+iadextje;IADExtJe - Processos Baixados por Caso Novo na Execução Extrajudicial dos Juizados Especiais
+iadextnfisc1;IADExtNFisc1º - Processos Baixados por Caso Novo na Execução Extrajudicial não-Fiscal do 1º Grau
+iadje;IADJe - Processos Baixados por Caso Novo nos Juizados Especiais
+iadjud1;IADJud1º - Processos Baixados por Caso Novo na Execução Judicial do 1º Grau
+iadjudcrimnpl1;IADJudCrimNPL1º - Processos Baixados por Caso Novo na Execução de Penas Não-Privativas de Liberdade do 1º Grau
+iadjudcrimnplje;IADJudCrimNPLJe - Processos Baixados por Caso Novo na Execução de Penas Não-Privativas de Liberdade dos Juizados Especiais
+iadjudcrimpl1;IADJudCrimPL1º - Processos Baixados por Caso Novo na Execução de Penas Privativas de Liberdade do 1º Grau
+iadjudje;IADJudJe - Processos Baixados por Caso Novo na Execução Judicial dos Juizados Especiais
+iadjudncrim1;IADJudNCrim1º - Processos Baixados por Caso Novo na Execução Judicial Não-Criminal do 1º Grau
+iadjudncrimje;IADJudNCrimJe - Processos Baixados por Caso Novo na Execução Judicial Não-Criminal dos Juizados Especiais
+iadncrim;IADNCrim - Processos Baixados por Caso Novo Não-Criminais
+iadncrim2;IADNCrim2º - Processos Baixados por Caso Novo Não-Criminais no 2º grau
+iadncrimtr;IADNCrimTr - Processos Baixados por Caso Novo Não-Criminais nas Turmas Recursais
+iadstm;IADSTM – Índice de Atendimento à Demanda no STM
+iadtr;IADTr - Processos Baixados por Caso Novo nas Turmas Recursais
+iadtru;IADTRU - Processos Baixados por Caso Novo nas Turmas Regionais de Uniformização
+ic;IC – Índice de Conciliação
+ic1;IC1º – Índice de Conciliação do 1º grau
+ic2;IC2º – Índice de Conciliação no 2º Grau
+icc1;ICC1º – Índice de Conciliação na Fase de Conhecimento do 1º grau
+iccje;ICCJE – Índice de Conciliação na Fase de Conhecimento dos Juizados Especiais
+icex1;ICEx1º – Índice de Conciliação na Fase de Execução do 1º Grau
+icexje;ICExJE – Índice de Conciliação na Fase de Execução dos Juizados Especiais
+icje;ICJE – Índice de Conciliação na Fase de Conhecimento dos Juizados Especiais
+ictr;ICTR – Índice de Conciliação nas Turmas Recursais
+idporte;Identificador do porte do tribunal
+impje;ImpJE - Índice de Impugnações dos Juizados Especiais
+incex;IncEx - Total de Incidentes em Execução
+incex1;IncEx1º - Incidentes em Execução no 1º Grau, exceto em execuções penais
+incexfisc1;IncExFisc1º - Incidentes de Execução Fiscal no 1º Grau
+incexj;IncExJ – Incidentes em Execução Julgados
+incexj1;IncExJ1º – Incidentes de Execução Julgados no 1º Grau, exceto em execuções penais
+incexje;IncExJE - Incidentes de Execução nos Juizados Especiais
+incexjfisc1;IncExJFisc1º – Incidentes de Execução Fiscal Julgados no 1º Grau
+incexjje;IncExJJE – Incidentes de Execução Julgados nos Juizados Especiais
+incexjnfisc1;IncExJNFisc1º – Incidentes de Execução Julgados no 1º Grau, exceto em execuções fiscais e penais
+incexnfisc1;IncExNFisc1º - Incidentes de Execução no 1º Grau, exceto em execuções fiscais e penais
+incexp;IncExP - Total de Incidentes em Execução Pendentes
+incexp1;IncExP1º - Incidentes de Execução Pendentes no 1º Grau, exceto em execuções penais
+incexpfisc1;IncExPFisc1º - Incidentes de Execução Fiscal Pendentes no 1º Grau
+incexpje;IncExPJE - Incidentes de Execução Pendentes nos Juizados Especiais
+incexpnfisc1;IncExPNfisc1 - Incidentes de Execução Pendentes no 1º Grau, exceto em execuções fiscais e penais
+inf1;Inf1 - Despesa com Tecnologia da Informação e Comunicação em relação à Despesa Total da Justiça
+inf2;Inf2 - Número de Computadores por Usuário
+inqarqfem;Inquéritos Arquivados de Feminicídio
+inqarqvd;Inquéritos Arquivados de Violência Doméstica, exceto Feminicídio
+inqarqvdf;Inquéritos Arquivados de Violência Doméstica
+inqcpfem;Inquéritos de Conhecimento Pendentes de Feminicídio
+inqcpvd;Inquéritos de Conhecimento Pendentes de Violência Doméstica, exceto Feminicídio
+inqn.h2m;Inquéritos Novos por 100.000 Mulheres
+inqn.hm;Inquéritos Novos por Mulher
+inqnfem;Inquéritos Novos de Feminicídio
+inqnvd;Inquéritos Novos de Violência Doméstica, exceto Feminicídio
+inqpfem;Inquéritos Pendentes de Feminicídio
+inqpvd;Inquéritos Pendentes de Violência Doméstica, exceto Feminicídio
+ipm;IPM - Índice de Produtividade dos Magistrados
+ipm1;IPM1º - Índice de Produtividade dos Magistrados no 1º Grau
+ipm2;IPM2º - Índice de Produtividade dos Magistrados no 2º Grau
+ipmc1;IPMC1º - Índice de Produtividade dos Magistrados na Fase de Conhecimento do 1º Grau
+ipmcje;IPMCJE - Índice de Produtividade dos Magistrados na Fase de Conhecimento dos Juizados Especiais
+ipmex1;IPMEx1º - Índice de Produtividade dos Magistrados na Fase de Execução do 1º Grau
+ipmexje;IPMExJE - Índice de Produtividade dos Magistrados na Fase de Execução dos Juizados Especiais
+ipmje;IPMJE - Índice de Produtividade dos Magistrados nos Juizados Especiais
+ipmstm;IPMSTM – Índice de Produtividade dos Magistrados no STM
+ipmtarget;IPM estimado
+ipmtr;IPMTR - Índice de Produtividade dos Magistrados nas Turmas Recursais
+ipmtru;IPMTRU - Índice de Produtividade dos Magistrados nas Turmas Regionais de Uniformização
+ips;IPS - Índice de Produtividade dos Servidores
+ipsjud;IPSJud - Índice de Produtividade dos Servidores da Área Judiciária
+ipsjud1;IPSJud1º - Índice de Produtividade dos Servidores da Área Judiciária no 1º Grau
+ipsjud2;IPSJud2º - Índice de Produtividade dos Servidores da Área Judiciária no 2º Grau
+ipsjudc1;IPSJudC1º - Índice de Produtividade dos Servidores da Área Judiciária na Fase de Conhecimento do 1º Grau
+ipsjudcje;IPSJudCJE - Índice de Produtividade dos Servidores da Área Judiciária na Fase de Conhecimento dos Juizados Especiais
+ipsjudex1;IPSJudEx1º - Índice de Produtividade dos Servidores da Área Judiciária na Fase de Execução do 1º Grau
+ipsjudexje;IPSJudExJE - Índice de Produtividade dos Servidores da Área Judiciária na Fase de Execução dos Juizados Especiais
+ipsjudje;IPSJudJE - Índice de Produtividade dos Servidores da Área Judiciária nos Juizados Especiais
+ipsjudstm;IPSJudSTM – Índice de Produtividade dos Servidores da Área Judiciária no STM
+ipsjudtr;IPSJudTR - Índice de Produtividade dos Servidores da Área Judiciária nas Turmas Recursais
+ipsjudtru;IPSJudTRU - Índice de Produtividade dos Servidores da Área Judiciária nas Turmas Regionais de Uniformização
+ipstarget;IPS estimado
+isupje;ISupJE – Impugnações a Decisões dos Juizados Especiais
+je;Número de Juizados Especiais
+jeci;Juizados Especiais Cíveis
+jecrim;Juizados Especiais Criminais
+jecum;Juizados Especiais Únicos ou que acumulem mais de uma competência
+jefaz;Juizados Especiais da Fazenda Pública
+jg;JG – Assistência Judiciária Gratuita
+justica;Ramo de Justiça
+k;K - Carga de Trabalho dos Magistrados
+k1;K1 - Carga de Trabalho dos Magistrados no 1º Grau
+k2;K2º - Carga de Trabalho dos Magistrados no 2º Grau
+kc1;KC1º - Carga de Trabalho dos Magistrados na Fase de Conhecimento do 1º Grau
+kcje;KCJE - Carga de Trabalho dos Magistrados na Fase de Conhecimento dos Juizados Especiais
+kex1;KEx1º - Carga de Trabalho dos Magistrados na Fase de Execução do 1º Grau
+kexje;KExJE - Carga de Trabalho dos Magistrados na Fase de Execução dos Juizados Especiais
+kje;KJE - Carga de Trabalho dos Magistrados nos Juizados Especiais
+kl;KL – Carga de Trabalho Líquida dos Magistrados
+kl1;KL1º – Carga de Trabalho Líquida dos Magistrados no 1º Grau
+kl2;KL2º – Carga de Trabalho Líquida dos Magistrados no 2º Grau
+klcje;KLCJE – Carga de Trabalho Líquida dos Magistrados na Fase de Conhecimento dos Juizados Especiais
+klex;KLEx1º – Carga de Trabalho Líquida dos Magistrados na Fase de Execução do 1º Grau
+klex1;KLEx1º – Carga de Trabalho Líquida dos Magistrados na Fase de Execução do 1º Grau
+klexje;KLExJE – Carga de Trabalho Líquida dos Magistrados na Fase de Execução dos Juizados Especiais
+klje;KLJE – Carga de Trabalho Líquida dos Magistrados dos Juizados Especiais
+klstm;KLSTM  – Carga de Trabalho Líquida dos Magistrados no STM
+kltr;KLTR – Carga de Trabalho Líquida dos Magistrados nas Turmas Recursais
+ks;KS - Carga de Trabalho por Servidor da Área Judiciária
+ks1;KS1 - Carga de Trabalho por Servidor da Área Judiciária no 1º Grau
+ks2;KS2 - Carga de Trabalho por Servidor da Área Judiciária no 2º Grau
+ksc1;KSC1 - Carga de Trabalho por Servidor da Área Judiciária na Fase de Conhecimento do 1º Grau
+kscje;KSCJE - Carga de Trabalho por Servidor da Área Judiciária na Fase de Conhecimento dos Juizados Especiais
+ksex1;KSEx1 - Carga de Trabalho por Servidor da Área Judiciária na Fase de Execução do 1º Grau
+ksexje;KSExJE - Carga de Trabalho por Servidor da Área Judiciária na Fase de Execução dos Juizados Especiais
+ksje;KSJE - Carga de Trabalho por Servidor da Área Judiciária nos Juizados Especiais
+kstm;KSTM – Carga de Trabalho Total dos Magistrados no STM
+kstr;KSTR - Carga de Trabalho por Servidor da Área Judiciária nas Turmas Recursais
+kstru;KSTRU - Carga de Trabalho por Servidor da Área Judiciária nas Turmas Regionais de Uniformização
+ktr;KTR - Carga de Trabalho dos Magistrados nas Turmas Recursais
+ktru;KTRU - Carga de Trabalho dos Magistrados nas Turmas Regionais de Uniformização
+m2total1;m²Total1 - Área total em metros quadrados no 1º grau
+m2totalstm;m²TotalSTM - Área total em metros quadrados no STM
+mag;Mag - Número de Cargos Existentes de Magistrado
+mag1;Mag1º - Número de Cargos de Magistrado no 1º Grau
+mag2;Mag2º - Número de Cargos de Magistrado no 2º Grau
+magaj;Número de magistrados afastados
+magaj1;MagAJ1º - Número de Magistrados Afastados da Jurisdição no 1º Grau
+magajje;MagAJJE - Número de Magistrados Afastados da Jurisdição nos Juizados Especiais
+magajtr;MagAJTR - Número de Magistrados Afastados da Jurisdição nas Turmas Recursais
+mage;MagE - Total de Cargos de Magistrado Existentes
+mage1;MagE1º - Número de Cargos Existentes de Magistrado no 1º Grau
+mage2;MagE2º - Número de Cargos Existentes de Magistrado no 2º Grau
+mageje;MagEJE - Número de Cargos Existentes de Magistrado nos Juizados Especiais
+magesub;MagSubTSE - Número de Cargos de Magistrado Substituto no TSE
+magesub2;MagESub2º - Número de Cargos Existentes de Juiz Substituto de 2º Grau
+magetit2;MagEtit2º – Número de Cargos Existentes de Magistrado Titular no 2º Grau
+magetr;MagETR - Número de Cargos Existentes de Magistrado nas Turmas Recursais
+magin;MagIn - Magistrados Inativos e Instituidores de Pensão
+magin1;MagIn1º – Magistrados Inativos e Instituidores de Pensão no 1º Grau
+maginstm;MagInSTM – Magistrados Inativos e Instituidores de Pensão no STM
+magje;MagJE - Total de Magistrados nos Juizados Especiais
+magp;Número de cargos de Magistrado Providos
+magp1;MagP1º - Número de Cargos Providos de Magistrado no 1º Grau
+magp2;MagP2º - Número de Cargos Providos de Magistrado no 2º Grau
+magpac1trje;MagPAc1TRJE - Número de Cargos Providos de Magistrado que Acumulam Função no 1º Grau, em Turmas Recursais ou Juizados Especiais
+magpacje1;MagPAcJE1º - Número de Cargos Providos de Magistrado no 1º Grau que Acumulam Função em Juizados Especiais
+magpactr1;MagPAcTR1º - Número de Cargos Providos de Magistrado no 1º Grau que Acumulam Função em Turmas Recursais
+magpactrje;MagPAcTRJE - Número de Cargos Providos de Magistrado nos Juizados Especiais que Acumulam Função em Turmas Recursais
+magpae1;MagPAe1º - Número de Cargos Providos de Magistrado no 1º Grau com Atuação Exclusiva
+magpaeje;MagPAeJE - Número de Cargos Providos de Magistrado nos Juizados Especiais com Atuação Exclusiva
+magpaetr;MagPAeTR - Número de Cargos Providos de Magistrado nas Turmas Recursais com atuação exclusiva
+magpje;MagPJE – Cargos de Magistrado Providos nos Juizados Especiais
+magpsub2;MagPSub2º - Número de Cargos Providos de Juiz Substituto de 2º Grau
+magptit2;MagPtit2º – Número de Cargos Providos de Magistrado Titular no 2º Grau
+magptr;MagPTR – Cargos de Magistrado Providos nas Turmas Recursais
+magsj;MagSJ - Número de Magistrados sem jurisdição
+magsj2;MagSJ2º - Número de Magistrados sem jurisdição no 2º grau
+magsjstm;MagSJSTM – Número de Magistrados sem jurisdição no STM
+magstm;MagSTM – Número de Cargos Existentes de Magistrado no STM
+magtr;MagTR - Total de Magistrados nas Turmas Recursais
+magtru;MagTRU - Número de Magistrados de Turma Regional de Uniformização
+magv;Número de cargos vagos de magistrado
+mcdispurna;MCDispUrna - Espaço Disponibilizado para Armazenamento da Urna Eletrônica, em metros cúbicos, no Tribunal
+mcutilurna;MCUtilUrna - Espaço Utilizado com Armazenamento da Urna Eletrônica, em metros cúbicos, no Tribunal
+me;me – Número de Militares Estaduais
+mldisparq;MLDispArq - Espaço disponível de arquivo em metros lineares
+mlutilarq;MLUtilArq - Espaço utilizado com arquivo em metros lineares
+mtotal;m²Total - Área total em metros quadrados
+multdisvd;Equipe Multidisciplinar de Violência Doméstica
+multdisvd.vara;Equipe Multidisciplinar por Vara
+munic;Número de municípios
+mutil;m²Util - Área útil em metros quadrados
+mutil1;m²Util1º - Área útil em metros quadrados no 1º Grau, Juizados Especiais e Turmas Recursais
+mutil2;m²Util2º - Área útil em metros quadrados no 2º Grau
+mutilstm;m²UtilSTM - Área útil em metros quadrados no STM
+nucleo;Núcleos Permanentes de Métodos Consensuais de Solução de Conflitos
+odc;ODC – Outras Despesas Correntes
+odck;ODCK – Outras Despesas Correntes e de Capital
+odp;ODP – Orçamento para Despesas de Pessoal e Encargos
+ok;OK – Orçamento para Despesas de Capital
+ooc;OOC – Orçamento para Outras Despesas Correntes
+pesus;PeSuS – Percentual de Processos Suspensos ou Sobrestados
+pesus1;PeSuS1 – Percentual de Processos Suspensos ou Sobrestados no 1º Grau
+pesus2;PeSuS2 – Percentual de Processos Suspensos ou Sobrestados no 2º Grau
+pesusc1;PeSuSC1 – Percentual de Processos de Conhecimento Suspensos ou Sobrestados no 1º Grau
+pesuscje;PeSuSCJE – Percentual de Processos de Conhecimento Suspensos ou Sobrestados nos Juizados Especiais
+pesusex1;PeSuSEx1 – Percentual de Processos de Execução Suspensos ou Sobrestados no 1º Grau
+pesusexje;PeSuSExJE – Percentual de Processos de Execução Suspensos ou Sobrestados nos Juizados Especiais
+pesusje;PeSuSJE – Percentual de Processos Suspensos ou Sobrestados nos Juizados Especiais
+pesusstm;PeSuSSTM – Percentual de Processos Suspensos ou Sobrestados no STM
+pesustr;PeSuSTR – Percentual de Processos Suspensos ou Sobrestados nas Turmas Recursais
+pexs1;PExS1º - Percentual de Processos de Execução de Títulos Judiciais e Extrajudiciais (exceto penal e fiscal) que estão Suspensos ou Sobrestados ou em Arquivo Provisório no 1º grau
+pexsfisc1;PExSFisc1º - Percentual de Processos de Execução Fiscal Suspensos ou Sobrestados ou em Arquivo Provisório no 1º grau
+pib;PIB - Produto Interno Bruto
+pm;Pm² – Força de Trabalho Total em relação à Área Útil (metros quadrados)
+pop_fem;População feminina
+porte;Porte do Tribunal
+procel;ProcEl - Índice de Processos Eletrônicos
+procel1;ProcEl1º - Índice de Processos Eletrônicos no 1º Grau
+procel2;ProcEl2º - Índice de Processos Eletrônicos no 2º Grau
+procelje;ProcElJE - Índice de Processos Eletrônicos nos Juizados Especiais
+procelstm;ProcElSTM – Índice de Processos Eletrônicos no STM
+proceltr;ProcElTR - Índice de Processos Eletrônicos nas Turmas Recursais
+proceltru;ProcElTRU – Índice de Processos Eletrônicos na Turma Regional de Uniformização
+procml;ProcML - Espaço Utilizado em relação ao Espaço Disponível para Arquivamento de Processos Judiciais (metros lineares)
+proct;ProcT – Espaço Terceirizado em relação ao Espaço Total Utilizado para Arquivamento de Processos (metros lineares)
+procurel;Procuradores Eleitorais
+promelel;Promotores Eleitorais
+qair;QAIR - Quantidade de Audiências de Instrução realizadas
+qapr;QAPR - Quantidade de Audiências Preliminares realizadas
+qdintp;QDIntP - Quantidade de Decisões Interlocutórias proferidas
+qdp;QDP - Quantidade de Despachos proferidos
+qjr;QJR - Quantidade de Juris realizados 
+qmp;QMP - Quantidade de Medidas Protetivas
+qmp.h2m;Medidas Protetivas por 100.000 Mulheres
+qmp.hm;Medidas Protetivas por Mulher
+r;R – Recolhimentos Diversos
+ranking;Ordem do porte
+rba;RBA - Receita decorrente da alienação de bens apreendidos
+reat;Reat - Casos Reativados
+reat2;Reat2º - Casos Reativados no 2º Grau
+reatc1;ReatC1º - Casos Reativados de Conhecimento no 1º Grau
+reatccrim1;ReatCCrim1º - Casos Reativados de Conhecimento no 1º Grau Criminais
+reatccrimje;ReatCCrimJE - Casos Reativados de Conhecimento nos Juizados Especiais Criminais
+reatcncrim1;ReatCNCrim1º - Casos Reativados de Conhecimento no 1º Grau Não-Criminais
+reatcncrimje;ReatCNCrimJE - Casos Reativados de Conhecimento nos Juizados Especiais Não-Criminais
+reatcrim;ReatCrim - Casos Reativados no Grau Criminais
+reatcrim2;ReatCrim2º - Casos Reativados no 2º Grau Criminais
+reatcrimtr;ReatCrimTR - Casos Reativados nas Turmas Recursais Criminais
+reatextfisc1;ReatExtFisc1º - Casos Reativados de Execução Fiscal no 1º grau
+reatextje;ReatExtJE - Casos Reativados de Execução de Título Extrajudicial nos Juizados Especiais
+reatextnfisc1;ReatExtNFisc1º - Casos Reativados de Execução de Título Extrajudicial no 1º grau, exceto execuções fiscais
+reatncrim;ReatNCrim - Casos Reativados no Grau Não-Criminais
+reatncrim2;ReatNCrim2º - Casos Reativados no 2º Grau Não-Criminais
+reatncrimtr;ReatNCrimTR - Casos Reativados nas Turmas Recursais Não-Criminais
+reatstm;ReatSTM - Casos Reativados no STM
+reattru;ReatTRU - Casos Reativados na Turma Regional de Uniformização
+receitas;Receitas - Total de Receitas
+ref;REF – Receita decorrente de Execuções Fiscais
+rert;ReRT - Receitas decorrentes de Execução das Penalidades impostas pelos Órgãos de Fiscalização das Relações de Trabalho
+ricm;RICM – Receitas de Imposto Causa Mortis nos inventários/arrolamentos
+rin;RIn – Recorribilidade Interna
+rin1;Rin1º - Recorribilidade Interna na Fase de Conhecimento do 1º Grau
+rin2;RIn2º - Recorribilidade Interna de 2º Grau
+rin2a;Rin2ºa - Recorribilidade Interna de Decisão Monocrática de 2º Grau
+rin2b;Rin2ºb - Recorribilidade Interna de Embargos de Declaração no 2º Grau
+rina;RIna – Recorribilidade Interna de Decisão Monocrática
+rinb;Rinb – Recorribilidade Interna de Embargos de Declaração
+rinc;Rinc –Recorribilidade Interna de Embargos
+rinje;RinJE - Recorribilidade Interna na Fase de Conhecimento dos Juizados Especiais
+rint;Rint – Recursos Internos
+rint2;Rint2º – Recursos Internos no 2º Grau
+rintc1;RIntC1º – Recursos Internos no 1º Grau na Fase de Conhecimento
+rintcj1;RIntCJ1º – Recursos Internos Julgados no 1º Grau na Fase de Conhecimento
+rintcje;RIntCJE – Recursos Internos da Fase de Conhecimento nos Juizados Especiais
+rintcjje;RIntCJJE – Recursos Internos Julgados nos Juizados Especiais na Fase de Conhecimento
+rintcp1;RIntCP1º – Recursos Internos Pendentes no 1º Grau na Fase de Conhecimento
+rintcpje;RIntCPJE – Recursos Internos Pendentes nos Juizados Especiais na Fase de Conhecimento
+rintinc;RIntInc - Recursos Internos e Incidentes de Execução
+rintincp;RIntIncP - Recursos Internos e Incidentes de Execução Pendentes
+rintj;RintJ – Recursos Internos Julgados
+rintj2;RintJ2º – Recursos Internos Julgados no 2º Grau
+rintjstm;RintJSTM – Recursos Internos Julgados no STM
+rintjtr;RIntJTR – Recursos Internos Julgados nas Turmas Recursais
+rintp;RintP – Recursos Internos Pendentes
+rintp2;RintP2º – Recursos Internos Pendentes no 2º Grau
+rintpstm;RintPSTM - Recursos Internos Pendentes no STM
+rintptr;RIntPTR – Recursos Internos Pendentes nas Turmas Recursais
+rintr;RInTR - Recorribilidade Interna das Turmas Recursais
+rintstm;RintSTM - Recursos Internos no STM
+rinttr;RIntTR – Recursos Internos nas Turmas Recursais
+rir;RIR - Receitas de Arrecadação de Imposto de Renda
+rjag1;RjAG1º - Agravos de Instrumento Julgados pelos Tribunais Regionais Federais
+rjai1;RjAI1º - Recursos de Agravos de Instrumento Julgados pelos Tribunais Estaduais
+rjai2;RjAI2º - Recursos de Agravos de Instrumento julgados pelo STJ
+rjap1;RjAP1º - Recursos de Apelações Julgados pelos Tribunais Estaduais
+rjesp2;RjEsp2º - Recursos Especiais julgados pelo STJ
+rjext2;RjExt2º - Recursos Extraordinários julgados pelo STF
+rjexttr;RjExtTR - Recursos Extraordinários julgados pelo STF
+rjinje;RjINJE - Recursos Inominados julgados pelas Turmas Recursais
+rjje;RjJE - Recursos das Decisões dos Juizado Especiais Federais Julgados pelas Turmas Recursais
+rjro1;RjRO1º - Recursos Ordinários julgados pelo TRT
+rjro2;RjRO2º - Recursos Ordinários Julgados pelo TST
+rjrops1;RjROPS1º - Recursos Ordinários em Procedimento Sumaríssimo julgados pelo TRT
+rjrr2;RjRR2º - Recursos de Revista Julgados pelo TST
+rorops1;ROROPS1º - Recursos Ordinários no 1° Grau
+rpag1;RpAG1º - Agravos de Instrumento Providos pelos Tribunais Regionais Federais (ainda que parcialmente)
+rpai1;RpAI1º - Recursos das Decisões de 1º Grau Providos pelos Tribunais Estaduais em Agravos de Instrumento (ainda que parcialmente)
+rpai2;RpAI2º - Recursos das decisões de 2º Grau providos pelo STJ em Agravos de Instrumento (ainda que parcialmente)
+rpap1;RpAP1º - Recursos das Decisões de 1º Grau Providos pelos Tribunais Estaduais em Recurso de Apelação (ainda que parcialmente)
+rpesp2;RpEsp2º - Recursos das decisões de 2º Grau providos pelo STJ em Recurso Especial (ainda que parcialmente)
+rpext2;RpExt2º - Recursos das decisões de 2º Grau providos pelo STF em Recurso Extraordinário (ainda que parcialmente)
+rpexttr;RpExtTR - Recursos das decisões de Turmas Recursais providos pelo STF em Recurso Extraordinário (ainda que parcialmente)
+rpinje;RpINJE - Recursos Inominados das decisões dos Juizados Especiais providos pelas Turmas Recursais (ainda que parcialmente)
+rpje;RpJE - Recursos das Decisões dos Juizado Especiais Federais Providos pelas Turmas Recursais (ainda que parcialmente)
+rprev;RPrev - Receitas de Execução Previdenciária
+rpro1;RpRO1º - Recursos das decisões de 1º Grau providos pelo TRT em Recursos Ordinários (ainda que parcialmente)
+rpro2;RpRO2º - Recursos das Decisões de 2º Grau Providos pelo TST em Recursos Ordinários (ainda que parcialmente)
+rprops1;RpROPS1º - Recursos das decisões de 1º Grau providos pelo TRT em Recursos Ordinários em Procedimento Sumaríssimo (ainda que parcialmente)
+rprr2;RpRR2º - Recursos das decisões de 2º Grau providos pelo TST em Recursos de Revista (ainda que parcialmente)
+rsup;Rsup – Recursos à Instância Superior
+rsup1;RSup1º – Recursos à Instância Superior no 1º Grau
+rsup2;Rsup2° – Recursos à Instância Superior no 2º Grau
+rsupje;RSupJE – Recursos à Instância Superior nos Juizados Especiais
+rsupstm;RsupSTM – Recursos à Instância Superior no STM
+rx;Rx – Recorribilidade Externa
+rx1;Rx1º - Recorribilidade Externa de 1º Grau
+rx2;Rx2º - Recorribilidade Externa de 2º grau
+rxa;Rxa - Recorribilidade Externa de Despacho Denegatório de Admissibilidade no Superior Tribunal de Justiça
+rxai2;RxAI2º - Recorribilidade Externa de Agravo de Instrumento para o TST
+rxap1;RxAP1º - Recorribilidade Externa na Fase de Execução no 1º Grau
+rxje;RxJE - Recorribilidade Externa dos Juizados Especiais
+rxro1;RxRO1º - Recorribilidade Externa na Fase de Conhecimento no 1º Grau
+sajud;SaJudTSE - Número de Servidores da Área Judiciária do TSE
+sajud1;SaJud1º - Número de Servidores Lotados na Área Judiciária do 1º Grau
+sajud2;SaJud2º - Número de Servidores Lotados na Área Judiciária do 2º Grau
+sajudacje1;SaJudAcJE1º - Número de Servidores Lotados na Área Judiciária do 1º Grau que acumulam função em Juizados Especiais
+sajudae1;SaJudAe1º - Número de Servidores Lotados na Área Judiciária do 1º Grau com Atuação Exclusiva
+sajudaeje;SaJudAeJE - Número de Servidores Lotados na Área Judiciária dos Juizados Especiais Exclusivos
+sajudje;SaJudJE - Total de Servidores Lotados na Área Judiciária dos Juizados Especiais
+sajudmag;SajudMag - Servidores da área Judiciária por Magistrado.
+sajudmag1;SajudMag1 - Servidores da área Judiciária por Magistrado no 1° Grau.
+sajudmag2;SajudMag2 - Servidores da área Judiciária por Magistrado no 2° Grau.
+sajudmagje;SajudMagJE - Servidores da área Judiciária por Magistrado nos Juizados Especiais.
+sajudmagtr;SajudMagTR - Servidores da área Judiciária por Magistrado nas Turmas Recursais.
+sajudp;SaJudP – Cargos Providos de Servidores da Área Judiciária
+sajudp1;SaJudP1º – Cargos Providos de Servidores da Área Judiciária no 1º Grau
+sajudp1_219;SaJudP1° - Total de Servidores que atuam na Área Judiciária do 1º Grau
+sajudp1jetr_219;SaJudP1JETR - Total de Servidores que atuam na Área Judiciária do 1º Grau, dos Juizados Especiais e das Turmas Recursais
+sajudp2;SaJudP2º – Cargos Providos de Servidores da Área Judiciária no 2º Grau
+sajudp2_219;SaJudP2° - Total de Servidores que atuam na Área Judiciária do 2º Grau
+sajudpje;SaJudPJE – Cargos Providos de Servidores da Área Judiciária nos Juizados Especiais
+sajudpstm;SaJudPSTM – Cargos Providos de Servidores da Área Judiciária no STM
+sajudpstm_219;SaJudPSTM - Total de Servidores que atuam na Área Judiciária do STM
+sajudptr;SaJudPTR – Cargos Providos de Servidores da Área Judiciária nas Turmas Recursais
+sajudptru;SaJudPTRU – Cargos Providos de Servidores da Área Judiciária na Turma Regional de Uniformização
+sajudserv;SaJudServ - Servidores da área judiciária em relação ao total de servidores
+sajudstm;SaJudSTM - Número de Servidores da Área Judiciária do STM
+sajudtr;SaJudTR - Número de Servidores Lotados na Área Judiciária das Turmas Recursais
+sajudtru;SaJudTRU - Número de Servidores Lotados na Área Judiciária da Turma Regional de Uniformização
+scn;Scn - Sentenças por Casos Novos
+scn1;Scn1 - Sentenças por Casos Novos no 1° Grau.
+scn2;Scn2 - Sentenças por Casos Novos no 2° Grau.
+scnc1;ScnC1 - Sentenças por Casos Novos de Conhecimento no 1° Grau.
+scncje;ScnCJE - Sentenças por Casos Novos de Conhecimento nos Juizados Especiais.
+scnex1;ScnEx1 - Sentenças por Casos Novos de Execução no 1° Grau.
+scnexje;ScnExJE - Sentenças por Casos Novos de Execução nos Juizados Especiais.
+scnje;ScnJE - Sentenças por Casos Novos nos Juizados Especiais.
+scntr;ScnTR - Sentenças por Casos Novos nas Turmas Recursais.
+scoreacp;Escore do ranking
+sent;Sent - Total de Sentenças / Decisões
+sent1;Sent1º - Total de Sentenças no 1º Grau
+sentc1;SentC1º – Sentenças de Conhecimento no 1º grau
+sentccmcfem;SentCCMCFEM - Total de Sentenças de Conhecimento com mérito em feminicídio
+sentccmcvd;SentCCMCVD - Total de Sentenças de Conhecimento com mérito em violência doméstica contra a mulher
+sentccrim1;SentCCrim1º – Sentenças de Conhecimento no 1º grau Criminais
+sentccrimje;SentCCrimJE – Sentenças de Conhecimento nos Juizados Especiais Criminais
+sentcfem;Sentenças de Conhecimento de Feminicídio
+senthc1;SentHC1º – Sentenças de Conhecimento Homologatórias de Acordos no 1º Grau
+senthcje;SentHCJE – Sentenças de Conhecimento Homologatórias de Acordos nos Juizados Especiais
+sentcje;SentCJE - Sentenças de Conhecimento nos Juizados Especiais
+sentcncrim1;SentCNCrim1º – Sentenças de Conhecimento no 1º grau Não-Criminais
+sentcncrimje;SentCNCrimJE – Sentenças de Conhecimento nos Juizados Especiais Não-Criminais
+sentcrim;SentCrim - Total de Sentenças e Decisões Criminais
+sentcsmcfem;SentCSMCFEM - Total de Sentenças de Conhecimento sem mérito em feminicídio
+sentcsmcvd;SentCSMCVD - Total de Sentenças de Conhecimento sem mérito em violência doméstica contra a mulher
+sentcvd;Sentenças de Conhecimento de Violência Doméstica, exceto Feminicídio
+sentcvdf;Sentenças de Violência Doméstica
+sentex1;SentEx1º - Sentenças em Execução Penal no 1º grau
+senthex1;SentHEx1º – Sentenças de Execução Homologatórias de Acordos no 1º Grau
+senthexje;SentHExJE – Sentenças de Execução Homologatórias de Acordos nos Juizados Especiais
+sentexje;SentExJE - Sentenças em Execução nos Juizados Especiais
+sentext1;SentExt1º - Sentenças em Execução de Título Extrajudicial no 1º Grau
+sentextfisc1;SentExtFisc1º – Sentenças em Execução Fiscal no 1º grau
+sentextje;SentExtJE – Sentenças em Execução de Título Extrajudicial nos Juizados Especiais
+sentextnfisc1;SentExtNFisc1º – Sentenças em Execução de Título Extrajudicial no 1º grau, exceto sentenças em execução fiscal
+senth1;SentH1º – Sentenças Homologatórias de Acordos no 1º Grau
+sentje;SentJe - Total de Sentenças nos Juizados Especiais
+sentjud1;SentJud1º – Sentenças em Execução Penal no 1º grau
+sentjudcrim1;SentJudCrim1º – Sentenças em Execução Penal no 1º grau
+sentjudcrimfem;Sentença Judicial Criminal de Feminicídio
+sentjudcrimnpl1;SentJudCrimNPL1º – Sentenças em Execução de Penas Não-Privativas de Liberdade no 1º grau
+sentjudcrimnplje;SentJudCrimNPLJE – Sentenças em Execução de Penas Não-Privativas de Liberdade nos Juizados Especiais
+sentjudcrimpl1;SentJudCrimPL1º – Sentenças em Execução de Penas Privativas de Liberdade no 1º grau
+sentjudcrimvd;Sentença Judicial Criminal de Violência Doméstica, exceto Feminicídio
+sentjudcrimvdf;Execuções Judiciais Sentenciadas de Violência Doméstica
+sentjudje;SentJudJE – Sentenças em Execução Judicial nos Juizados Especiais
+sentjudncrim1;SentJudNCrim1º – Sentenças em Execução Judicial no 1º grau, exceto sentenças em execução penal
+sentjudncrimje;SentJudNCrimJE – Sentenças em Execução nos Juizados Especiais Não-Criminais
+sentncrim;SentNCrim - Total de Sentenças e Decisões Não-Criminais
+seq_orgao;Identificador do Tribunal
+serec1;SeReC1º - Sentenças de Conhecimento de 1º Grau Passíveis de Recurso Externo
+sereex1;SeReEx1º - Sentenças de Execução de 1º Grau Passíveis de Recurso Externo
+serinc1;SeRInC1º - Sentenças de Conhecimento de 1º Grau Passíveis de Recurso Interno
+serint1;SeRInt1º - Sentenças no 1º Grau Passíveis de Recurso Interno
+serintje;SeRIntJE - Sentenças nos Juizados Especiais Passíveis de Recurso Interno
+serv;Total de servidores
+servadmseti;ServAdmSETI - Total de Servidores na Área Administrativa, exceto os lotados nas escolas judiciais e da magistratura e nas áreas de tecnologia da informação 
+servcso;ServCSo - Servidores da Especialidade Ciências Sociais
+servin;ServIn – Total de Servidores Inativos e Instituidores de Pensão
+servin1;ServIn1º – Total de Servidores Inativos e Instituidores de Pensão no 1º Grau
+servinstm;ServInSTM – Total de Servidores Inativos e Instituidores de Pensão no STM
+servmedc;ServMedC - Servidores da Especialidade Medicina/Clínica Geral
+servmedp;ServMedP - Servidores da Especialidade Medicina/Psiquiatria 
+servpd;ServPd - Servidores da Especialidade Pedagogia
+servps;ServPs - Servidores da Especialidade Psicologia 
+servpsspne;ServPsSPNE - Servidores da Especialidade Psicologia em setores psicossociais não-exclusivos
+servsso;ServSSo - Servidores da Especialidade Serviço Social 
+servssospne;ServSSoSPNE - Servidores da Especialidade Serviço Social em setores psicossociais não-exclusivos
+servvd;ServVD - Servidores lotados nas varas e setores exclusivos em Violência Doméstica contra a Mulher
+setorpsi;Número de Setores Psicossociais
+setorpsi.vara; Setores Psicossociais por Vara
+setorpsie;SetorPsiE - Número de Setores Psicossociais Exclusivos
+setorpsie.vara; Setores Psicossociais Exclusivos por Vara
+setorpsine;SetorPsiNE - Número de Setores Psicossociais não-exclusivos
+sigla;Sigla do Tribunal
+sm;SM - Sentenças / Decisões Terminativas de Processo por Magistrado
+sm1;SM1 - Sentenças por Magistrados no 1º Grau
+sm2;DTM2º - Decisões Terminativas de Processo por Magistrado no 2º Grau
+smc1;SMC1º - Sentenças por Magistrados na Fase de Conhecimento do 1º Grau
+smcje;SMCJE - Sentenças por Magistrados na Fase de Conhecimento dos Juizados Especiais
+smex1;SMEx1º - Sentenças por Magistrados na Fase de Execução do 1º Grau
+smexje;SMExJE - Sentenças por Magistrados na Fase de Execução dos Juizados Especiais
+smje;SMJE - Sentenças por Magistrados nos Juizados Especiais
+smstm;SMSTM – Sentenças por Magistrado do STM
+smtr;DTMTR - Decisões Terminativas por Magistrado na Turma Recursal
+smtru;SMTRU – Sentenças por Magistrado das Turmas Regionais de Uniformização
+sus;Sus - Processos Suspensos ou Sobrestados ou em Arquivo Provisório
+sus1;SuS1º – Processos Suspensos ou Sobrestados ou em Arquivo Provisório no 1º Grau
+sus2;SuS2º – Processos Suspensos ou Sobrestados ou em Arquivo Provisório no 2º Grau
+susc1;SuSC1º – Processos de Conhecimento Suspensos ou Sobrestados ou em Arquivo Provisório no 1º Grau
+suscje;SuSCJE – Processos de Conhecimento Suspensos ou Sobrestados ou em Arquivo Provisório nos Juizados Especiais
+susex1;SuSEx1º – Execuções Suspensas ou Sobrestadas ou em Arquivo Provisório no 1º Grau
+susexfisc1;SuSExFisc1º – Execuções Fiscais Suspensas ou Sobrestadas ou em Arquivo Provisório
+susexje;SuSExJE – Execuções Suspensas ou Sobrestadas ou em Arquivo Provisório nos Juizados Especiais
+susexnfisc1;SuSExNfisc1º – Execuções Judiciais e Extrajudiciais Suspensas ou Sobrestadas ou em Arquivo Provisório, exceto execuções fiscais e penais
+susrg;SuSRG – Processos Suspensos ou Sobrestados por Repercussão Geral
+susrg1;SuSRG1º – Processos Suspensos ou Sobrestados no 1º grau por Repercussão Geral
+susrg2;SuSRG2º – Processos Suspensos ou Sobrestados no 2º grau por Repercussão Geral
+susrgje;SuSRGJE – Processos Suspensos ou Sobrestados nos Juizados Especiais por Repercussão Geral
+susrgstm;SuSRGSTM – Processos Suspensos ou Sobrestados por Repercussão Geral no STM
+susrgtr;SuSRGTR – Processos Suspensos ou Sobrestados nas Turmas Recursais por Repercussão Geral
+susrr;SuSRR – Processos Suspensos ou Sobrestados por Recurso de Revista Repetitivo
+susrr1;SuSRR1º – Processos Suspensos ou Sobrestados no 1º grau por Recurso Repetitivo
+susrr2;SuSRR2º – Processos Suspensos ou Sobrestados no 2º grau por Recurso Repetitivo
+susrrje;SuSRRJE – Processos Suspensos ou Sobrestados nos Juizados Especiais por Recurso Repetitivo
+susrrtr;SuSRRTR – Processos Suspensos ou Sobrestados nas Turmas Recursais por Recurso Repetitivo
+susstm;SusSTM - Processos Suspensos ou Sobrestados ou em Arquivo Provisório no STM
+sustr;SuSTR – Processos Suspensos ou Sobrestados ou em Arquivo Provisório nas Turmas Recursais
+tamj1;TAMJ1º - Tempo de Afastamento da Jurisdição dos Magistrados de 1º Grau
+tamjje;TAMJJE - Tempo de Afastamento da Jurisdição dos Magistrados dos Juizados Especiais
+tamjtr;TAMJTR - Tempo de Afastamento da Jurisdição dos Magistrados das Turmas Recursais
+target.tbaix;Total de processos baixados
+target.tbaix1;Total de processos baixados no 1º grau
+target.tbaix2;Total de processos baixados no 2º grau
+tas1;TAS1º – Tempo de Afastamento de Servidor da Área Judiciária de 1º grau
+tas2;TAS2º – Tempo de Afastamento de Servidor da Área Judiciária de 2º Grau
+tasacje1;TASAcJE1º – Tempo de Afastamento de Servidor da Área Judiciária de 1º grau que acumula função em Juizados Especiais
+tasadm;TASAdm – Tempo de Afastamento de Servidor da Área Administrativa
+tasadm1;TASAdm1 - Tempo de Afastamento de Servidor da Área Administrativa nas Auditorias Militares
+tasadmstm;TASAdmSTM - Tempo de Afastamento de Servidor da Área Administrativa no STM
+tasae1;TASAe1º – Tempo de Afastamento de Servidor da Área Judiciária Exclusivo de 1º grau
+tasaeje;TASAeJE – Tempo de Afastamento de Servidor da Área Judiciária Exclusivo de Juizados Especiais
+tasjud;TASJud – Tempo de Afastamento de Servidor da Área Judiciária
+tasstm;TASSTM – Tempo de Afastamento de Servidor da Área Judiciária no STM
+tastr;TASTR – Tempo de Afastamento de Servidor da Área Judiciária das Turmas Recursais
+tastru;TASTRU – Tempo de Afastamento de Servidor da Área Judiciária da Turma Regional de Uniformização
+tbaix;TBaix – Total de Processos Baixados
+tbaix.sus.fisc.penal;Processos baixados excluídos os processos suspensos e as execuções fiscais e penais
+tbaix1;TBaix1º - Total de Processos Baixados no 1º Grau
+tbaix2;TBaix2º – Total de Processos Baixados no 2º Grau
+tbaix3;TBaix3 - Total de Processos Baixados
+tbaixc1;TBaixC1º – Processos de Conhecimento Baixados no 1º Grau
+tbaixccrim1;TBaixCCrim1º – Processos de Conhecimento Baixados no 1º Grau Criminais
+tbaixccrimje;TBaixCCrimJE – Total de Processos de Conhecimento Baixados nos Juizados Especiais Criminais
+tbaixcfem;TBaixCFEM - Total de Processos Baixados de Conhecimento em feminicídio
+tbaixcje;TBaixCJE - Total de Processos de Conhecimento Baixados nos Juizados Especiais
+tbaixcncrim1;TBaixCNCrim1º – Processos de Conhecimento Baixados no 1º Grau Não-Criminais
+tbaixcncrimje;TBaixCNCrimJE – Total de Processos de Conhecimento Baixados nos Juizados Especiais Não-Criminais
+tbaixcrim;TBaixCrim – Total de Processos Baixados Criminais
+tbaixcrim2;TBaixCrim2º – Total de Processos Baixados no 2º Grau Criminais
+tbaixcrim3;Processos baixados criminais nos Tribunais Superiores
+tbaixcrimtr;TBaixCrimTR – Total de Processos Baixados nas Turmas Recursais Criminais
+tbaixcvd;TBaixCVD - Total de Processos Baixados de Conhecimento em violência doméstica contra a mulher
+tbaixcvdf;Processos Baixados  de Violência Doméstica
+tbaixex1;TBaixEx1º - Total de Processos Baixados de Execução Penal no 1º Grau
+tbaixexje;TBaixExJE - Total de Processos de Execução Baixados nos Juizados Especiais
+tbaixext1;TBaixExt1º - Total de Processos Baixados de Execução de Título Extrajudicial no 1º Grau
+tbaixextfisc1;TBaixExtFisc1º – Total de Processos Baixados de Execução Fiscal no 1º Grau
+tbaixextje;TBaixExtJE – Total de Processos Baixados de Execução de Título Extrajudicial nos Juizados Especiais
+tbaixextnfisc1;TBaixExtNFisc1º – Total de Processos Baixados de Execução de Títulos Extrajudiciais no 1º Grau, exceto execuções fiscais
+tbaixje;TBaixJE - Total de Processos Baixados nos Juizados Especiais
+tbaixjud1;TBaixJud1º – Total de Processos Baixados de Execução Penal no 1º Grau
+tbaixjudcrim1;TBaixJudCrim1º – Total de Processos Baixados de Execução Penal no 1º Grau
+tbaixjudcrimfem;Total de Baixados Judiciais Criminais de Feminicídio
+tbaixjudcrimnpl1;TBaixJudCrimNPL1º – Total de Processos Baixados de Execução de Penas Não-Privativas de Liberdade no 1º Grau
+tbaixjudcrimnplje;TBaixJudCrimNPLJE – Total de Processos Baixados de Execução de Penas Não-Privativas de liberdade nos Juizados Especiais
+tbaixjudcrimpl1;TBaixJudCrimPL1º – Total de Processos Baixados de Execução de Penas Privativas de Liberdade no 1º Grau
+tbaixjudcrimvd;Total de Baixados Judiciais Criminais de Violência Doméstica, exceto Feminicídio
+tbaixjudcrimvdf;Execuções Judiciais Baixadas de Violência Doméstica
+tbaixjudje;TBaixJudJE – Total de Processos Baixados de Execução Judicial nos Juizados Especiais
+tbaixjudncrim1;TBaixJudNCrim1º – Total de Processos Baixados de Execução Judicial no 1º Grau, exceto execuções penais
+tbaixjudncrimje;TBaixJudNCrimJE – Total de Processos Baixados de Execução Judicial nos Juizados Especiais, exceto execuções penais
+tbaixncrim;TBaixNCrim – Total de Processos Baixados Não-Criminais
+tbaixncrim2;TBaixNCrim2º – Total de Processos Baixados no 2º Grau Não-Criminais
+tbaixncrim3;TBaixNCrim3 - Total de processos baixados não criminais nos Tribunais Superiores.
+tbaixncrimtr;TBaixNCrimTR – Total de Processos Baixados nas Turmas Recursais Não-Criminais
+tbaixstm;TBaixSTM – Total de Processos Baixados no STM
+tbaixtr;TBaixTR - Total de Processos Baixados na Turma Recursal
+tbaixtru;TBaixTRU – Total de Processos Baixados na Turma Regional de Uniformização
+tc;TC - Taxa de Congestionamento
+tc1;TC1 - Taxa de Congestionamento no 1º Grau
+tc2;TC2º - Taxa de Congestionamento no 2º Grau
+tcc;TCC - Total de Cargos em Comissão Existentes
+tcc1;TCC1º - Taxa de Congestionamento na Fase de Conhecimento do 1º Grau
+tcc1je;TcC1JE - Taxa de Congestionamento de Conhecimento no 1° Grau e Juizados Especiais.
+tcccrim1;TcCCrim1º - Taxa de Congestionamento Criminal na Fase de Conhecimento do 1º Grau
+tcccrimje;TcCCrimJe - Taxa de Congestionamento Criminal na Fase de Conhecimento dos Juizados Especiais
+tccje;TCCJE - Taxa de Congestionamento na Fase de Conhecimento dos Juizados Especiais
+tccncrim1;TcCNCrim1º - Taxa de Congestionamento Não-Criminal na Fase de Conhecimento do 1º Grau
+tccncrimje;TcCNCrimJe - Taxa de Congestionamento Não-Criminal na Fase de Conhecimento dos Juizados Especiais
+tccrim;TcCrim - Taxa de Congestionamento Criminal
+tccrim2;TcCrim2º - Taxa de Congestionamento Criminal no 2º grau
+tccrimtr;TcCrimTr - Taxa de Congestionamento Criminal nas Turmas Recursais
+tcefet;TCEfet – Total de Cargos do Quadro Efetivo Existentes
+tcex1;TCEx1º - Taxa de Congestionamento na Fase de Execução do 1º Grau
+tcexje;TCexJE - Taxa de Congestionamento na Fase de Execução dos Juizados Especiais
+tcext1;TcExt1º - Taxa de Congestionamento na Execução Extrajudicial do 1º Grau
+tcextfisc1;TcExtFisc1º - Taxa de Congestionamento na Execução Fiscal do 1º Grau
+tcextje;TCExtJe - Taxa de Congestionamento na Execução Extrajudicial dos Juizados Especiais
+tcextnfisc1;TcExtNFisc1º - Taxa de Congestionamento na Execução Extrajudicial não-Fiscal do 1º Grau
+tcje;TCJE - Taxa de Congestionamento nos Juizados Especiais
+tcjud1;TcJud1º - Taxa de Congestionamento na Execução Judicial do 1º Grau
+tcjudcrimnpl1;TcJudCrimNPL1º - Taxa de Congestionamento na Execução de Penas Não-Privativas de Liberdade do 1º Grau
+tcjudcrimnplje;TCJudCrimNPLJe - Taxa de Congestionamento na Execução de Penas Não-Privativas de Liberdade dos Juizados Especiais
+tcjudcrimpl1;TcJudCrimPL1º - Taxa de Congestionamento na Execução de Penas Privativas de Liberdade do 1º Grau
+tcjudje;TCJudJe - Taxa de Congestionamento na Execução Judicial dos Juizados Especiais
+tcjudncrim1;TcJudNCrim1º - Taxa de Congestionamento na Execução Não-Criminal do 1º Grau
+tcjudncrimje;TCJudNCrimJe - Taxa de Congestionamento na Execução Judicial Não-Criminal dos Juizados Especiais
+tcl;TCL – Taxa de Congestionamento Líquida
+tcl1;TCL1º – Taxa de Congestionamento Líquida do 1º Grau
+tcl2;TCL2º – Taxa de Congestionamento Líquida do 2º Grau
+tclc1;TCLC1º – Taxa de Congestionamento Líquida na Fase de Conhecimento do 1º Grau
+tclcje;TCLCJE – Taxa de Congestionamento Líquida na Fase de Conhecimento dos Juizados Especiais
+tclex1;TCLEx1º – Taxa de Congestionamento Líquida na Fase de Execução do 1º Grau
+tclexje;TCLExJE – Taxa de Congestionamento Líquida na Fase de Execução dos Juizados Especiais
+tclje;TCLJE – Taxa de Congestionamento Líquida dos Juizados Especiais
+tclstm;TCLSTM – Taxa de Congestionamento Líquida no STM
+tcltarget;Taxa de Congestionamento estimada
+tcltr;TCLTR – Taxa de Congestionamento Líquida nas Turmas Recursais
+tcncrim;TcNCrim - Taxa de Congestionamento Não-Criminal
+tcncrim2;TcNCrim2º - Taxa de Congestionamento Não-Criminal no 2º grau
+tcncrimtr;TcNCrimTr - Taxa de Congestionamento Não-Criminal nas Turmas Recursais
+tcstm;TCSTM – Taxa de Congestionamento Total no STM
+tctr;TCTR - Taxa de Congestionamento nas Turmas Recursais
+tctru;TCTRU - Taxa de Congestionamento nas Turmas Regionais de Uniformização
+tfaux;TFAux - Total da Força de Trabalho Auxiliar
+tfaux1;TFAux1º - Total da Força de Trabalho Auxiliar no 1º Grau
+tfaux2;TFAux2º - Total da Força de Trabalho Auxiliar no 2º Grau
+tfauxc;TFAuxC - Total da Força de Trabalho Auxiliar – Conciliadores
+tfauxc1;TFAuxC1 - Total da Força de Trabalho Auxiliar: Conciliadores
+tfauxc2;TFAuxC2 - Total da Força de Trabalho Auxiliar no 2º Grau: Conciliadores
+tfauxe;TFAuxE – Total da Força de Trabalho Auxiliar – Estagiários
+tfauxe1;TFAuxE1 - Total da Força de Trabalho Auxiliar: Estagiários
+tfauxe2;TFAuxE2 - Total da Força de Trabalho Auxiliar no 2º Grau: Estagiários
+tfauxestm;TFAuxESTM - Total da Força de Trabalho Auxiliar - Estagiários no STM
+tfauxjl;TFAuxJL – Total da Força de Trabalho Auxiliar – Juízes Leigos
+tfauxjl1;TFAuxJL1 - Total da Força de Trabalho Auxiliar: Juízes leigos
+tfauxjl2;TFAuxJL2 - Total da Força de Trabalho Auxiliar no 2º Grau: Juízes Leigos
+tfauxsp;TFauxSP – Total da Força de Trabalho Auxiliar – Serventias Judiciais Privatizadas
+tfauxt;TFAuxT – Total da Força de Trabalho Auxiliar – Terceirizados
+tfauxt1;TFAuxT1 - Total da Força de Trabalho Auxiliar: Terceirizados
+tfauxt2;TFAuxT2 - Total da Força de Trabalho Auxiliar no 2º Grau: Terceirizados
+tfauxtstm;TFAuxTSTM - Total da Força de Trabalho Auxiliar - Terceirizados no STM
+tfauxv;TFAuxV - Total da Força de Trabalho Voluntária
+tfc;TFc - Total de Funções Comissionadas Existentes
+tpaf;TPAf – Total de Pessoal Afastado
+tpaf1;TPAf1º – Total de Pessoal Afastado da Área Judiciária no 1º Grau
+tpaf2;TPAf2º – Total de Pessoal Afastado da Área Judiciária no 2º Grau
+tpafje;TPAfJE – Total de Pessoal Afastado da Área Judiciária nos Juizados Especiais
+tpafstm;TPAfSTM – Total de Pessoal Afastado do STM
+tpaftr;TPAfTR – Total de Pessoal Afastado da Área Judiciária nas Turmas Recursais
+tpaftru;TPAfTRU – Total de Pessoal Afastado da Área Judiciária na Turma Regional de Uniformização
+tpbaix2dp;TpBaix2- Desvio Padrão
+tpbaix2m;TpBaix2 - Média
+tpbaix2md;TpBaix2 - Mediana
+tpbaix2p;TpBaix2- Número de Processos
+tpbaixc1dp;TpBaixC1- Desvio Padrão
+tpbaixc1m;TpBaixC1 - Média
+tpbaixc1md;TpBaixC1- Mediana
+tpbaixc1p;TpBaixC1- Número de Processos
+tpbaixccrim1dp;TpBaixCCrim1- Desvio Padrão
+tpbaixccrim1m;TpBaixCCrim1 - Média
+tpbaixccrim1md;TpBaixCCrim1- Mediana
+tpbaixccrim1p;TpBaixCCrim1- Número de Processos
+tpbaixccrimjedp;TpBaixCCrimJE- Desvio Padrão
+tpbaixccrimjem;TpBaixCCrimJE - Média
+tpbaixccrimjemd;TpBaixCCrimJE- Mediana
+tpbaixccrimjep;TpBaixCCrimJE- Número de Processos
+tpbaixcncrim1dp;TpBaixCNCrim1- Desvio Padrão
+tpbaixcncrim1m;TpBaixCNCrim1 - Média
+tpbaixcncrim1md;TpBaixCNCrim1- Mediana
+tpbaixcncrim1p;TpBaixCNCrim1- Número de Processos
+tpbaixcncrimjedp;TpBaixCNCrimJE- Desvio Padrão
+tpbaixcncrimjem;TpBaixCNCrimJE - Média
+tpbaixcncrimjemd;TpBaixCNCrimJE- Mediana
+tpbaixcncrimjep;TpBaixCNCrimJE- Número de Processos
+tpbaixcrim2dp;TpBaixCrim2- Desvio Padrão
+tpbaixcrim2m;TpBaixCrim2 - Média
+tpbaixcrim2md;TpBaixCrim2- Mediana
+tpbaixcrim2p;TpBaixCrim2- Número de Processos
+tpbaixcrimdp;TpBaixCrim- Desvio Padrão
+tpbaixcrimm;TpBaixCrim - Média
+tpbaixcrimmd;TpBaixCrim- Mediana
+tpbaixcrimp;TpBaixCrim- Número de Processos
+tpbaixcrimtrdp;TpBaixCrimTR- Desvio Padrão
+tpbaixcrimtrm;TpBaixCrimTR - Média
+tpbaixcrimtrmd;TpBaixCrimTR- Mediana
+tpbaixcrimtrp;TpBaixCrimTR- Número de Processos
+tpbaixdp;TpBaix- Desvio Padrão
+tpbaixextfisc1dp;TpBaixExtFisc1- Desvio Padrão
+tpbaixextfisc1m;TpBaixExtFisc1 - Média
+tpbaixextfisc1md;TpBaixExtFisc1- Mediana
+tpbaixextfisc1p;TpBaixExtFisc1- Número de Processos
+tpbaixextjedp;TpBaixExtJE- Desvio Padrão
+tpbaixextjem;TpBaixExtJE - Média
+tpbaixextjemd;TpBaixExtJE- Mediana
+tpbaixextjep;TpBaixExtJE- Número de Processos
+tpbaixextnfisc1dp;TpBaixExtNFisc1- Desvio Padrão
+tpbaixextnfisc1m;TpBaixExtNFisc1 - Média
+tpbaixextnfisc1md;TpBaixExtNFisc1- Mediana
+tpbaixextnfisc1p;TpBaixExtNFisc1- Número de Processos
+tpbaixjud1dp;TpBaixJud1- Desvio Padrão
+tpbaixjud1m;TpBaixJud1 - Média
+tpbaixjud1md;TpBaixJud1- Mediana
+tpbaixjud1p;TpBaixJud1- Número de Processos
+tpbaixjudcrim1dp;TpBaixJudCrim1- Desvio Padrão
+tpbaixjudcrim1m;TpBaixJudCrim1 - Média
+tpbaixjudcrim1md;TpBaixJudCrim1- Mediana
+tpbaixjudcrim1p;TpBaixJudCrim1- Número de Processos
+tpbaixjudcrimnpl1dp;TpBaixJudCrimNPL1- Desvio Padrão
+tpbaixjudcrimnpl1m;TpBaixJudCrimNPL1 - Média
+tpbaixjudcrimnpl1md;TpBaixJudCrimNPL1- Mediana
+tpbaixjudcrimnpl1p;TpBaixJudCrimNPL1- Número de Processos
+tpbaixjudcrimnpljedp;TpBaixJudCrimNPlJE- Desvio Padrão
+tpbaixjudcrimnpljem;TpBaixJudCrimNPlJE - Média
+tpbaixjudcrimnpljemd;TpBaixJudCrimNPlJE- Mediana
+tpbaixjudcrimnpljep;TpBaixJudCrimNPlJE- Número de Processos
+tpbaixjudcrimpl1dp;TpBaixJudCrimPL1- Desvio Padrão
+tpbaixjudcrimpl1m;TpBaixJudCrimPL1 - Média
+tpbaixjudcrimpl1md;TpBaixJudCrimPL1- Mediana
+tpbaixjudcrimpl1p;TpBaixJudCrimPL1- Número de Processos
+tpbaixjudjedp;TpBaixJudJE- Desvio Padrão
+tpbaixjudjem;TpBaixJudJE - Média
+tpbaixjudjemd;TpBaixJudJE- Mediana
+tpbaixjudjep;TpBaixJudJE- Número de Processos
+tpbaixjudncrim1dp;TpBaixJudNCrim1- Desvio Padrão
+tpbaixjudncrim1m;TpBaixJudNCrim1 - Média
+tpbaixjudncrim1md;TpBaixJudNCrim1- Mediana
+tpbaixjudncrim1p;TpBaixJudNCrim1- Número de Processos
+tpbaixjudncrimjedp;TpBaixJudNCrimJE- Desvio Padrão
+tpbaixjudncrimjem;TpBaixJudNCrimJE - Média
+tpbaixjudncrimjemd;TpBaixJudNCrimJE- Mediana
+tpbaixjudncrimjep;TpBaixJudNCrimJE- Número de Processos
+tpbaixm;TpBaix - Média
+tpbaixmd;TpBaix- Mediana
+tpbaixncrim2dp;TpBaixNCrim2- Desvio Padrão
+tpbaixncrim2m;TpBaixNCrim2 - Média
+tpbaixncrim2md;TpBaixNCrim2- Mediana
+tpbaixncrim2p;TpBaixNCrim2- Número de Processos
+tpbaixncrimdp;TpBaixNCrim- Desvio Padrão
+tpbaixncrimm;TpBaixNCrim - Média
+tpbaixncrimmd;TpBaixNCrim- Mediana
+tpbaixncrimp;TpBaixNCrim- Número de Processos
+tpbaixncrimtrdp;TpBaixNCrimTR- Desvio Padrão
+tpbaixncrimtrm;TpBaixNCrimTR - Média
+tpbaixncrimtrmd;TpBaixNCrimTR- Mediana
+tpbaixncrimtrp;TpBaixNCrimTR- Número de Processos
+tpbaixp;TpBaix - Número de Processos
+tpbaixstmdp;TpBaixSTM - Desvio Padrão
+tpbaixstmm;TpBaixSTM - Média
+tpbaixstmmd;TpBaixSTM - Mediana
+tpbaixstmp;TpBaixSTM - Número de Processos
+tpbaixtrudp;TpBaixTRU- Desvio Padrão
+tpbaixtrum;TpBaixTRU - Média
+tpbaixtrumd;TpBaixTRU- Mediana
+tpbaixtrup;TpBaixTRU - Número de Processos
+tpced;TPCed - Total de Pessoal Cedido
+tpcp1dp;TpCp1- Desvio Padrão
+tpcp1m;TpCp1 - Média
+tpcp1md;TpCp1- Mediana
+tpcp1p;TpCp1- Número de Processos
+tpcp2dp;TpCp2 - Desvio Padrão
+tpcp2m;TpCp2 - Média
+tpcp2md;TpCp2 - Mediana
+tpcp2p;TpCp2 - Número de Processos
+tpcpc1dp;TpCpC1 - Desvio Padrão
+tpcpc1m;TpCpC1 - Média
+tpcpc1md;TpCpC1 - Mediana
+tpcpc1p;TpCpC1 - Número de Processos
+tpcpcjedp;TpCpCJE- Desvio Padrão
+tpcpcjem;TpCpCJE - Média
+tpcpcjemd;TpCpCJE- Mediana
+tpcpcjep;TpCpCJE- Número de Processos
+tpcpdp;TpCp- Desvio Padrão
+tpcpex1dp;TpCpEx1- Desvio Padrão
+tpcpex1m;TpCpEx1 - Média
+tpcpex1md;TpCpEx1- Mediana
+tpcpex1p;TpCpEx1- Número de Processos
+tpcpexjedp;TpCpExJE- Desvio Padrão
+tpcpexjem;TpCpExJE - Média
+tpcpexjemd;TpCpExJE- Mediana
+tpcpexjep;TpCpExJE- Número de Processos
+tpcpm;TpCp - Média
+tpcpmd;TpCp - Mediana
+tpcpp;TpCp - Número de Processos
+tpcpstmdp;TpCpSTM - Desvio Padrão
+tpcpstmm;TpCpSTM - Média
+tpcpstmmd;TpCpSTM - Mediana
+tpcpstmp;TpCpSTM - Número de Processos
+tpcptrdp;TpCpTR- Desvio Padrão
+tpcptrm;TpCpTR - Média
+tpcptrmd;TpCpTR- Mediana
+tpcptrp;TpCpTR- Número de Processos
+tpcptrudp;TpCpTRU- Desvio Padrão
+tpcptrum;TpCpTRU - Média
+tpcptrumd;TpCpTRU- Mediana
+tpcptrup;TpCpTRU- Número de Processos
+tpdec2dp;TpDec2- Desvio Padrão
+tpdec2m;TpDec2 - Média
+tpdec2md;TpDec2- Mediana
+tpdec2p;TpDec2- Número de Processos
+tpdecdp;TpDec - Desvio Padrão
+tpdecm;TpDec - Média
+tpdecmd;TpDec - Mediana
+tpdecp;TpDec - Número de Processos
+tpdecstmdp;TpDecSTM- Desvio Padrão
+tpdecstmm;TpDecSTM - Média
+tpdecstmmd;TpDecSTM - Mediana
+tpdecstmp;TpDecSTM - Número de Processos
+tpdectrdp;TpDecTR- Desvio Padrão
+tpdectrm;TpDecTR - Média
+tpdectrmd;TpDecTR- Mediana
+tpdectrp;TpDecTR- Número de Processos
+tpdectrudp;TpDecTRU- Desvio Padrão
+tpdectrum;TpDecTRU - Média
+tpdectrumd;TpDecTRU- Mediana
+tpdectrup;TpDecTRU- Número de Processos
+tpefet;TPEfet - Total de Pessoal do Quadro Efetivo
+tpefet1;TPEfet1 - Total de Pessoal do Quadro Efetivo
+tpefet2;TPEfet2º – Total de Pessoal do Quadro Efetivo na Área Judiciária de 2º grau
+tpefetacje1;TPEfetAcJE1º – Total de Pessoal do Quadro Efetivo na Área Judiciária com Atuação Acumulativa no 1º grau e Juizado Especial
+tpefetadm;TPEfetAdm – Total de Pessoal do Quadro Efetivo na Área Administrativa
+tpefetadm1;TPEfetAdm1 - Total de Pessoal do Quadro Efetivo na Área Administrativa nas Auditorias Militares
+tpefetadmstm;TPEfetAdmSTM - Total de Pessoal do Quadro Efetivo na Área Administrativa no STM
+tpefetae1;TPEfetAe1º – Total de Pessoal do Quadro Efetivo na Área Judiciária Exclusiva de 1º grau
+tpefetaeje;TPEfetAeJE – Total de Pessoal do Quadro Efetivo na Área Judiciária Exclusiva de Juizado Especial
+tpefetjud;TPEfetJud – Total de Pessoal do Quadro Efetivo na Área Judiciária
+tpefetstm;TPEfetSTM – Total de Pessoal do Quadro Efetivo na Área Judiciária do STM
+tpefettr;TPEfetTR – Total de Pessoal do Quadro Efetivo na Área Judiciária de Turmas Recursais
+tpefettru;TPEfetTRU – Total de Pessoal do Quadro Efetivo na Área Judiciária da Turma Regional de Uniformização
+tpesc;TPEsc – Total de Pessoal das Escolas Judiciais e de Magistratura
+tpi;TPI – Total de Pessoal que ingressou por cessão ou requisição
+tpi1;TPI1º – Total de Pessoal que ingressou por cessão ou requisição na Área Judiciária de 1º grau
+tpi2;TPI2º – Total de Pessoal que ingressou por cessão ou requisição na Área Judiciária de 2º grau
+tpiacje1;TPIAcJE1º – Total de Pessoal que ingressou por cessão ou requisição na Área Judiciária com Atuação Acumulativa no 1º grau e Juizado Especial
+tpiadm;TPIAdm – Total de Pessoal que ingressou por cessão ou requisição na Área Administrativa
+tpiadm1;TPIAdm1 - Total de Pessoal que ingressou por cessão ou requisição na Área Administrativa nas Auditorias Militares
+tpiadmstm;TPIAdmSTM - Total de Pessoal que ingressou por cessão ou requisição na Área Administrativa no STM
+tpiae1;TPIAe1º – Total de Pessoal que ingressou por cessão ou requisição na Área Judiciária Exclusiva de 1º grau
+tpiaeje;TPIAeJE – Total de Pessoal que ingressou por cessão ou requisição na Área Judiciária Exclusiva de Juizado Especial
+tpiext;TPIExt - Total de Pessoal que ingressou extraordinariamente por cessão ou requisição para Realização de Pleitos Eleitorais
+tpijud;TPIJud – Total de Pessoal que ingressou por cessão ou requisição na Área Judiciária
+tpin;TPIn – Total de Pessoal Inativo e Instituidores de Pensão
+tpistm;TPISTM – Total de Pessoal que ingressou por cessão ou requisição na Área Judiciária do STM
+tpitr;TPITR – Total de Pessoal que ingressou por cessão ou requisição na Área Judiciária de Turmas Recursais
+tpitru;TPITRU – Total de Pessoal que ingressou por cessão ou requisição na Área Judiciária da Turma Regional de Uniformização
+tpreq;TPReq - Total de Pessoal Requisitado
+tpreq1;TPReq1º - Total de Pessoal Requisitado no 1º Grau
+tpreq2;TPReq2º - Total de Pessoal Requisitado no 2º Grau
+tpreqext;TPReqExt - Total de Pessoal Requisitado Extraordinariamente para Realização de Pleitos Eleitorais
+tpreqext1;TPReqExt1 - Total de Pessoal Requisitado Extraordinariamente para Realização de Pleitos Eleitorais no 1° Grau
+tpreqext2;TPReqExt2 - Total de Pessoal Requisitado Extraordinariamente para Realização de Pleitos Eleitorais no 2° Grau
+tpreqfpj;TPReqFPJ - Total de Pessoal Requisitado: fora do Poder Judiciário
+tpreqfpj1;TPReqFPJ1 - Total de Pessoal Requisitado: fora do Poder Judiciário
+tpreqfpj2;TPReqFPJ2 - Total de Pessoal Requisitado no 2º Grau: fora do Poder Judiciário
+tpreqfpjstm;TPReqFPJSTM - Total de Pessoal Requisitado Fora do Poder Judiciário no STM
+tpreqpj;TPReqPJ - Total de Pessoal Requisitado: do Poder Judiciário
+tpreqpj1;TPReqPJ1 - Total de Pessoal Requisitado: do Poder Judiciário
+tpreqpj2;TPReqPJ2 - Total de Pessoal Requisitado no 2º Grau: do Poder Judiciário
+tpreqpjstm;TPReqPJSTM - Total de Pessoal Requisitado do Poder Judiciário no STM
+tprg1dp;TpRG1- Desvio Padrão
+tprg1m;TpRG1 - Média
+tprg1md;TpRG1- Mediana
+tprg1p;TpRG1- Número de Processos
+tprg2dp;TpRG2- Desvio Padrão
+tprg2m;TpRG2 - Média
+tprg2md;TpRG2- Mediana
+tprg2p;TpRG2- Número de Processos
+tprgdp;TpRG - Desvio Padrão
+tprgjedp;TpRGJE- Desvio Padrão
+tprgjem;TpRGJE - Média
+tprgjemd;TpRGJE- Mediana
+tprgjep;TpRGJE- Número de Processos
+tprgm;TpRG - Média
+tprgmd;TpRG - Mediana
+tprgp;TpRG - Número de Processos
+tprgstmdp;TpRGSTM- Desvio Padrão
+tprgstmm;TpRGSTM - Média
+tprgstmmd;TpRGSTM- Mediana
+tprgstmp;TpRGSTM- Número de Processos
+tprgtrdp;TpRGTR- Desvio Padrão
+tprgtrm;TpRGTR - Média
+tprgtrmd;TpRGTR- Mediana
+tprgtrp;TpRGTR- Número de Processos
+tprr1dp;TpRR1- Desvio Padrão
+tprr1m;TpRR1 - Média
+tprr1md;TpRR1- Mediana
+tprr1p;TpRR1- Número de Processos
+tprr2dp;TpRR2- Desvio Padrão
+tprr2m;TpRR2 - Média
+tprr2md;TpRR2- Mediana
+tprr2p;TpRR2- Número de Processos
+tprrdp;TpRR - Desvio Padrão
+tprrjedp;TpRRJE- Desvio Padrão
+tprrjem;TpRRJE - Média
+tprrjemd;TpRRJE- Mediana
+tprrjep;TpRRJE- Número de Processos
+tprrm;TpRR - Média
+tprrmd;TpRR - Mediana
+tprrp;TpRR- Número de Processos
+tprrtrdp;TpRRTR- Desvio Padrão
+tprrtrm;TpRRTR - Média
+tprrtrmd;TpRRTR- Mediana
+tprrtrp;TpRRTR- Número de Processos
+tps;TPS - Total de Pessoal que saiu por cessão ou requisição
+tpsent1dp;TpSent1- Desvio Padrão
+tpsent1m;TpSent1 - Média
+tpsent1md;TpSent1- Mediana
+tpsent1p;TpSent1 - Número de Processos
+tpsentc1dp;TpSentC1- Desvio Padrão
+tpsentc1m;TpSentC1 - Média
+tpsentc1md;TpSentC1- Mediana
+tpsentc1p;TpSentC1- Número de Processos
+tpsentcjedp;TpSentCJE- Desvio Padrão
+tpsentcjem;TpSentCJE - Média
+tpsentcjemd;TpSentCJE- Mediana
+tpsentcjep;TpSentCJE- Número de Processos
+tpsentex1dp;TpSentEx1- Desvio Padrão
+tpsentex1m;TpSentEx1 - Média
+tpsentex1md;TpSentEx1- Mediana
+tpsentex1p;TpSentEx1- Número de Processos
+tpsentexjedp;TpSentExJE- Desvio Padrão
+tpsentexjem;TpSentExJE - Média
+tpsentexjemd;TpSentExJE- Mediana
+tpsentexjep;TpSentExJE- Número de Processos
+tpsv;TPSV - Total de Pessoal sem Vínculo
+tpsv1;TPSV1 - Total de Pessoal sem Vínculo
+tpsv2;TPSV2º – Total de Pessoal Comissionado sem Vínculo Efetivo na Área Judiciária do 2º grau
+tpsvacje1;TPSVAcJE1º – Total de Pessoal Comissionado sem Vínculo Efetivo na Área Judiciária com Atuação Acumulativa no 1º grau e Juizado Especial
+tpsvadm;TPSVAdm – Total de Pessoal Comissionado sem Vínculo Efetivo na Área Administrativa
+tpsvadm1;TPSVAdm1 - Total de Pessoal Comissionado sem Vínculo Efetivo na Área Administrativa nas Auditorias Militares
+tpsvadmstm;TPSVAdmSTM - Total de Pessoal Comissionado sem Vínculo Efetivo na Área Administrativa no STM
+tpsvae1;TPSVAe1º – Total de Pessoal Comissionado sem Vínculo Efetivo na Área Judiciária Exclusiva de 1º grau
+tpsvaeje;TPSVAeJE – Total de Pessoal Comissionado sem Vínculo Efetivo na Área Judiciária Exclusiva de Juizado Especial
+tpsvjud;TPSVJud – Total de Pessoal Comissionado sem Vínculo Efetivo na Área Judiciária
+tpsvstm;TPSVSTM – Total de Pessoal Comissionado sem Vínculo Efetivo na Área Judiciária do STM
+tpsvtr;TPSVTR – Total de Pessoal Comissionado sem Vínculo Efetivo na Área Judiciária de Turmas Recursais
+tpsvtru;TPSVTRU – Total de Pessoal Comissionado sem Vínculo Efetivo na Área Judiciária da Turma Regional de Uniformização
+tptic;TPTIC – Total de Pessoal da área de tecnologia da informação
+tptotdp;TpTot - Desvio Padrão
+tptotm;TpTot - Média
+tptotmd;TpTot - Mediana
+tptotp;TpTot - Número de Processos
+tptotst;Tempo total de tramitação no TST
+tram;Total de processos que tramitaram
+tram1jetr;Total de processos que tramitaram no 1º grau, Juizados Especiais e Turmas Recursais
+tram2tru;Total de processos que tramitaram no 2º grau e Turmas Regionais de Uniformização
+tramcvdf.h2m;Processos em tramitação de Violência Doméstica por 100.000 Mulheres
+tramcvdf.hm;Processos em tramitação de Violência Doméstica por Mulher
+tramcvdf.vara;Processos em tramitação de Violência Doméstica por Vara
+traml;Total de processos que tramitaram (Excluídos os processos sobrestados, suspensos ou em arquivo provisório)
+traml1jetr;Total de processos que tramitaram no 1º grau, Juizados Especiais e Turmas Recursais (Excluídos os processos sobrestados, suspensos ou em arquivo provisório)
+traml2tru;Total de processos que tramitaram no 2º grau e Turmas Regionais de Uniformização (Excluídos os processos sobrestados, suspensos ou em arquivo provisório)
+ts;TS - Total de Servidores
+tvefet;Total de cargos vagos de servidor
+ue;UE - Número de eleitores por Urna
+uemc;UEMC - Espaço Utilizado em Relação ao Espaço Disponível para Armazenamento de Urnas Eletrônicas (em Metros Cúbicos)
+uf_abrangida;UF abrangida
+uf_sede;UF sede
+ui;Ui - Usuários de computador
+urnas;Urnas - Número de Urnas no Tribunal
+vara;Número de varas
+varaadjje;Número de varas adjuntas a Juizados Especiais
+varacicrim;Varas Cíveis e Criminais
+varae;Números de varas e Juizados Especiais
+varaexci;Varas Exclusivas Cíveis
+varaexcrim;Varas Exclusivas Criminais
+varaexexp;Varas Exclusivas de Execução Penal
+varah;Número de varas por cem mil habitantes
+varaij;Varas Exclusivas de Infância e Juventude
+varaijif;Varas de Infância e Juventude que acumulam idoso e/ou família
+varaje;Número de varas e Juizados Especiais
+varajeo;Outras Varas com Juizado Especial Adjunto
+varao;Outras Varas, não adjuntas a Juizados Especiais
+varau;Varas de Juízo Único
+vcc1;VCCTRJE1º - Valores Integrais dos Cargos em Comissão Alocados na Área Judiciária do 1º Grau, nas Turmas Recursais e nos Juizados Especiais
+vcc2;VCC2º - Valores Integrais dos Cargos em Comissão Alocados na Área Judiciária do 2º Grau
+vccadm;VCCAdm - Valores Integrais dos Cargos em Comissão Alocados na Área Administrativa
+vccstm;VCCSTM - Valores Integrais dos Cargos em Comissão Alocados na Área Judiciária do STM
+vesvd;Varas Exclusivas de Violência Doméstica
+vexvd;VExVD - Número de Varas e Juizados Exclusivos de Violência Doméstica contra a Mulher
+vfc1;VFCTRJE1º - Valores Integrais das Funções de Confiança Alocadas na Área Judiciária do 1º Grau, nas Turmas Recursais e nos Juizados Especiais
+vfc2;VFC2º - Valores Integrais das Funções de Confiança Alocadas na Área Judiciária do 2º grau
+vfcadm;VFCAdm - Valores Integrais das Funções de Confiança Alocadas na Área Administrativa
+vfcstm;VFCSTM - Valores Integrais das Funções de Confiança Alocadas na Área Judiciária do STM
+vpag;VPag – Valores Pagos aos Jurisdicionados
