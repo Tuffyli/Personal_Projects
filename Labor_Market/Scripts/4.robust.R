@@ -1,7 +1,13 @@
-# --------------------------------------------------------------------------- #
-#Criando a var de salario
-# --------------------------------------------------------------------------- #
-# Library ----
+# ---------------------------------------------------------------------------- #
+# Robustsness and Heterogeneity tests
+# Aditional tests
+# Last edited by: Tuffy Licciardi Issa
+# Date: 20/10/2025
+# ---------------------------------------------------------------------------- #
+
+# ---------------------------------------------------------------------------- #
+# Libraries -----
+# ---------------------------------------------------------------------------- #
 library(dplyr)
 library(fixest)
 library(ggplot2)
@@ -12,13 +18,12 @@ library(knitr)
 library(grid)
 
 # --------------------------------------------------------------------------- #
-#Abertura da Base ----
+#Data Base ----
 # --------------------------------------------------------------------------- #
-
 
 base <- read.csv("C:/Users/tuffy/Documents/IC/Bases/panel_workers_2003to2013_nova.csv")
 
-#Estabelecendo o grupo de indivíduos que se encontrará na Rais em todos os períodos.
+#Marking the individuals who appear in RAIS in all periods
 base <- base %>%   
   group_by(code_id) %>% 
   mutate( all_in_rais = min(rais_)
@@ -41,9 +46,11 @@ base <- base %>%
   )
 
 # ---------------------------------------------------------------------------- #
-#1. Salario -------
+#1. Salary -------
 # ---------------------------------------------------------------------------- #
-
+# ------------- #
+## 1.1 Data ----
+# ------------- #
 summary(base$remuneracao_media_sm_)
 
 base <- base %>%
@@ -79,14 +86,16 @@ base$cnae_ano <- as.numeric(interaction(base$cnae_group, base$ano))
 base$minus_1 <- base$year_first_treated - 1
 base$minus_2 <- base$year_first_treated - 2
 
-# ---------------------------------------------------------------------------- #
-#2. EST ----
-# ---------------------------------------------------------------------------- #
+# ------------- #
+## 1.2 Estimation ----
+# ------------- #
 
-##2.1 No FE ----
-#### T0
-
-#Estimação
+# ------------- #
+###1.2.1 No FE ----
+# ------------- #
+####1.2.1.1 T0 -----
+#Here I utilized the real treatment timming
+#Estimating
 calsan_did <- did::att_gt(
   yname = "sal_var",
   gname = "year_first_treated",
@@ -100,20 +109,22 @@ calsan_did <- did::att_gt(
 )
 
 est_calsan_t0 <- aggte( MP = calsan_did, type = "dynamic", na.rm = TRUE)
-#Tabela de resultados
+#Result Table
 print(est_calsan_t0)
 
 plot_calsan_t0 <- ggdid(est_calsan_t0) +
   ggtitle("Event Study: Callaway & Sant'anna, ref T0") +
-  labs("Tempo até o tratamento") +
+  labs("Time to treat") +
   theme_minimal()
 
 plot_calsan_t0
 
+#### 1.2.1.2 T2 -----
+#'The results in T0 promped me to test for a tratment timming 2 periods before the real treatment
+#'this is a direct resul from the labor lawsuits strutures in Brazil, where the
+#'plaintiff workers has a 2 year period to start the lawsuit after the termination
 
-#### T2
-
-#Estimação
+#Estimating
 calsan_did <- did::att_gt(
   yname = "sal_var_t2",
   gname = "year_first_treated",
@@ -127,20 +138,20 @@ calsan_did <- did::att_gt(
 )
 
 est_calsan_t2 <- aggte( MP = calsan_did, type = "dynamic", na.rm = TRUE)
-#Tabela de resultados
+#Results table
 print(est_calsan_t2)
 
 plot_calsan_t2 <- ggdid(est_calsan_t2) +
   ggtitle("Event Study: Callaway & Sant'anna, ref T2 ") +
-  labs("Tempo até o tratamento") +
+  labs("Time to treat") +
   theme_minimal()
 
 plot_calsan_t2
 
 
-#### T MEAN
+#### 1.2.1.3 T MEAN -----
 
-#Estimação
+#Estimating
 calsan_did <- did::att_gt(
   yname = "sal_var_tmean",
   gname = "year_first_treated",
@@ -154,19 +165,21 @@ calsan_did <- did::att_gt(
 )
 
 est_calsan_tmean <- aggte( MP = calsan_did, type = "dynamic", na.rm = TRUE)
-#Tabela de resultados
+#Result Table
 print(est_calsan_tmean)
 
 plot_calsan_tmean <- ggdid(est_calsan_tmean) +
   ggtitle("Event Study: Callaway & Sant'anna, T Mean ") +
-  labs("Tempo até o tratamento") +
+  labs("Time to treat") +
   theme_minimal()
 
 plot_calsan_tmean
 
 
-#### New Spec ----
+###1.2.2 New Spec ----
 
+#' The new specification removed all observations where the observed salary was
+#' equal to 0.
 
 base2 <- base %>%
   group_by(code_id) %>%
@@ -176,9 +189,9 @@ base2 <- base %>%
   )
 
 
-#### T0
+#### 1.2.2.1 T0 ----
 
-#Estimação
+#Estimation
 calsan_did <- did::att_gt(
   yname = "sal_var",
   gname = "year_first_treated",
@@ -192,20 +205,20 @@ calsan_did <- did::att_gt(
 )
 
 est_calsan_t0 <- aggte( MP = calsan_did, type = "dynamic", na.rm = TRUE)
-#Tabela de resultados
+#Result table
 print(est_calsan_t0)
 
 plot_calsan_t0 <- ggdid(est_calsan_t0) +
   ggtitle("Event Study: Callaway & Sant'anna, ref T0") +
-  labs("Tempo até o tratamento") +
+  labs("Time to treat") +
   theme_minimal()
 
 plot_calsan_t0
 
 
-#### T2
+#### 1.2.2.2 T2 ----
 
-#Estimação
+#Estimation
 calsan_did <- did::att_gt(
   yname = "sal_var_t2",
   gname = "year_first_treated",
@@ -219,20 +232,20 @@ calsan_did <- did::att_gt(
 )
 
 est_calsan_t2 <- aggte( MP = calsan_did, type = "dynamic", na.rm = TRUE)
-#Tabela de resultados
+#Result table
 print(est_calsan_t2)
 
 plot_calsan_t2 <- ggdid(est_calsan_t2) +
   ggtitle("Event Study: Callaway & Sant'anna, ref T2 ") +
-  labs("Tempo até o tratamento") +
+  labs("Time to treat") +
   theme_minimal()
 
 plot_calsan_t2
 
 
-#### T MEAN
+#### 1.2.2.3 T MEAN ----
 
-#Estimação
+#Estimating
 calsan_did <- did::att_gt(
   yname = "sal_var_tmean",
   gname = "year_first_treated",
@@ -246,12 +259,12 @@ calsan_did <- did::att_gt(
 )
 
 est_calsan_tmean <- aggte( MP = calsan_did, type = "dynamic", na.rm = TRUE)
-#Tabela de resultados
+#Result Table
 print(est_calsan_tmean)
 
 plot_calsan_tmean <- ggdid(est_calsan_tmean) +
   ggtitle("Event Study: Callaway & Sant'anna, T Mean ") +
-  labs("Tempo até o tratamento") +
+  labs("Time to treat") +
   theme_minimal()
 
 plot_calsan_tmean
@@ -259,9 +272,9 @@ plot_calsan_tmean
 
 
 
-##2.2 COM FE ----
+##1.3 With FE ----
 
-#Estimação
+#Estimating
 calsan_did <- did::att_gt(
   yname = "sal_var",
   gname = "year_first_treated",
@@ -275,12 +288,12 @@ calsan_did <- did::att_gt(
 )
 
 est_calsan <- aggte( MP = calsan_did, type = "dynamic", na.rm = TRUE)
-#Tabela de resultados
+#Result Table
 print(est_calsan)
 
 plot_calsan <- ggdid(est_calsan) +
   ggtitle("Event Study: Callaway & Sant'anna, CNAE + CBO ") +
-  labs("Tempo até o tratamento") +
+  labs("Time to treat") +
   theme_minimal()
 
 plot_calsan
@@ -288,9 +301,9 @@ plot_calsan
 
 
 
-##2.3 -1 periodo ----
+###1.3.1 -1 period ----
 
-#Estimação
+#Estimation
 calsan_did <- did::att_gt(
   yname = "sal_var",
   gname = "minus_1",
@@ -304,20 +317,20 @@ calsan_did <- did::att_gt(
 )
 
 est_calsan <- aggte( MP = calsan_did, type = "dynamic", na.rm = TRUE)
-#Tabela de resultados
+#Result table
 print(est_calsan)
 
 plot_calsan <- ggdid(est_calsan) +
   ggtitle("Event Study: Callaway & Sant'anna, CNAE + CBO (-1) ") +
-  labs("Tempo até o tratamento") +
+  labs("Time to treat") +
   theme_minimal()
 
 plot_calsan
 
 
-##2.3 -2 periodo ----
+###1.3.2 -2 period ----
 
-#Estimação
+#Estimation
 calsan_did <- did::att_gt(
   yname = "sal_var",
   gname = "minus_2",
@@ -331,12 +344,12 @@ calsan_did <- did::att_gt(
 )
 
 est_calsan <- aggte( MP = calsan_did, type = "dynamic", na.rm = TRUE)
-#Tabela de resultados
+#Result table
 print(est_calsan)
 
 plot_calsan <- ggdid(est_calsan) +
   ggtitle("Event Study: Callaway & Sant'anna, CNAE + CBO (-2) ") +
-  labs("Tempo até o tratamento") +
+  labs("Time to treat") +
   theme_minimal()
 
 plot_calsan
@@ -358,27 +371,31 @@ plot_calsan
 #   select(-PANEL, -shape, -size, -fill, -alpha, -stroke)
 
 rm(base)
+
 # -----------------------------------------------------------------------------#
-# 3. Sexo ----
+# 2. Sex ----
 # -----------------------------------------------------------------------------#
 
+# ----------- #
+## 2.0 Data -----
+# ----------- #
 
 data <- read.csv("C:/Users/tuffy/Documents/IC/Bases/base_atual_dum_v3.csv")
 
 data$cbo_ano <- as.numeric(interaction(data$cbo_group, data$ano))
 data$cnae_ano <- as.numeric(interaction(data$cnae_group, data$ano))
 
-#Filtrando a base pela dummy de sexo
+#Filtering the database according to each individual sex
 base_mas <- data %>% 
-  filter(sexo_dummy == 1)
+  filter(sexo_dummy == 1) #male
 
 base_fem <- data %>% 
-  filter(sexo_dummy == 0 )
+  filter(sexo_dummy == 0 ) #female
 
 #depois subdividir em white e blue collar
 
-## 3.1 Fem ----
-#Estimação
+## 2.1 Female ----
+#Estimating
 calsan_did <- did::att_gt(
   yname = "rais_",
   gname = "year_first_treated",
@@ -393,23 +410,23 @@ calsan_did <- did::att_gt(
 )
 
 est_calsan <- aggte( MP = calsan_did, type = "dynamic", na.rm = TRUE)
-#Tabela de resultados
+#Result table
 print(est_calsan)
 
 plot_calsan <- ggdid(est_calsan) +
   ggtitle("Event Study: Callaway & Sant'anna, CNAE + CBO ") +
-  labs("Tempo até o tratamento") +
+  labs("Time to treat") +
   theme_minimal()
 
 plot_calsan
 
-#Extraindo os resultados para o sexo feminino
 
+#Extracting
 data_calsan <- ggplot_build(plot_calsan)$data[[1]]
 data_calsan <- as.data.frame(data_calsan)
 
-## 3.2 Masc ----
-#Estimação
+## 2.2 Male ----
+#Estimating
 calsan_did <- did::att_gt(
   yname = "rais_",
   gname = "year_first_treated",
@@ -424,23 +441,23 @@ calsan_did <- did::att_gt(
 )
 
 est_calsan2 <- aggte( MP = calsan_did, type = "dynamic", na.rm = TRUE)
-#Tabela de resultados
+#Result table
 print(est_calsan2)
 
 plot_calsan2 <- ggdid(est_calsan2) +
   ggtitle("Event Study: Callaway & Sant'anna, CNAE + CBO ") +
-  labs("Tempo até o tratamento") +
+  labs("Time to treat") +
   theme_minimal()
 
 plot_calsan2
 
-#Extrauindo os resultados para o sexo feminino
-
+#Extracting the results for the female workers
 data_calsan2 <- ggplot_build(plot_calsan2)$data[[1]]
 data_calsan2 <- as.data.frame(data_calsan2)
 
 
-##3.3 Unindo as bases  ----
+##2.3 Combined ----
+#The combined results database
 
 data_calsan <- data_calsan %>% 
   mutate(
@@ -459,7 +476,7 @@ data_final <- rbind(data_calsan,
                     data_calsan2)
 
 
-### Gráfico
+#Graph
 p <- ggplot(data_final, aes(x = x, y = y, colour = colour, group = grupo)) +
   geom_point(size = 3) +
   geom_errorbar(aes(ymin = ymin, ymax = ymax), width = 0.5) +
@@ -501,9 +518,9 @@ rm(p, base_fem, base_mas, data_calsan, data_calsan2, data_final, est_calsan, est
 
 
 
-##3.4 White colar ----
+##2.4 White-collar ----
 
-### 3.4.1 Fem ----
+### 2.4.1 Female ----
 
 base_mas <- data %>% 
   filter(sexo_dummy == 1,
@@ -514,7 +531,7 @@ base_fem <- data %>%
   filter(sexo_dummy == 0,
          white_dummy == 1)
 
-#Estimação
+#Estimation
 calsan_did <- did::att_gt(
   yname = "rais_",
   gname = "year_first_treated",
@@ -529,23 +546,22 @@ calsan_did <- did::att_gt(
 )
 
 est_calsan <- aggte( MP = calsan_did, type = "dynamic", na.rm = TRUE)
-#Tabela de resultados
+#Result table
 print(est_calsan)
 
 plot_calsan <- ggdid(est_calsan) +
   ggtitle("Event Study: Callaway & Sant'anna, CNAE + CBO ") +
-  labs("Tempo até o tratamento") +
+  labs("Time to treat") +
   theme_minimal()
 
 plot_calsan
 
-#Extraindo os resultados para o sexo feminino
-
+#Extracting the results for the female workers
 data_calsan <- ggplot_build(plot_calsan)$data[[1]]
 data_calsan <- as.data.frame(data_calsan)
 
-### 3.4.2 Masc ----
-#Estimação
+### 2.4.2 Male ----
+#Estimation
 calsan_did <- did::att_gt(
   yname = "rais_",
   gname = "year_first_treated",
@@ -560,24 +576,23 @@ calsan_did <- did::att_gt(
 )
 
 est_calsan2 <- aggte( MP = calsan_did, type = "dynamic", na.rm = TRUE)
-#Tabela de resultados
+#Result table
 print(est_calsan2)
 
 plot_calsan2 <- ggdid(est_calsan2) +
   ggtitle("Event Study: Callaway & Sant'anna, CNAE + CBO ") +
-  labs("Tempo até o tratamento") +
+  labs("Time to treat") +
   theme_minimal()
 
 plot_calsan2
 
-#Extrauindo os resultados para o sexo feminino
-
+#Final results for the male workers
 data_calsan2 <- ggplot_build(plot_calsan2)$data[[1]]
 data_calsan2 <- as.data.frame(data_calsan2)
 
 
-### 3.4.3 Unindo as bases  ----
-
+### 2.4.3 Combined  ----
+# Combining the results databases
 data_calsan <- data_calsan %>% 
   mutate(
     grupo = 1,
@@ -595,7 +610,7 @@ data_final <- rbind(data_calsan,
                     data_calsan2)
 
 
-### Gráfico
+#Final Graph
 p <- ggplot(data_final, aes(x = x, y = y, colour = colour, group = grupo)) +
   geom_point(size = 3) +
   geom_errorbar(aes(ymin = ymin, ymax = ymax), width = 0.5) +
@@ -637,9 +652,9 @@ rm(p, base_fem, base_mas, data_calsan, data_calsan2, data_final, est_calsan, est
 
 
 
-##3.5 Blue colar ----
+##2.5 Blue-collar ----
 
-### 3.5.1 Fem ----
+### 2.5.1 Female ----
 
 base_mas <- data %>% 
   filter(sexo_dummy == 1,
@@ -650,7 +665,7 @@ base_fem <- data %>%
   filter(sexo_dummy == 0,
          white_dummy == 0)
 
-#Estimação
+#Estimation
 calsan_did <- did::att_gt(
   yname = "rais_",
   gname = "year_first_treated",
@@ -665,23 +680,23 @@ calsan_did <- did::att_gt(
 )
 
 est_calsan <- aggte( MP = calsan_did, type = "dynamic", na.rm = TRUE)
-#Tabela de resultados
+#Result table
 print(est_calsan)
 
 plot_calsan <- ggdid(est_calsan) +
   ggtitle("Event Study: Callaway & Sant'anna, CNAE + CBO ") +
-  labs("Tempo até o tratamento") +
+  labs("Time to treat") +
   theme_minimal()
 
 plot_calsan
 
-#Extraindo os resultados para o sexo feminino
 
+#Extracting the results for the female workers
 data_calsan <- ggplot_build(plot_calsan)$data[[1]]
 data_calsan <- as.data.frame(data_calsan)
 
-### 3.5.2 Masc ----
-#Estimação
+### 2.5.2 Male ----
+#Estimation
 calsan_did <- did::att_gt(
   yname = "rais_",
   gname = "year_first_treated",
@@ -696,24 +711,23 @@ calsan_did <- did::att_gt(
 )
 
 est_calsan2 <- aggte( MP = calsan_did, type = "dynamic", na.rm = TRUE)
-#Tabela de resultados
+#Result table
 print(est_calsan2)
 
 plot_calsan2 <- ggdid(est_calsan2) +
   ggtitle("Event Study: Callaway & Sant'anna, CNAE + CBO ") +
-  labs("Tempo até o tratamento") +
+  labs("Time to treat") +
   theme_minimal()
 
 plot_calsan2
 
-#Extrauindo os resultados para o sexo feminino
-
+#Extracting the results for the male workers
 data_calsan2 <- ggplot_build(plot_calsan2)$data[[1]]
 data_calsan2 <- as.data.frame(data_calsan2)
 
 
-### 3.5.3 Unindo as bases  ----
-
+### 2.5.3 Combined  ----
+#The combined results database
 data_calsan <- data_calsan %>% 
   mutate(
     grupo = 1,
@@ -731,7 +745,7 @@ data_final <- rbind(data_calsan,
                     data_calsan2)
 
 
-### Gráfico
+#Graph
 p <- ggplot(data_final, aes(x = x, y = y, colour = colour, group = grupo)) +
   geom_point(size = 3) +
   geom_errorbar(aes(ymin = ymin, ymax = ymax), width = 0.5) +
@@ -774,20 +788,24 @@ rm(p, base_fem, base_mas, data_calsan, data_calsan2, data_final, est_calsan, est
 
 
 # -----------------------------------------------------------------------------#
-# 4. Cor/Raca ----
+# 3. Race/Color ----
 # -----------------------------------------------------------------------------#
 
-#Filtrando a base pela dummy de sexo
+# ----------- #
+## 3.0 Data -----
+# ----------- #
+
+#Filtering the database for individuals race/color
 base_bra <- data %>% 
-  filter(branco_dummy == 1)
+  filter(branco_dummy == 1) #white
 
 base_nbr <- data %>% 
-  filter(branco_dummy == 0 )
+  filter(branco_dummy == 0 )#non-white
 
-#depois subdividir em white e blue collar
+#separating into further white and blue collars
 
-## 4.1 Brancos----
-#Estimação
+## 3.1 White----
+#Estimation
 calsan_did <- did::att_gt(
   yname = "rais_",
   gname = "year_first_treated",
@@ -802,23 +820,23 @@ calsan_did <- did::att_gt(
 )
 
 est_calsan <- aggte( MP = calsan_did, type = "dynamic", na.rm = TRUE)
-#Tabela de resultados
+#Result table
 print(est_calsan)
 
 plot_calsan <- ggdid(est_calsan) +
   ggtitle("Event Study: Callaway & Sant'anna, CNAE + CBO ") +
-  labs("Tempo até o tratamento") +
+  labs("Time to treat") +
   theme_minimal()
 
 plot_calsan
 
-#Extraindo os resultados para o sexo feminino
 
+#Final result dataframe for Whites
 data_calsan <- ggplot_build(plot_calsan)$data[[1]]
 data_calsan <- as.data.frame(data_calsan)
 
-## 4.2 Non-Branco ----
-#Estimação
+## 3.2 Non-White ----
+#Estimation
 calsan_did <- did::att_gt(
   yname = "rais_",
   gname = "year_first_treated",
@@ -833,23 +851,22 @@ calsan_did <- did::att_gt(
 )
 
 est_calsan2 <- aggte( MP = calsan_did, type = "dynamic", na.rm = TRUE)
-#Tabela de resultados
+#Result table
 print(est_calsan2)
 
 plot_calsan2 <- ggdid(est_calsan2) +
   ggtitle("Event Study: Callaway & Sant'anna, CNAE + CBO ") +
-  labs("Tempo até o tratamento") +
+  labs("Time to treat") +
   theme_minimal()
 
 plot_calsan2
 
-#Extrauindo os resultados para o sexo feminino
-
+#Extracting the final results for Non-Whites
 data_calsan2 <- ggplot_build(plot_calsan2)$data[[1]]
 data_calsan2 <- as.data.frame(data_calsan2)
 
 
-##4.3 Unindo as bases  ----
+##3.3 Combined  ----
 
 data_calsan <- data_calsan %>% 
   mutate(
@@ -910,20 +927,20 @@ rm(p, base_fem, base_mas, data_calsan, data_calsan2, data_final, est_calsan, est
 
 
 
-##4.4 White colar ----
+##3.4 White-collar ----
 
-### 4.4.1 Branco ----
-
+### 3.4.1 White ----
+#Creating the segmentated auxiliar databases
 base_bra <- data %>% 
-  filter(branco_dummy == 1,
-         white_dummy == 1) 
+  filter(branco_dummy == 1, #white
+         white_dummy == 1)  #white-collar
 
 
 base_nbr <- data %>% 
-  filter(branco_dummy == 0,
-         white_dummy == 1)
+  filter(branco_dummy == 0, #non-white
+         white_dummy == 1) #white-collar
 
-#Estimação
+#Estimation
 calsan_did <- did::att_gt(
   yname = "rais_",
   gname = "year_first_treated",
@@ -938,23 +955,23 @@ calsan_did <- did::att_gt(
 )
 
 est_calsan <- aggte( MP = calsan_did, type = "dynamic", na.rm = TRUE)
-#Tabela de resultados
+#Result table
 print(est_calsan)
 
 plot_calsan <- ggdid(est_calsan) +
   ggtitle("Event Study: Callaway & Sant'anna, CNAE + CBO ") +
-  labs("Tempo até o tratamento") +
+  labs("Time to treat") +
   theme_minimal()
 
 plot_calsan
 
-#Extraindo os resultados para o sexo feminino
 
+#Final results dataframe
 data_calsan <- ggplot_build(plot_calsan)$data[[1]]
 data_calsan <- as.data.frame(data_calsan)
 
-### 4.4.2 Non-Branco ----
-#Estimação
+### 3.4.2 Non-White ----
+#Estimation
 calsan_did <- did::att_gt(
   yname = "rais_",
   gname = "year_first_treated",
@@ -969,23 +986,23 @@ calsan_did <- did::att_gt(
 )
 
 est_calsan2 <- aggte( MP = calsan_did, type = "dynamic", na.rm = TRUE)
-#Tabela de resultados
+#Result table
 print(est_calsan2)
 
 plot_calsan2 <- ggdid(est_calsan2) +
   ggtitle("Event Study: Callaway & Sant'anna, CNAE + CBO ") +
-  labs("Tempo até o tratamento") +
+  labs("Time to treat") +
   theme_minimal()
 
 plot_calsan2
 
-#Extrauindo os resultados para o sexo feminino
 
+#Final result dataframe
 data_calsan2 <- ggplot_build(plot_calsan2)$data[[1]]
 data_calsan2 <- as.data.frame(data_calsan2)
 
 
-### 4.4.3 Unindo as bases  ----
+### 3.4.3 Combined  ----
 
 data_calsan <- data_calsan %>% 
   mutate(
@@ -1046,20 +1063,21 @@ rm(p, base_fem, base_mas, data_calsan, data_calsan2, data_final, est_calsan, est
 
 
 
-##4.5 Blue colar ----
+##3.5 Blue-collar ----
 
-### 4.5.1 Branco ----
+### 3.5.1 White ----
 
+#Creating the databases
 base_bra <- data %>% 
-  filter(branco_dummy == 1,
-         white_dummy == 0) 
+  filter(branco_dummy == 1, #White
+         white_dummy == 0)  #Blue-collar
 
 
 base_nbr <- data %>% 
-  filter(branco_dummy == 0,
-         white_dummy == 0)
+  filter(branco_dummy == 0, #Non-white
+         white_dummy == 0) #Blue-collar
 
-#Estimação
+#Estimation
 calsan_did <- did::att_gt(
   yname = "rais_",
   gname = "year_first_treated",
@@ -1074,23 +1092,22 @@ calsan_did <- did::att_gt(
 )
 
 est_calsan <- aggte( MP = calsan_did, type = "dynamic", na.rm = TRUE)
-#Tabela de resultados
+#Result table
 print(est_calsan)
 
 plot_calsan <- ggdid(est_calsan) +
   ggtitle("Event Study: Callaway & Sant'anna, CNAE + CBO ") +
-  labs("Tempo até o tratamento") +
+  labs("Time to treat") +
   theme_minimal()
 
 plot_calsan
 
-#Extraindo os resultados para o sexo feminino
-
+#Creating the final results dataframe
 data_calsan <- ggplot_build(plot_calsan)$data[[1]]
 data_calsan <- as.data.frame(data_calsan)
 
-### 4.5.2 Non ----
-#Estimação
+### 3.5.2 Non-White ----
+#Estimation
 calsan_did <- did::att_gt(
   yname = "rais_",
   gname = "year_first_treated",
@@ -1105,23 +1122,22 @@ calsan_did <- did::att_gt(
 )
 
 est_calsan2 <- aggte( MP = calsan_did, type = "dynamic", na.rm = TRUE)
-#Tabela de resultados
+#Result table
 print(est_calsan2)
 
 plot_calsan2 <- ggdid(est_calsan2) +
   ggtitle("Event Study: Callaway & Sant'anna, CNAE + CBO ") +
-  labs("Tempo até o tratamento") +
+  labs("Time to treat") +
   theme_minimal()
 
 plot_calsan2
 
-#Extrauindo os resultados para o sexo feminino
-
+#Creating the final results dataframe
 data_calsan2 <- ggplot_build(plot_calsan2)$data[[1]]
 data_calsan2 <- as.data.frame(data_calsan2)
 
 
-### 4.5.3 Unindo as bases  ----
+### 3.5.3 Combined ----
 
 data_calsan <- data_calsan %>% 
   mutate(
@@ -1185,7 +1201,7 @@ rm(p, base_fem, base_mas, data_calsan, data_calsan2, data_final, est_calsan, est
 
 
 # -----------------------------------------------------------------------------#
-# 5. Estimadores ----
+# 4. Estimators ----
 # -----------------------------------------------------------------------------#
 
 rm(base)
@@ -1204,9 +1220,12 @@ library(DIDmultiplegt)
 data <- read.csv("C:/Users/tuffy/Documents/IC/Bases/base_atual_dum_v3.csv")
 
 
-
-## 5.1 CalSan & SunAb ----
-
+## ------------------------- #
+## 4.1 CalSan & SunAb ----
+##-------------------------- #
+##' Here I estimate the results for the main estimators I employed, being the ones
+##' developed by Callaway and Sant'anna, and Sun and Abraham.
+#
 # plot <- function(df,
 #                  plot_title,
 #                  var_y,
@@ -1257,7 +1276,7 @@ data <- read.csv("C:/Users/tuffy/Documents/IC/Bases/base_atual_dum_v3.csv")
 #   
 #   plot_calsan <- ggdid(est_calsan) +
 #     ggtitle("Event Study: Callaway & Sant'anna, IGNORAR ") +
-#     labs("Tempo até o tratamento") +
+#     labs("Time to treat") +
 #     theme_minimal()
 #   
 #   ##Extraindo os coeficientes##
@@ -1320,7 +1339,9 @@ calsun <- calsun %>%
     group = ifelse(group == 2, 1, 2)
     )
 
-## 5.2 Borusyak ----
+# ------------------- #
+## 4.2 Borusyak ----
+# ------------------- #
 
 res_bjs <- did_imputation(
   data = data,
@@ -1359,7 +1380,10 @@ temp <- rbind(calsun, res_temp)
 
 rm(res_bjs, res_temp)
 
-## 5.3 De ChaiseMartin ----
+# -------------------------- #
+## 4.3 De ChaiseMartin ----
+# -------------------------- #
+
 
 data$treat_dcm <- ifelse(data$ano < data$year_first_treated, 0, 1)
 
@@ -1383,15 +1407,20 @@ data$treat_dcm <- ifelse(data$ano < data$year_first_treated, 0, 1)
 #   # mode = "old"
 # )
 
-
-### VERSÃO ANTIGA DO DATA.TABLE
+## --------------------------- #
+### DISCLAIMER
+## --------------------------- #
+##' An older version of the data.table package was needed to correctly apply this
+##' estimator. The following steps are directed towards this adaptation.
+##----------- #
+#
 # install.packages("pkgbuild")
 # pkgbuild::has_rtools()
 # 
 # install.packages("remotes")
 # remotes::install_version("data.table", version = "1.16.4", repos = "http://cran.us.r-project.org")
-
-#ESTIMEI NA FEA-USP (03/////)
+#
+## Estimated @FEA-USP
 # multiplegt_res <- did_multiplegt_dyn(
 #   df = data,
 #   outcome = "rais_",
@@ -1417,7 +1446,7 @@ data$treat_dcm <- ifelse(data$ano < data$year_first_treated, 0, 1)
 chaise <- readRDS("C:/Users/tuffy/Documents/IC/Bases/results_est/dechaisemartin.RDS")
 
 
-
+# Joining into the final results dataframe
 estimates_df <- chaise$plot$data
 
 estimates_df <- estimates_df %>% 
@@ -1442,7 +1471,7 @@ temp <- temp %>%
 
 
 # ---------------------------------------------------------------------------- #
-#6. Gráfico ----
+## 4.4 Graph  ----
 # ---------------------------------------------------------------------------- #
 
 p <- ggplot(temp, aes(x = x, y = y, color = colour, shape = colour, group = group)) +
@@ -1458,7 +1487,7 @@ p <- ggplot(temp, aes(x = x, y = y, color = colour, shape = colour, group = grou
                "Sun & Abraham")
   ) +
   scale_shape_manual(
-    values = c(16, 15, 17, 18), # Círculo, quadrado, triângulo, diamante
+    values = c(16, 15, 17, 18), # Circle, square, triangle, diamond
     labels = c("Callaway & Sant'anna",
                "Borusyak et al.",
                "De Chaisemartin & d’Haultfoeuille",
@@ -1494,13 +1523,13 @@ ggsave("C:/Users/tuffy/Documents/IC/Graphs/united/estimators.pdf", plot = p, dev
 
 
 # ---------------------------------------------------------------------------- #
-# 7. Nova var de CBO ----
+# 5. New variable tests ----
 # ---------------------------------------------------------------------------- #
 
 data <- read.csv("C:/Users/tuffy/Documents/IC/Bases/base_atual_dum_v3.csv")
 
 data <- data %>% 
-  filter(all_in_rais == 1)
+  filter(all_in_rais == 1) #presence in all periods
 
 data <- data %>% 
   group_by(code_id) %>% 
@@ -1511,10 +1540,20 @@ data <- data %>%
   select(-X) %>% 
   ungroup()
 
-####7.1 CNAE ------ 
+# --------------------- #
+## 5.1 CNAE ------ 
+# --------------------- #
+
+
+#' The CNAE variable can more easily capture movement between firms, since their
+#' are naturally assigned into different codes. Thus, this is estimations tried 
+#' to capture the true firm change movement. Differently from previous estimations
+#' this section is directed to capturing the CNAE code when compared to the first
+#' CNAE observation of each individual in the dataset.
+
 summary(data$cnae_group)
 
-#Passos para  a criação da dummy
+#Steps for dummy criation
 treat <- data %>%
   arrange(code_id, ano) %>% 
   select(
@@ -1529,10 +1568,10 @@ treat <- data %>%
   group_by(code_id) %>% 
   
   mutate(
-    #Dummy auxiliar - livre mudança após o tratamento
+    #Auxiliatory Dummy - free movement after treatment
     dummy_cnae_aux =        
       case_when(
-        #Aqui listamos os possíveis casos
+        #Possible cases
         ano < year_first_treated & cnae_group != first_cnae ~ 1, 
         
         #ano >= year_first_treated & cnae_group == 0 ~ 1,
@@ -1541,15 +1580,15 @@ treat <- data %>%
         
         TRUE ~ 0
       ),
-    #Dummy final
-    first_one = which(dummy_cnae_aux == 1 & ano >= year_first_treated)[1], #Primeira linha post-treat
+    #Final dummy
+    first_one = which(dummy_cnae_aux == 1 & ano >= year_first_treated)[1], #First pre-treatment row
     
     dummy_cnae_all = ifelse(
       row_number() >= first_one & !is.na(first_one), 1, dummy_cnae_aux
     ),
     
     dummy_cnae_all = ifelse(
-      is.na(first_one) & ano >= year_first_treated, 0 , dummy_cnae_all #Essa condição lida com os casos em que não há first_one
+      is.na(first_one) & ano >= year_first_treated, 0 , dummy_cnae_all #Condition to deal with the cases where there is no first one
     ),
     
     new_dummy_cnae = ifelse(
@@ -1559,16 +1598,17 @@ treat <- data %>%
 
 treat <- treat %>% 
   select(
-    code_id, ano, dummy_cnae_all, new_dummy_cnae #selecionando apenas as colunas suficientes para realizar o merge
+    code_id, ano, dummy_cnae_all, new_dummy_cnae #Selecting only the merge necessary collumns
   )
 
-#Unindo as os dataframes
+#Joinning both dataframes
 data <- data %>% 
   left_join(treat, by= c("code_id", "ano")) %>% 
   select(-X.1)
 
-#### 7.2 Est 2 ----
-
+# ----------------- #
+## 5.2 Estimation ----
+# ------------------ #
 
 calsan_did <- did::att_gt(
   yname = "new_dummy_cnae",
@@ -1584,12 +1624,12 @@ calsan_did <- did::att_gt(
 )
 
 est_calsan <- aggte( MP = calsan_did, type = "dynamic", na.rm = TRUE)
-#Tabela de resultados
+#Result table
 print(est_calsan)
 
 plot_calsan <- ggdid(est_calsan) +
   ggtitle("Event Study: CNAE - all_in_rais ") +
-  labs("Tempo até o tratamento") +
+  labs("Time to treat") +
   theme_minimal()
 
 plot_calsan
@@ -1601,9 +1641,9 @@ ggsave("C:/Users/tuffy/Documents/IC/Graphs/plot_test_cnae.jpeg", plot = plot_cal
 
 
 # ---------------------------------------------------------------------------- #
-# 8. Novíssima var CNAE ----
+# 6. Newest CNAE variable ----
 # ---------------------------------------------------------------------------- #
-
+#dataset
 data <- read.csv("C:/Users/tuffy/Documents/IC/Bases/base_atual_dum_v3.csv")
 
 
@@ -1639,39 +1679,43 @@ treat <- data %>%
     cnae_dummy_v2 = ifelse(cnae_group != cnae_aux & cnae_group != 0, 1, 0),
     
     
-    first_one = which(cnae_dummy_v2 == 1 & ano >= year_first_treated)[1], #Primeira linha post-treat
+    first_one = which(cnae_dummy_v2 == 1 & ano >= year_first_treated)[1], #First row pre-treatment
     
     dummy_cnae_all_v2 = ifelse(
       row_number() >= first_one & !is.na(first_one), 1, cnae_dummy_v2
     ),
     
     
-    #Levando em conta inf
+    #Accountig for INF values
     cnae_dummy_v3 = ifelse(cnae_group != cnae_aux, 1, 0),
     
-    cnae_dummy_v4 = ifelse(cnae_group != cnae_aux, 1, 0),
+    cnae_dummy_v4 = ifelse(cnae_group != cnae_aux, 1, 0), #direct dummy
     
     
     
-    first_one2 = which(cnae_dummy_v3 == 1 & ano >= year_first_treated)[1], #Primeira linha post-treat
+    first_one2 = which(cnae_dummy_v3 == 1 & ano >= year_first_treated)[1], #First row pre-treat
     
     dummy_cnae_all_v3 = ifelse(
-      row_number() >= first_one2 & !is.na(first_one2), 1, cnae_dummy_v3
+      row_number() >= first_one2 & !is.na(first_one2), 1, cnae_dummy_v3 #propagating the result through periods
     ),
   )
 
 treat <- treat %>% 
   select(
-    code_id, ano, dummy_cnae_all_v2, dummy_cnae_all_v3, cnae_dummy_v4 #selecionando apenas as colunas suficientes para realizar o merge
+    code_id, ano, dummy_cnae_all_v2, dummy_cnae_all_v3, cnae_dummy_v4 #Only necessary collumns
   )
 
-#Unindo as os dataframes
+#Combining the dataframes
 data <- data %>% 
   left_join(treat, by= c("code_id", "ano")) %>% 
   select(-X.1)
 
-#### 8.2 Est 2 ----
 
+#'Next we will comapre the results found between the two main dummy specifications
+
+# ------------------------- #
+## 6.2 D2 Estimation ----
+# ------------------------- #
 
 calsan_did <- did::att_gt(
   yname = "dummy_cnae_all_v2",
@@ -1687,19 +1731,22 @@ calsan_did <- did::att_gt(
 )
 
 est_calsan <- aggte( MP = calsan_did, type = "dynamic", na.rm = TRUE)
-#Tabela de resultados
+#Result table
 print(est_calsan)
 
 plot_calsan <- ggdid(est_calsan) +
   ggtitle("Event Study: CNAE - Mudança CNAE ") +
-  labs("Tempo até o tratamento") +
+  labs("Time to treat") +
   theme_minimal()
 
 plot_calsan
 ggsave("C:/Users/tuffy/Documents/IC/Graphs/plot_test2_cnae.jpeg", plot = plot_calsan, device = "jpeg", width = 10, height = 6, dpi = 600)
 
-
-#### 8.2 Est 4*** ----
+# -------------------------- #
+## 6.2 D4*** Estimation ----
+# -------------------------- #
+#' This estimation utilized the 4 dummy spec. The stars refered to the prefered 
+#' specification for the code.
 
 #Aqui só utilizamos a variável de CNAE da primeira observação.
 
@@ -1717,12 +1764,12 @@ calsan_did <- did::att_gt(
 )
 
 est_calsan <- aggte( MP = calsan_did, type = "dynamic", na.rm = TRUE)
-#Tabela de resultados
+#Result table
 print(est_calsan)
 
 plot_calsan <- ggdid(est_calsan) +
   ggtitle("Event Study: CNAE - Mudança  v2 ") +
-  labs("Tempo até o tratamento") +
+  labs("Time to treat") +
   theme_minimal()
 
 plot_calsan
@@ -1734,7 +1781,7 @@ rm(treat)
 
 
 #------------------------------------------------------------------------------#
-##8.3 Honest DID ----
+# 7. Honest DID ----
 # -----------------------------------------------------------------------------#
 
 # # Install remotes package if not installed
@@ -1754,7 +1801,8 @@ library(ggplot2)
 library(fixest)
 library(HonestDiD)
 
-### 8.3.1 Fnc ----
+# ---------------- #
+## 7.1 Function ----
 
 
 #' @title honest_did
@@ -1872,10 +1920,9 @@ honest_did.AGGTEobj <- function(es,
   return(list(robust_ci=robust_ci, orig_ci=orig_ci, type=type))
 }
 
-
-### 8.3.2 Honest did -----
-
-
+# ------------------ #
+## 7.2 Graph -----
+# ------------------ #
 
 calsan_did <- did::att_gt(
   yname = "cnae_dummy_v4",
@@ -1917,8 +1964,10 @@ HonestDiD::createSensitivityPlot_relativeMagnitudes(sensitivity_results$robust_c
                                                     sensitivity_results$orig_ci)
 
 
+# --------------- #
+## 7.3 Rais----
+# --------------- #
 
-#####Rais----
 calsan_did <- did::att_gt(
   yname = "rais_",
   gname = "year_first_treated",
@@ -1963,10 +2012,12 @@ M_col <- matrix(1/8, nrow = 8, ncol = 1)  # 8×1
 # Multiply: (1×8) %*% (8×8) → 1×8, then %*% (8×1) → 1×1
 result_1x1 <- M_row %*% pre_treatV %*% M_col
 
+
 # ---------------------------------------------------------------------------- #
-# 9. RAIS TWFE ----
+# 8. RAIS TWFE ----
 # ---------------------------------------------------------------------------- #
 
+#' Here we will test the TFWE in the main specification
 colnames(data)
 
 
@@ -1976,12 +2027,15 @@ twfe <- feols(cnae_dummy_v4 ~ i(time_to_treat, ref = -1) | code_id + ano_sexo + 
 
 iplot(twfe)
 
+#----------------------------------------------------------------------------- #
+# <<<CBO>>> ----
+# ---------------------------------------------------------------------------- #
 
-# **** CBO **** ----
-
+#' In this section we will test how the relative probability of RAIS presence is
+#' observed for different CBO groups.
 
 # 10. CBO----
-# Olhando na RAIS dentro dos grupos CBO
+# Looking at RAIS within each CBO group
 data <- read.csv("C:/Users/tuffy/Documents/IC/Bases/base_atual_dum_v3.csv")
 
 
@@ -2038,7 +2092,7 @@ for ( wc in c(1:5)) {
     filter( cbo_first == wc)
 
   
-  #Estimação
+  #Estimation
   calsan_did <- did::att_gt(
     yname = "rais_",
     gname = "year_first_treated",
@@ -2053,7 +2107,7 @@ for ( wc in c(1:5)) {
   )
   
   est_calsan <- aggte( MP = calsan_did, type = "dynamic", na.rm = TRUE)
-  #Tabela de resultados
+  #Result table
    print(est_calsan)
   # 
    plot_calsan <- ggdid(est_calsan) 
@@ -2158,7 +2212,7 @@ for ( wc in c(6,8,9,10)) {
     filter( cbo_first == wc)
   
   
-  #Estimação
+  #Estimation
   calsan_did <- did::att_gt(
     yname = "rais_",
     gname = "year_first_treated",
@@ -2173,7 +2227,7 @@ for ( wc in c(6,8,9,10)) {
   )
   
   est_calsan <- aggte( MP = calsan_did, type = "dynamic", na.rm = TRUE)
-  #Tabela de resultados
+  #Result table
   print(est_calsan)
   # 
   plot_calsan <- ggdid(est_calsan) 
@@ -2326,7 +2380,7 @@ for ( wc in c(1:18)) {
     filter( cnae_first == wc)
   
   
-  #Estimação
+  #Estimation
   calsan_did <- did::att_gt(
     yname = "rais_",
     gname = "year_first_treated",
@@ -2341,7 +2395,7 @@ for ( wc in c(1:18)) {
   )
   
   est_calsan <- aggte( MP = calsan_did, type = "dynamic", na.rm = TRUE)
-  #Tabela de resultados
+  #Result table
   print(est_calsan)
   # 
   plot_calsan <- ggdid(est_calsan) 
@@ -2447,7 +2501,7 @@ for ( wc in c(1:7,9:16,18)) {
     filter( cnae_first == wc)
   
   
-  #Estimação
+  #Estimation
   calsan_did <- did::att_gt(
     yname = "rais_",
     gname = "year_first_treated",
@@ -2462,7 +2516,7 @@ for ( wc in c(1:7,9:16,18)) {
   )
   
   est_calsan <- aggte( MP = calsan_did, type = "dynamic", na.rm = TRUE)
-  #Tabela de resultados
+  #Result table
   print(est_calsan)
   # 
   plot_calsan <- ggdid(est_calsan) 
@@ -2705,7 +2759,7 @@ for( qrt in c(1,2,3,4)) {
     filter( quartile_first == qrt)
   
   
-  #Estimação
+  #Estimation
   calsan_did <- did::att_gt(
     yname = "rais_",
     gname = "year_first_treated",
@@ -2720,7 +2774,7 @@ for( qrt in c(1,2,3,4)) {
   )
   
   est_calsan <- aggte( MP = calsan_did, type = "dynamic", na.rm = TRUE)
-  #Tabela de resultados
+  #Result table
   print(est_calsan)
   # 
   plot_calsan <- ggdid(est_calsan) 
