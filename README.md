@@ -1,6 +1,26 @@
 # Personal_Projects
-This repository is directed towards my own personal research projects.
 
-Here, I try to separate the main codes regarding the projects I am undertaking at the moment. I am trying to keep them updated; however, I may fail in this aspect.
+A collection of my **personal research projects** in economics, with a focus on
+causal inference, labor markets, and reproducible R code.
 
-Feel free to explore my files and give me feedback.
+> **Note on data access:** Some projects rely on **restricted/sensitive data** and
+> therefore include only code and synthetic examples. No confidential datasets are stored here.
+
+---
+
+## What’s inside
+
+- **[DrDiD_Combined_Estimators](./DrDiD_Combined_Estimators/)**  
+  Build a **single, combined graph** comparing major modern DiD/DrDiD estimators
+  (Callaway & Sant’Anna; Sun & Abraham; Borusyak–Jaravel–Spiess; de Chaisemartin & d’Haultfoeuille).
+  Includes plotting utilities and a consistent interface for side-by-side results.
+
+- **[Labor_Market](./Labor_Market/)**  
+  Scripts regarding my Bachelor Thesis and Working Paper addressing the effects of laborlawsuit in the
+  relative probability of employment in the labor market.
+
+- **[R_Callaway_Santanna_Standard_Error](./R_Callaway_Santanna_Standard_Error/)**  
+  Experiments around **standard errors** for Callaway & Sant’Anna (2021): choices,
+  caveats, and reproducible R snippets.
+
+---
