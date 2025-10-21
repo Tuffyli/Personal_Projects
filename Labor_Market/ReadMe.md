@@ -3,9 +3,4 @@
 This section hosts the **most up-to-date code** for my ongoing working paper.  
 > **Note on data access:** The underlying databases contain **sensitive information** and are **not publicly available** at this time.
 
-### Overview
-- **Goal:** Reproduce the paper’s core estimates, tables, and figures.
-- **Scope:** Data prep, estimator runs (DiD/DrDiD variants), and plotting utilities.
-- **Status:** Active development; expect breaking changes before the next preprint.
 
-### Repository Layout
