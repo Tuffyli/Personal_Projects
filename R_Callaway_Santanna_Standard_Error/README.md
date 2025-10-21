@@ -1,5 +1,19 @@
-A problem we R users have when applying the did package is extracting the Pre-Average values. The STATA package does these calculations on its own.
+### Pre-Average ATT and SE with `did` (R)
 
-Although extracting the average estimated values is somewhat direct and easy (calculating just the average mean), the same cannot be affirmed about the Standard Error. From the beginning, the Covariance-Variance Matrix is not easily accessible after aggregating the estimation utilizing the aggte() command
+Many R users find it non-trivial to extract the **pre-treatment average effect** (the “Pre-Average” across negative event times) **with a correct standard error** when using the `did` package.  
+In Stata, `csdid` reports these quantities out of the box; in R, `aggte()` focuses on
+event-time estimates and common aggregations, but the **variance of the pre-average aggregator** is not directly exposed after aggregation.
 
-Therefore, here I tried to recreate the process so that any R users can exhibit the Pre-Average values of their Doubly Robust Difference-in-Difference.
+This note replicates that calculation in R by:
+- **Identifying pre-treatment event times** from `aggte(type = "dynamic")`.
+- **Averaging the corresponding ATT estimates** to form the Pre-Average.
+- **Reconstructing its standard error** via the relevant covariance among those
+  event-time estimates (delta-method style), yielding an estimate, SE, CI, and a simple
+  pre-trend test.
+
+**What you get**
+- A reproducible routine to report the **Pre-Average ATT** and its **standard error** for
+  the **Doubly Robust Difference-in-Differences** setup.
+- Minimal example code in `Standard_Error_Pre_Avg.Rmd` and a rendered PDF.
+
+> If your workflow differs (e.g., custom clustering or weighting), adapt the selection of event times and the covariance extraction accordingly.
