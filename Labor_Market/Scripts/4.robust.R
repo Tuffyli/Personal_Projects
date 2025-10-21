@@ -2028,7 +2028,7 @@ twfe <- feols(cnae_dummy_v4 ~ i(time_to_treat, ref = -1) | code_id + ano_sexo + 
 iplot(twfe)
 
 #----------------------------------------------------------------------------- #
-# <<<CBO>>> ----
+# <<< CBO >>> ----
 # ---------------------------------------------------------------------------- #
 
 #' In this section we will test how the relative probability of RAIS presence is
@@ -2059,12 +2059,14 @@ data <- data %>%
     cbo_first = cbo_group[row_number() == aux2]
 )
 
-## 10.1 Bases ----
+## 10.1 Data Frames ----
+
+#Note that WC = White-Collar and BC = Blue-Collar
 
 ### 10.1.1 WC ----
 data_wc <- data %>% 
   filter(white_dummy == 1 &
-           cbo_first %in% c(1:5)) #Nesta condição removemos os que não começam WC
+           cbo_first %in% c(1:5)) #Removing the individuals who don't start as WC
 
 summary(data_wc$cbo_group)
 summary(data_wc$cbo_first)
@@ -2073,13 +2075,13 @@ summary(data_wc$cbo_first)
 
 data_bc <- data %>% 
   filter(white_dummy == 0 &
-           cbo_first %in% c(6:10)) #Nesta condição removemos os que não começam WC
+           cbo_first %in% c(6:10)) #Removing the individuals who don't start as BC
 
 summary(data_bc$cbo_group)
 summary(data_bc$cbo_first)
 
 
-## 10.2 Reg ----
+## 10.2 Estimation ----
 ### 10.2.1 WC ----
 
 data_final <- data.frame()
@@ -2114,9 +2116,8 @@ for ( wc in c(1:5)) {
 
   # 
    plot_calsan
-  # 
-  # #Extraindo os resultados para o sexo feminino
-  # 
+  
+  #Result dataframe
    data_calsan <- ggplot_build(plot_calsan)$data[[1]]
    data_calsan$cbo <- wc
    data_final <- rbind(data_final,as.data.frame(data_calsan))
@@ -2163,7 +2164,7 @@ p <- ggplot(data_final, aes(x = x, y = y, color = cbo, shape = cbo, group = cbo)
   scale_shape_manual(
     values = c(
       #16,
-      15, 17, 18, 16), # Círculo, quadrado, triângulo, diamante
+      15, 17, 18, 16), # Circle, Square, Triangle, Diamond
     labels = c(
       #"Group 0",
                "Group 1",
@@ -2235,7 +2236,7 @@ for ( wc in c(6,8,9,10)) {
   # 
   plot_calsan
   # 
-  # #Extraindo os resultados para o sexo feminino
+  #   #Result dataframe
   # 
   data_calsan <- ggplot_build(plot_calsan)$data[[1]]
   data_calsan$cbo <- wc
@@ -2281,7 +2282,7 @@ p <- ggplot(data_final, aes(x = x, y = y, color = cbo, shape = cbo, group = cbo)
   scale_shape_manual(
     values = c(16, 15, 17, 18
                #, 16
-               ), # Círculo, quadrado, triângulo, diamante
+               ), # Circle, square, triangle, diamond
     labels = c("Group 5",
                #"Group 7",
                "Group 7",
@@ -2318,19 +2319,23 @@ ggsave("C:/Users/tuffy/Documents/IC/Graphs/united/BC_groups.jpeg", plot = p, dev
 ggsave("C:/Users/tuffy/Documents/IC/Graphs/united/BC_groups.pdf", plot = p, device = "pdf", width = 10, height = 6, dpi = 300)
  
 
-# **** CNAE **** ----
+# ---------------------------------------------------------------------------- #
+# <<< CNAE >>> ----
+# ---------------------------------------------------------------------------- #
 
+#'The same methodology is applied to this section. We seek to observe how each
+#'CNAE group differs from the overall observed result in RAIS.
 
 # 11. CNAE----
-# Olhando na RAIS dentro dos grupos CNAE
+# Database
 data <- read.csv("C:/Users/tuffy/Documents/IC/Bases/base_atual_dum_v3.csv")
 
 
 data <- data %>% 
   group_by(code_id) %>% 
   mutate(
-    aux1 = which(cnae_group == 0 & ano < year_first_treated)[1],
-    aux2 = which(cnae_group != 0 & ano < year_first_treated)[1]
+    aux1 = which(cnae_group == 0 & ano < year_first_treated)[1], 
+    aux2 = which(cnae_group != 0 & ano < year_first_treated)[1] # Removing NA values
     
   ) %>% 
   arrange( code_id, ano) %>% 
@@ -2353,7 +2358,7 @@ data <- data %>%
 
 ### 11.1.1 WC ----
 data_wc <- data %>% 
-  filter(white_dummy == 1) #Nesta condição removemos os que não começam WC
+  filter(white_dummy == 1) #Removing the individuals who don't start as WC
 
 summary(data_wc$cnae_group)
 summary(data_wc$cnae_first)
@@ -2361,14 +2366,15 @@ summary(data_wc$cnae_first)
 ### 11.1.2 BC ------
 
 data_bc <- data %>% 
-  filter(white_dummy == 0) #Nesta condição removemos os que não começam WC
+  filter(white_dummy == 0) #Removing the individuals who don't start as BC
 
 summary(data_bc$cnae_group)
 summary(data_bc$cnae_first)
 
-
+# ---------------------------- #
 ## 11.2 WC ----
-### 11.2.1 REG----
+# ---------------------------- #
+### 11.2.1 Estimation----
 
 data_final <- data.frame()
 
@@ -2484,7 +2490,9 @@ p
 ggsave("C:/Users/tuffy/Documents/IC/Graphs/united/Cnae_WC_groups.jpeg", plot = p, device = "jpeg", width = 10, height = 6, dpi = 600)
 ggsave("C:/Users/tuffy/Documents/IC/Graphs/united/Cnae_WC_groups.pdf", plot = p, device = "pdf", width = 10, height = 6, dpi = 300)
 
+# ---------------------------- #
 ## 11.3.1 BC ----
+# ---------------------------- #
 
 ### 11.3.1 REG ----
 
@@ -2595,8 +2603,18 @@ p
 ggsave("C:/Users/tuffy/Documents/IC/Graphs/united/Cnae_BC_groups.jpeg", plot = p, device = "jpeg", width = 10, height = 6, dpi = 600)
 ggsave("C:/Users/tuffy/Documents/IC/Graphs/united/Cnae_BC_groups.pdf", plot = p, device = "pdf", width = 10, height = 6, dpi = 300)
 
-# **** SAL **** ----
-## 12.1 Dados ----
+# ---------------------------------------------------------------------------- #
+# <<< SAL >>> ----
+# ---------------------------------------------------------------------------- #
+
+#' This is a WORK IN PROGRESS. I am tryng to better understang how each salary
+#' quartile individual reacts with the labor lawsuit initiaon.
+#' 
+#' I must add that the current code dividing the groups in each years is badly
+#' written. I have, still, to correct the issue regarding the quartile division 
+#' for each year in the dataset.
+
+## 12.1 Data ----
 data <- read.csv("C:/Users/tuffy/Documents/IC/Bases/base_atual_dum_v3.csv")
 
 
@@ -2746,7 +2764,7 @@ nrow(data %>% filter(ano == 2008, quartile == 4)) #191344
 
 
 
-# REG ----
+# Estimation ----
 
 for( qrt in c(1,2,3,4)) {
   
@@ -2782,8 +2800,8 @@ for( qrt in c(1,2,3,4)) {
   # 
   plot_calsan
   # 
-  # #Extraindo os resultados para o sexo feminino
-  # 
+  #
+  # Results dataframe 
   data_calsan <- ggplot_build(plot_calsan)$data[[1]]
   data_calsan$quart <- qrt
   data_final <- rbind(data_final,as.data.frame(data_calsan))
@@ -2831,7 +2849,7 @@ p <- ggplot(data_final, aes(x = x, y = y, color = quart, shape = quart, group = 
   scale_shape_manual(
     values = c(
       #16,
-      15, 17, 18, 16), # Círculo, quadrado, triângulo, diamante
+      15, 17, 18, 16), # Circle, square, triangle, diamond
     labels = c(
       #"Group 0",
       "1st Quartile",
