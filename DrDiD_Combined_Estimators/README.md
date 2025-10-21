@@ -9,7 +9,7 @@ I couldn’t find an R implementation that brought all these estimators together
 - **Callaway & Sant’Anna (2021)** — [“Difference-in-Differences with Multiple Time Periods”](https://www.sciencedirect.com/science/article/abs/pii/S0304407620303948)
 - **Sun & Abraham (2021)** — [“Estimating Dynamic Treatment Effects in Event Studies with Heterogeneous Treatment Effects”](https://www.sciencedirect.com/science/article/abs/pii/S030440762030378X)
 - **Borusyak, Jaravel & Spiess (2024)** — [“Revisiting Event Study Designs” (working paper)](https://www.econstor.eu/bitstream/10419/260392/1/1800643624.pdf)
-- **de Chaisemartin & d’Haultfoeuille (2024)** — [“Two-Way Fixed Effects and Differences-in-Differences with Heterogeneous Treatment Effects” (NBER w29873)](https://www.nber.org/system/files/working_papers/w29873/w29873.pdf)
+- **De Chaisemartin & d’Haultfoeuille (2024)** — [“Two-Way Fixed Effects and Differences-in-Differences with Heterogeneous Treatment Effects” (NBER w29873)](https://www.nber.org/system/files/working_papers/w29873/w29873.pdf)
 
 ## What you get
 
@@ -28,3 +28,4 @@ I couldn’t find an R implementation that brought all these estimators together
 
 - This repo focuses on **comparability of outputs** (estimands, CI conventions, and plotting scales).
 - If you spot edge cases or want a new estimator added, feel free to open an issue or PR.
+- The code is intentionally **generic**. If you hit an error, please **adapt as needed** and consider submitting a fix via PR (or open an issue).
