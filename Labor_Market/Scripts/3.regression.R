@@ -124,9 +124,18 @@ plot <- function(df,
   return(df_completo)
   
   
-  delta_t <- Sys.time() - ini
-  print(delta_t)
-  rm(delta_t, ini)
+  fim <- Sys.time()
+  
+  
+  delta <- difftime(fim, ini, units = "secs")
+  mins <- floor(as.numeric(delta) / 60)
+  secs <- round(as.numeric(delta) %% 60)
+  
+  message("---------------------------------------------")
+  message("Time: ",mins," mins and ", secs, " s")
+  message("---------------------------------------------")  
+  
+  rm(delta_t, ini, fim, mins, secs)
   
 }
 
@@ -1626,5 +1635,6 @@ se_equal   # optional: the average SE (with sqrt)
 # Create LaTeX row string
 print(pre_av)
 print(se_equal)
+
 
 # ---------------------------------------------------------------------------- #
