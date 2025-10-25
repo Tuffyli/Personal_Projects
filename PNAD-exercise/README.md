@@ -2,6 +2,7 @@
 
 This repo reproduces and extends **Rangel (2006)** on Brazil’s expansion of **alimony rights** for women in stable unions.  
 I focus on **young women (15–24)** and study how eligibility for alimony relates to **years of education** after the policy change.
+
 > **Note:** This is part of the project for the Social Policy Evaluation course.
 ---
 
@@ -25,3 +26,9 @@ Key covariates used in matching: **age, race/color, UF (state), household per-ca
 
 ---
 
+## Citation
+
+Rangel, M. A. (2006). *Alimony Rights and Intrahousehold Allocation of Resources: Evidence from Brazil.*  
+**The Economic Journal**, 116(513), 627–658. https://doi.org/10.1111/j.1468-0297.2006.01086.x
+
+---
