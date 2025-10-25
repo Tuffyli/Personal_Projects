@@ -29,6 +29,6 @@ Key covariates used in matching: **age, race/color, UF (state), household per-ca
 ## Citation
 
 Rangel, M. A. (2006). *Alimony Rights and Intrahousehold Allocation of Resources: Evidence from Brazil.*  
-**The Economic Journal**, 116(513), 627–658. https://doi.org/10.1111/j.1468-0297.2006.01086.x
+**The Economic Journal**, 116(513), 627–658.
 
 ---
