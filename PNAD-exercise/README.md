@@ -1,6 +1,6 @@
 # PNAD-exercise — Alimony Rights Expansion & Young Women’s Education (Brazil)
 
-This repo reproduces and extends **Rangel (2006)**[https://www.jstor.org/stable/3876398] on Brazil’s expansion of **alimony rights** for women in stable unions.  
+This repo reproduces and extends [**Rangel (2006)**](https://www.jstor.org/stable/3876398) on Brazil’s expansion of **alimony rights** for women in stable unions.  
 I focus on **young women (15–24)** and study how eligibility for alimony relates to **years of education** after the policy change.
 
 > **Note:** This is part of the project for the Social Policy Evaluation course.
