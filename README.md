@@ -23,4 +23,6 @@ causal inference, labor markets, and reproducible R code.
   Experiments around **standard errors** for Callaway & Sant’Anna (2021): choices,
   caveats, and reproducible R snippets.
 
+- **[PNAD-exercise](./PNAD-exercise/)**
+  Adjusted codes for the Social Policy Evaluation course final project. 
 ---
