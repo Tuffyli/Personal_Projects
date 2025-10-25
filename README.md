@@ -24,6 +24,5 @@ causal inference, labor markets, and reproducible R code.
   caveats, and reproducible R snippets.
 
 - **[PNAD-exercise](./PNAD-exercise/)**
-  
   Adjusted codes for the Social Policy Evaluation course final project. 
 ---
