@@ -2637,7 +2637,7 @@ data <- data %>%
   mutate(
     sm_first = remuneracao_media_sm_[row_number() == aux1],
     
-    #Para cada ano
+    #For each year
     sm_03 = remuneracao_media_sm_[ano == 2003],
     sm_04 = remuneracao_media_sm_[ano == 2004],
     sm_05 = remuneracao_media_sm_[ano == 2005],
@@ -2657,104 +2657,83 @@ summary(data %>% filter(ano == 2008) %>% select(sm_first))
 #' 2 - 2.040
 #' 3 - 3.160
 
+
+
+
+
+### 12.2.1 Breaks ----
+# ---------------------------------------------------------------------------- #
+#' Before estimating the cutoff values I have to extract the quartile values for
+#' each year in the database. If I do not calculate this value before hand, and
+#' try to place it within the group_by fucntion, it will calculate the quartiles
+#' individually and not for the entire data. Thus the primary extraction is needed.
+# ---------------------------------------------------------------------------- #
+
+break_first <- unique(quantile(data$sm_first, #Definindo os quartis
+                               probs = c(0, .25, .5, .75, 1), na.rm = TRUE))
+break_03 <- unique(quantile(data$sm_03, probs = c(0, .25, .5, .75, 1), na.rm = TRUE))
+break_04 <- unique(quantile(data$sm_04, probs = c(0, .25, .5, .75, 1), na.rm = TRUE))
+break_05 <- unique(quantile(data$sm_05, probs = c(0, .25, .5, .75, 1), na.rm = TRUE))
+break_06 <- unique(quantile(data$sm_06, probs = c(0, .25, .5, .75, 1), na.rm = TRUE))
+break_07 <- unique(quantile(data$sm_07, probs = c(0, .25, .5, .75, 1), na.rm = TRUE))
+break_08 <- unique(quantile(data$sm_08, probs = c(0, .25, .5, .75, 1), na.rm = TRUE))
+break_09 <- unique(quantile(data$sm_09, probs = c(0, .25, .5, .75, 1), na.rm = TRUE))
+break_10 <- unique(quantile(data$sm_10, probs = c(0, .25, .5, .75, 1), na.rm = TRUE))
+break_11 <- unique(quantile(data$sm_11, probs = c(0, .25, .5, .75, 1), na.rm = TRUE))
+break_12 <- unique(quantile(data$sm_12, probs = c(0, .25, .5, .75, 1), na.rm = TRUE))
+break_13 <- unique(quantile(data$sm_13, probs = c(0, .25, .5, .75, 1), na.rm = TRUE))
+
 ini <- Sys.time()
 
-data <- data %>% 
-  #select(-c(aux1, aux2)) %>%
-  group_by(code_id) %>% 
-  mutate(
-   # quartile =  case_when(
-   #   sm_first < 1.520 ~ 1,
-   #   sm_first >= 1.520 & sm_first < 2.040 ~ 2,
-   #   sm_first >= 2.040 & sm_first < 3.160 ~ 3,
-   #   sm_first > 3.160 ~ 4,
-   #   TRUE ~ NA
-   # ),
-   quartile_first = cut(sm_first,
-                        breaks = unique(quantile(data$sm_first, #Definindo os quartis
-                                                 probs = c(0, .25, .5, .75, 1),
-                                                 na.rm = TRUE)
-                                        ),
-                        include.lowest = TRUE, labels = FALSE),
-   
-   #Para os anos...
-   quartile_03 = cut(sm_03,
-                     breaks = unique(quantile(data$sm_03, probs = c(0, .25, .5, .75, 1),na.rm = TRUE)),
-                     include.lowest = TRUE, labels = FALSE)
-   
-   )
-
-fim <- Sys.time()
-delta <- difftime(fim, ini, units = "mins")
-message(delta)
-
 
 data <- data %>% 
   group_by(code_id) %>%
   mutate(
-   quartile_04 = cut(sm_04,
-                     breaks = unique(quantile(data$sm_04, probs = c(0, .25, .5, .75, 1),na.rm = TRUE)),
-                     include.lowest = TRUE, labels = FALSE),
-   quartile_05 = cut(sm_05,
-                     breaks = unique(quantile(data$sm_05, probs = c(0, .25, .5, .75, 1),na.rm = TRUE)),
-                     include.lowest = TRUE, labels = FALSE)
-   )
-
-fim <- Sys.time()
-delta <- difftime(fim, ini, units = "mins")
-message(delta)
-
-
-data <- data %>% 
-  group_by(code_id) %>%
-  mutate(
-   quartile_06 = cut(sm_06,
-                     breaks = unique(quantile(data$sm_06, probs = c(0, .25, .5, .75, 1),na.rm = TRUE)),
-                     include.lowest = TRUE, labels = FALSE),
-   quartile_07 = cut(sm_07,
-                     breaks = unique(quantile(data$sm_07, probs = c(0, .25, .5, .75, 1),na.rm = TRUE)),
-                     include.lowest = TRUE, labels = FALSE),
-   quartile_08 = cut(sm_08,
-                     breaks = unique(quantile(data$sm_08, probs = c(0, .25, .5, .75, 1),na.rm = TRUE)),
-                     include.lowest = TRUE, labels = FALSE)
-   )
-fim <- Sys.time()
-delta <- difftime(fim, ini, units = "mins")
-message(delta)
-
-
-data <- data %>% 
-  group_by(code_id) %>%
-  mutate(
-   quartile_09 = cut(sm_09,
-                     breaks = unique(quantile(data$sm_09, probs = c(0, .25, .5, .75, 1),na.rm = TRUE)),
-                     include.lowest = TRUE, labels = FALSE),
-   quartile_10 = cut(sm_10,
-                     breaks = unique(quantile(data$sm_10, probs = c(0, .25, .5, .75, 1),na.rm = TRUE)),
-                     include.lowest = TRUE, labels = FALSE)
-   )
-
-fim <- Sys.time()
-delta <- difftime(fim, ini, units = "mins")
-message(delta)
-
-
-data <- data %>% 
-  group_by(code_id) %>%
-  mutate(
-   quartile_11 = cut(sm_11,
-                     breaks = unique(quantile(data$sm_11, probs = c(0, .25, .5, .75, 1),na.rm = TRUE)),
-                     include.lowest = TRUE, labels = FALSE),
-   quartile_12 = cut(sm_12,
-                     breaks = unique(quantile(data$sm_12, probs = c(0, .25, .5, .75, 1),na.rm = TRUE)),
-                     include.lowest = TRUE, labels = FALSE),
-   quartile_13 = cut(sm_13,
-                     breaks = unique(quantile(data$sm_13, probs = c(0, .25, .5, .75, 1),na.rm = TRUE)),
-                     include.lowest = TRUE, labels = FALSE)
-  ) %>% 
+    quartile_first = cut(sm_first, #first observed salary value
+                         breaks = break_first,
+                             include.lowest = TRUE, labels = FALSE), 
+        
+        #Calculating for the years
+    quartile_03 = cut(sm_03,
+                          breaks = break_03,
+                          include.lowest = TRUE, labels = FALSE),
+    quartile_04 = cut(sm_04,
+                     breaks = break_04,
+                     include.lowest = TRUE, labels = FALSE), #2004
+    quartile_05 = cut(sm_05,
+                     breaks = break_05,
+                     include.lowest = TRUE, labels = FALSE), #2005
+    quartile_06 = cut(sm_06,
+                     breaks = break_06,
+                     include.lowest = TRUE, labels = FALSE), #2006
+    quartile_07 = cut(sm_07,
+                     breaks = break_07,
+                     include.lowest = TRUE, labels = FALSE), #2007
+    quartile_08 = cut(sm_08,
+                     breaks = break_08,
+                     include.lowest = TRUE, labels = FALSE), #2008
+    quartile_09 = cut(sm_09,
+                     breaks = break_09,
+                     include.lowest = TRUE, labels = FALSE), #2009
+    quartile_10 = cut(sm_10,
+                     breaks = break_10,
+                     include.lowest = TRUE, labels = FALSE), #2010
+    quartile_11 = cut(sm_11,
+                     breaks = break_11,
+                     include.lowest = TRUE, labels = FALSE), #2011
+    quartile_12 = cut(sm_12,
+                     breaks = break_12,
+                     include.lowest = TRUE, labels = FALSE), #2012
+    quartile_13 = cut(sm_13,
+                     breaks = break_13,
+                     include.lowest = TRUE, labels = FALSE) #2013
+    ) %>% 
   ungroup()
 
 
+fim <- Sys.time()
+delta <- difftime(fim, ini, units = "mins")
+message(delta)
 
 
 nrow(data %>% filter(ano == 2008, quartile == 1)) #190495
@@ -2762,7 +2741,8 @@ nrow(data %>% filter(ano == 2008, quartile == 2)) #191730
 nrow(data %>% filter(ano == 2008, quartile == 3)) #192892
 nrow(data %>% filter(ano == 2008, quartile == 4)) #191344
 
-
+rm(break_04, break_05, break_06, break_07, break_08, break_09, break_10, break_11,
+   break_12, break_13)
 
 # Estimation ----
 
