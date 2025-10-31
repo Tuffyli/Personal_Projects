@@ -2736,132 +2736,169 @@ delta <- difftime(fim, ini, units = "mins")
 message(delta)
 
 
-nrow(data %>% filter(ano == 2008, quartile == 1)) #190495
-nrow(data %>% filter(ano == 2008, quartile == 2)) #191730
-nrow(data %>% filter(ano == 2008, quartile == 3)) #192892
-nrow(data %>% filter(ano == 2008, quartile == 4)) #191344
 
-rm(break_04, break_05, break_06, break_07, break_08, break_09, break_10, break_11,
-   break_12, break_13)
+rm(break_03, break_04, break_05, break_06, break_07, break_08, break_09, break_10,
+   break_11, break_12, break_13, break_first, fim, ini, delta)
 
-# Estimation ----
+##12.3 Graph ----
 
-for( qrt in c(1,2,3,4)) {
+salary_list <- c("quartile_03", #2003 and so on
+                 "quartile_04",
+                 "quartile_05",
+                 "quartile_06",
+                 "quartile_07",
+                 "quartile_08",
+                 "quartile_09",
+                 "quartile_10",
+                 "quartile_11",
+                 "quartile_12",
+                 "quartile_13")
+
+for (ano in c(2003:2013)) {
   
-  if(qrt == 1) {
-    data_final <- data.frame()
-  }
+  gc()
+  message("Starting: ", ano)
   
+  #Timer start
+  ini <- Sys.time()
   
-  temp <- data %>% 
-    filter( quartile_first == qrt)
+  #Index capture
+  i <- ano - 2002
   
-  
-  #Estimation
-  calsan_did <- did::att_gt(
-    yname = "rais_",
-    gname = "year_first_treated",
-    idname = "code_id",
-    tname = "ano",
-    xformla = ~ code_id + ano_sexo + ano_branco + ano_ensino
-    ,
-    data = temp,
-    control_group = "notyettreated",
-    base_period = "universal",
-    clustervars = "code_id"
-  )
-  
-  est_calsan <- aggte( MP = calsan_did, type = "dynamic", na.rm = TRUE)
-  #Result table
-  print(est_calsan)
-  # 
-  plot_calsan <- ggdid(est_calsan) 
-  
-  # 
-  plot_calsan
-  # 
-  #
-  # Results dataframe 
-  data_calsan <- ggplot_build(plot_calsan)$data[[1]]
-  data_calsan$quart <- qrt
-  data_final <- rbind(data_final,as.data.frame(data_calsan))
-  
-  rm(temp, calsan_did)
+  ext <- as.character(salary_list[i]) #extraction key
   
   
+  ###12.3.1 Loop ----
+  #Looping the regression for each quartile
+  for( qrt in c(1,2,3,4)) {
+      
+      if(qrt == 1) {
+        data_final <- data.frame()
+      }
+      
+      
+      temp <- data %>% 
+        filter( get(ext) == qrt)
+      
+      
+      #Estimation
+      calsan_did <- did::att_gt(
+        yname = "rais_",
+        gname = "year_first_treated",
+        idname = "code_id",
+        tname = "ano",
+        xformla = ~ code_id + ano_sexo + ano_branco + ano_ensino
+        ,
+        data = temp,
+        control_group = "notyettreated",
+        base_period = "universal",
+        clustervars = "code_id"
+      )
+      
+      est_calsan <- aggte( MP = calsan_did, type = "dynamic", na.rm = TRUE)
+      #Result table
+      print(est_calsan)
+      # 
+      plot_calsan <- ggdid(est_calsan) 
+      
+      # 
+      plot_calsan
+      # 
+      #
+      # Results dataframe 
+      data_calsan <- ggplot_build(plot_calsan)$data[[1]]
+      data_calsan$quart <- qrt
+      data_final <- rbind(data_final,as.data.frame(data_calsan))
+      
+      rm(temp, calsan_did)
+      
+      message("Ended DrDiD estimation for quartile: ", qrt, " of ", ano)
+      
 }
 
 
-### 10.2.2. Graph ----
-
-
-data_final <- data_final %>% 
-  mutate(
-    x = as.numeric(x),
-    x = case_when(
-      quart == 1 ~ x - 0.25,
-      quart == 2 ~ x - 0.15,
-      quart == 4 ~ x + 0.15,
-      quart == 5 ~ x + 0.25,
-      TRUE ~ x
-    )
-  ) 
-
-data_final$quart <- as.factor(data_final$quart)
-
-p <- ggplot(data_final, aes(x = x, y = y, color = quart, shape = quart, group = quart)) +
-  geom_point( size = 3) +
-  geom_errorbar(aes(ymin = ymin, ymax = ymax), width = 0.3) +
-  geom_hline(yintercept = 0, color = "#D62728") +
-  geom_vline(xintercept = -1, color = "#BEBEBE", linetype = "dashed") +
-  scale_color_manual(
-    values = c(
-      #'black',
-      '#0072B2', '#009E73'	, '#E69F00', "#CC79A7"),
-    labels = c(
-      #"Group 0",
-      "1st Quartile",
-      "2nd Quartile",
-      "3rd Quartile",
-      "4th Quartile"
-    )
-  ) +
-  scale_shape_manual(
-    values = c(
-      #16,
-      15, 17, 18, 16), # Circle, square, triangle, diamond
-    labels = c(
-      #"Group 0",
-      "1st Quartile",
-      "2nd Quartile",
-      "3rd Quartile",
-      "4th Quartile"
-    )
-  ) +  
-  labs(x = "Years to treatment", y = '', colour = '', shape = '') +
-  theme_classic(base_size = 18) +   
-  theme(
-    axis.line = element_line(),
-    axis.ticks.length = unit(5, "pt"),
-    axis.ticks = element_line(colour = "black"),  
-    axis.ticks.x = element_line(colour = "black"),
-    axis.ticks.y = element_line(colour = "black"),
-    axis.text.x = element_text(margin = margin(t = 5), size = 18),
-    axis.text.y = element_text(size = 18
-    ),
+    #### 12.3.1.1 Graph ----
+    data_final <- data_final %>% 
+      mutate(
+        x = as.numeric(x),
+        x = case_when(
+          quart == 1 ~ x - 0.25,
+          quart == 2 ~ x - 0.15,
+          quart == 4 ~ x + 0.15,
+          quart == 5 ~ x + 0.25,
+          TRUE ~ x
+        )
+      ) 
     
-    legend.text = element_text(size = 18),
-    legend.position = c(0.05, 0.05),         
-    legend.justification = c(0, 0)           
-  ) +
-  scale_x_continuous(limits = c(-9.5, 4.5),
-                     breaks = c(-9,-8,-7,-6,-5,-4,-3,-2,-1,0,1,2,3,4),
-                     labels = c('-9','-8','-7','-6','-5','-4','-3','-2','-1','0','+1','+2','+3','+4')) +
-  scale_y_continuous(limits = c(-0.95, 0.155),
-                     breaks = c(-0.90,-0.75,-0.60,-0.45,-0.30,-0.15,0,0.15),
-                     labels = c('-0.90','-0.75','-0.60','-0.45','-0.30','-0.15','0','0.15'))
-p
-
-ggsave("C:/Users/tuffy/Documents/IC/Graphs/united/SM_quart.jpeg", plot = p, device = "jpeg", width = 10, height = 6, dpi = 600)
-ggsave("C:/Users/tuffy/Documents/IC/Graphs/united/Sm_quart.pdf", plot = p, device = "pdf", width = 10, height = 6, dpi = 300)
-
+    data_final$quart <- as.factor(data_final$quart)
+    
+    p <- ggplot(data_final, aes(x = x, y = y, color = quart, shape = quart, group = quart)) +
+      geom_point( size = 3) +
+      geom_errorbar(aes(ymin = ymin, ymax = ymax), width = 0.3) +
+      geom_hline(yintercept = 0, color = "#D62728") +
+      geom_vline(xintercept = -1, color = "#BEBEBE", linetype = "dashed") +
+      scale_color_manual(
+        values = c(
+          #'black',
+          '#0072B2', '#009E73'	, '#E69F00', "#CC79A7"),
+        labels = c(
+          #"Group 0",
+          "1st Quartile",
+          "2nd Quartile",
+          "3rd Quartile",
+          "4th Quartile"
+        )
+      ) +
+      scale_shape_manual(
+        values = c(
+          #16,
+          15, 17, 18, 16), # Circle, square, triangle, diamond
+        labels = c(
+          #"Group 0",
+          "1st Quartile",
+          "2nd Quartile",
+          "3rd Quartile",
+          "4th Quartile"
+        )
+      ) +  
+      labs(x = "Years to treatment", y = '', colour = '', shape = '') +
+      theme_classic(base_size = 18) +   
+      theme(
+        axis.line = element_line(),
+        axis.ticks.length = unit(5, "pt"),
+        axis.ticks = element_line(colour = "black"),  
+        axis.ticks.x = element_line(colour = "black"),
+        axis.ticks.y = element_line(colour = "black"),
+        axis.text.x = element_text(margin = margin(t = 5), size = 18),
+        axis.text.y = element_text(size = 18
+        ),
+        
+        legend.text = element_text(size = 18),
+        legend.position = c(0.05, 0.05),         
+        legend.justification = c(0, 0)           
+      ) +
+      scale_x_continuous(limits = c(-9.5, 4.5),
+                         breaks = c(-9,-8,-7,-6,-5,-4,-3,-2,-1,0,1,2,3,4),
+                         labels = c('-9','-8','-7','-6','-5','-4','-3','-2','-1','0','+1','+2','+3','+4')) +
+      scale_y_continuous(limits = c(-0.95, 0.155),
+                         breaks = c(-0.90,-0.75,-0.60,-0.45,-0.30,-0.15,0,0.15),
+                         labels = c('-0.90','-0.75','-0.60','-0.45','-0.30','-0.15','0','0.15'))
+    p
+    
+    ggsave(paste0("C:/Users/tuffy/Documents/IC/Graphs/salary/",ano,"_SM_quart.jpeg"), plot = p, device = "jpeg", width = 10, height = 6, dpi = 600)
+    ggsave(paste0("C:/Users/tuffy/Documents/IC/Graphs/salary/",ano,"_SM_quart.pdf"), plot = p, device = "pdf", width = 10, height = 6, dpi = 300)
+ 
+    
+    #Final time
+    fim <- Sys.time()
+    
+    delta <- difftime(fim, ini, units = "secs")
+    mins <- floor(as.numeric(delta) / 60)
+    secs <- round(as.numeric(delta) %% 60)
+    
+    message("---------------------------------------------")
+    message("Total time: ",mins," mins and ", secs, " s")
+    message("---------------------------------------------")
+    
+    rm(p, qrt, ano, ext, ini, fim, delta, secs, mins, i)   
+}
