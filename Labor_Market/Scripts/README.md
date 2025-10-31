@@ -7,4 +7,3 @@ Each script covers a stage of the workflow. **Execution priority is indicated by
 3. **[4.robust.R](./4.robust.R)** — robustness checks and alternative specs.  
 4. **[coding_sample.R](./coding_sample.R)** — the combination of all current code files into a single one (incomplete).
 
-> Tip: If you use restricted data, point paths in `2.data.R` to your local files and keep them out of Git.
